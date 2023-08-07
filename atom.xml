@@ -6,7 +6,7 @@
   <link href="https://xiaoxue1055.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaoxue1055.github.io/"/>
-  <updated>2023-08-07T11:10:39.838Z</updated>
+  <updated>2023-08-07T11:15:36.502Z</updated>
   <id>https://xiaoxue1055.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>简历项目</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/07/%E7%AE%80%E5%8E%86%E9%A1%B9%E7%9B%AE/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/07/%E7%AE%80%E5%8E%86%E9%A1%B9%E7%9B%AE/</id>
+    <published>2023-08-07T11:12:59.000Z</published>
+    <updated>2023-08-07T11:15:36.502Z</updated>
+    
+    <content type="html"><![CDATA[<p>一. 佳购商城（2022.10-2023.6）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构：Mysql+MyBatisPlus+Redis+SpringBoot+ SpringCloud + RabbitMQ +SpringCache +Elasticsearch+SpringSecurity+vue+Element-UI<br>项目描述： 佳购商城是一个电商项目，主要是通过互联网平台为用户提供在线购买和销售商品的服务。项目主要包含：销售前台和电商管理后台。项目的主要模块有：用户模块、轮播模块、商品模块、类别模块、地址模块、收藏模块、购物模块、订单模块。用户模块是用户的登录和注册，轮播模块是对轮播图的展示，商品模块和类别模块是把商品根据类别展示，地址模块是用户对地址的操作，收藏模块是用户收藏的商品，购物模块是用户加入购物车的商品，订单模块是用户订单的内容。<br>技术描述：<br>1.使用SpringCloud作为后端框架，vue作为前端框架，前后端分离模式。<br>2.使用MyBatisPlus实现对数据库的增删改查，完成对数据的操作。<br>3.使用OpenFeign对不同模块进行远程服务调用，使用Nacos作为服务的注册中心。<br>4.使用SpringCache对商品信息进行缓存，减少查询对数据库的压力。<br>5.使用Redis对商品模块统计商品的浏览量、销售量，统计数据并生成排行榜。<br>6.使用RabbitMQ消息队列对数据进行同步，保证数据的一致性。<br>7.使用Elasticsearch对商品信息进行搜索，提高查询的效率。<br>8.使用SpringSecurity对用户进行认证和授权，用户只有登录后才能把商品加入购物车或收藏。<br>     二. 智慧云课堂（2022.4-2022.10）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： MySql+MyBatisPlus+Redis+SpringBoot+SpringCloud+RabbitMQ+vue+Element-UI<br>项目描述: 智慧云课堂是线上课堂项目，主要功能是提供在线教育服务。项目分为：系统后台和系统前台。系统后台是管理员使用，系统前台是用户使用。后台系统主要有：讲师管理，课程分类管理，点播管理，课程订单，营销管理，直播管理，权限管理。用户通过登录，可以在点播课程和直播课程的模块来学习内容。讲师管理和课程分类管理，是老师人员和课程分类的详细信息。点播管理是老师上传的课程，有付费和免费的课程。课程订单是用户下单的管理，营销管理是活动时的打折销售。直播管理有聊天互动的功能，权限管理对用户的权限进行管理。<br>技术描述：<br>1.使用分级课程列表对课程展示,通过EasyExcal对Excal导入和导出。<br>2.使用腾讯云的COS对课程的图片上传，VOD对点播的视频上传。<br>3.使用Nacos把后端服务注册，SpringCloudGateWay解决前后端跨域问题。<br>4.使用RabbitMQ将用户的学习记录和课程进度同步到不同的数据中心，以便于用户在不同地方使用课程。<br>5.使用Redis添加缓存、计数器、排行榜，缓存热门课程信息，课程点击量，热门课程排行。<br>6.使用Swagger2进行前后端的衔接，规范开发流程。<br>三. 科讯办公系统（2021.12-2022.4）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+MyBatisPlus+Redis+SpringBoot+SpringSecurity+Activiti+<br>vue+Element-UI<br>项目描述: 科讯办公系统是一套自动化办公系统，主要用于公司员工的日常工作和管理。系统主要包含：管理端和员工端。管理端包含：权限管理、审批管理、公众号菜单管理等功能。员工端包含：办公审批、微信授权登录、消息推送等功能。项目中也包括考勤打卡、代办记录、业务人员状态等办公辅助型功能。<br>技术描述：<br>1.使用MD5对登录的密码进行加密处理，JWT生成token实现用户登录。<br>2.使用SpringSecurity对后端接口进行用户认证和用户授权，自定义拦截方法不同的用户分配不同的角色操作不同的菜单。<br>3.使用Activiti工作流，按照预定义的规则完成审批的流程，完成管理端的审批管理模块的编写。<br>4.使用Activiti工作流，完成员工端的审批分类、记录提交信息、查询代办任务、显示审批详情、查询已处理任务等功能。<br>5.使用Swagger2进行前后端的衔接，规范开发流程。<br>四. 美食快送（2021.6-2021.12）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构：Mysql+MyBatisPlus+Redis+Nginx+SpringBoot+SpringSession+Spring+SpringMVC+<br>vue+Element-UI<br>项目描述: 美食快送是一个外卖项目，主要用于餐饮的移动应用程序订购并送餐到指定地址的餐品。项目主要包括系统管理后台和移动端应用两部分。其中系统管理后台主要提供给餐饮企业内部员工使用，可以对餐厅的菜品、套餐、订单等进行管理维护。移动端应用主要提供给消费者使用，可以在线浏览菜品、添加购物车、下单等。<br>技术描述：<br>1.使用Nginx实现服务端的负载均衡。<br>2.使用SpringMVC的拦截器检验用户是否登录。<br>3.使用MyBatisPlus的分页插件对数据进行分页查询。<br>4.使用Redis设置有效期保存手机验证码。<br>5.使用ThreadLocal保存和获取当前登录的用户id。<br>五. 牙科医疗项目（2020.6-2021.6）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+Mybatis+Spring+SpringMVC+jQuery+Eachart+EasyUI<br>项目描述: 牙科医疗项目是医疗项目，主要用于提供一系列的牙科医疗服务。项目中有三个大的模块分为病历模块，付款和账单模块，角色管理模块。病历模块主要给医生办公用，对患者的一些信息进行录入，和开具治疗方案。付款和账单模块主要给用户使用，用户可以通过在线平台或移动应用程序在线支付诊疗费用，并管理个人的账单信息。角色管理模块主要给公司其他办公人员使用，主要是对公司岗位的一些层级管理。<br>技术描述：<br>1.使用Shiro进行系统部分功能的权限控制。<br>2.使用RESTfulAPI实现患者的预约管理、医生的诊断处理、管理员的系统管理等。<br>3.使用POI进行表单的导出和导入。<br>4.使用Eachart进行医生的诊断数量和财务分析报表的分析和可视化展示。<br>5.使用jQuery实现表单验证、数据提交、异步加载等操作。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一. 佳购商城（2022.10-2023.6）&lt;br&gt;开发环境： jdk1.8+ maven+git+tomcat8&lt;br&gt;技术架构：Mysql+MyBatisPlus+Redis+SpringBoot+ SpringCloud + RabbitMQ +SpringCach</summary>
+      
+    
+    
+    
+    <category term="简历" scheme="https://xiaoxue1055.github.io/categories/%E7%AE%80%E5%8E%86/"/>
+    
+    
+    <category term="简历项目" scheme="https://xiaoxue1055.github.io/tags/%E7%AE%80%E5%8E%86%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>简历技能</title>
     <link href="https://xiaoxue1055.github.io/2023/08/07/%E7%AE%80%E5%8E%86%E6%8A%80%E8%83%BD/"/>
     <id>https://xiaoxue1055.github.io/2023/08/07/%E7%AE%80%E5%8E%86%E6%8A%80%E8%83%BD/</id>
     <published>2023-08-07T11:08:37.000Z</published>
-    <updated>2023-08-07T11:10:39.838Z</updated>
+    <updated>2023-08-07T11:14:26.488Z</updated>
     
     <content type="html"><![CDATA[<ol><li><p>   具有扎实的Java基础，熟悉掌握面向对象编程思想、集合、泛型、IO流、多线程、反射。</p></li><li><p>   熟练掌握Spring、SpringMVC、MyBatis、MyBatisPlus等框架，熟悉对其进行整合为SSM，熟悉Spring的控制反转、依赖注入、面向切面编程等使用。</p></li><li><p>   熟练掌握SpringBoot框架快速构建项目，对项目进行热部署，多环境开发配置，使用常用的注解开发，RESTful的编码风格。</p></li><li><p>   熟练掌握SpringCloudAlibaba框架搭建微服务架构，熟悉其组件Nacos、OpenFeign、Sentinel、Gateway、Ribbon、Sleuth、Zipkin的功能和使用。</p></li><li><p>   熟练使用RabbitMQ消息队列，进行应用解耦，异步提速，削峰填谷，熟悉多种消息模式。</p></li><li><p>   熟练使用SpringSecurity和JWT安全框架，通过RBAC进行认证和授权，熟悉使用token登录认证。</p></li><li><p>   熟练使用Elasticsearch分布式搜索引擎，通过IK分词器，将中文文本进行分词，方便搜索和聚合。</p></li><li><p>   熟练掌握 MySQL关系型数据库，Redis非关系型数据库，熟悉SQL语句编写、事务机制、索引，熟悉Redis常用数据类型、AOF和RDB持久化操作机制、主从复制。</p></li><li><p>   熟悉Docker的基本使用，熟悉容器和镜像的操作，通过挂载实现数据的共享和持久化，熟悉Linux常用命令。</p></li><li><p>   熟悉Java虚拟机JVM的组成部分、运行时数据区、双亲委派模型、GC垃圾回收。</p></li><li><p>   熟悉若依框架开发前后端，熟悉使用Vue框架，并配合Element-ui组件库快速开发前端页面。</p></li></ol>]]></content>
     
@@ -36,7 +60,7 @@
     
     
     
-    <category term="学习" scheme="https://xiaoxue1055.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="简历" scheme="https://xiaoxue1055.github.io/categories/%E7%AE%80%E5%8E%86/"/>
     
     
     <category term="简历技能" scheme="https://xiaoxue1055.github.io/tags/%E7%AE%80%E5%8E%86%E6%8A%80%E8%83%BD/"/>
@@ -145,7 +169,7 @@ src=&quot;https://www.bilibili.com/video/BV1</summary>
     <published>2023-08-06T14:06:21.000Z</published>
     <updated>2023-08-06T14:10:08.718Z</updated>
     
-    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#x69;&#x74;&#101;&#101;&#46;&#99;&#111;&#109;">&#103;&#x69;&#116;&#64;&#103;&#x69;&#x74;&#101;&#101;&#46;&#99;&#111;&#109;</a>:abc&#x2F;abc.git</p>]]></content>
+    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x65;&#101;&#x2e;&#x63;&#111;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x65;&#101;&#x2e;&#x63;&#111;&#109;</a>:abc&#x2F;abc.git</p>]]></content>
     
     
       
