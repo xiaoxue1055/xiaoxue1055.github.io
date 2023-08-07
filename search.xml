@@ -4,7 +4,7 @@
     <title>git</title>
     <url>/2023/08/06/git/</url>
     <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
-<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#101;&#x65;&#46;&#99;&#x6f;&#109;">&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#101;&#x65;&#46;&#99;&#x6f;&#109;</a>:abc&#x2F;abc.git</p>
+<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#x69;&#x74;&#101;&#101;&#46;&#99;&#111;&#109;">&#103;&#x69;&#116;&#64;&#103;&#x69;&#x74;&#101;&#101;&#46;&#99;&#111;&#109;</a>:abc&#x2F;abc.git</p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -116,61 +116,6 @@
 ]]></content>
       <tags>
         <tag>h文</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql</title>
-    <url>/2023/08/05/mysql/</url>
-    <content><![CDATA[<p>mysql</p>
-<p>ddl:  操作数据库</p>
-<p>查询：&nbsp;&nbsp;show databases;(所有)&nbsp;&nbsp;&nbsp;select database();(当前)</p>
-<p>创建：&nbsp;&nbsp;create database&nbsp;&nbsp;&nbsp;ittest;&nbsp;&nbsp;&nbsp;(if not exists)</p>
-<p>删除：&nbsp;&nbsp;drop database ittest;&nbsp;&nbsp;&nbsp;(if  exists)</p>
-<p>使用：&nbsp;&nbsp;use ittest;</p>
-<p>ddl:&nbsp;&nbsp;操作表结构</p>
-<p>查询：&nbsp;&nbsp;show tables;(所有表)&nbsp;&nbsp;&nbsp;desc 表名;(表结构)&nbsp;&nbsp;&nbsp;show create table 表名;(建表语句) </p>
-<p>创建：&nbsp;&nbsp;create table 表名(字段1  字段1类型 comment 注释,字段2  字段2类型 comment 注释)</p>
-<p>数据类型：&nbsp;&nbsp;数据类型、字符串类型、日期时间类型。</p>
-<p>修改：&nbsp;&nbsp;alter table  表名 add 字段名 类型(长度);(添加)&nbsp;&nbsp;&nbsp;alter table  表名 change 旧字段名  新字段名  类型(长度);(修改)&nbsp;&nbsp;&nbsp;alter  table 表名 drop 字段名;(删除)&nbsp;&nbsp;&nbsp;alter  table 表名 rename to  新表名;(表名)</p>
-<p>删除：&nbsp;&nbsp;drop table  表名;&nbsp;&nbsp;&nbsp;truncate   table  表名;</p>
-<p>dml:&nbsp;&nbsp;增删改</p>
-<p>添加：&nbsp;&nbsp;insert  into 表名(字段1,字段2) values (值1,值2);</p>
-<p>修改：&nbsp;&nbsp;update  表名  set  字段1&#x3D;值1, 字段2&#x3D;值2;</p>
-<p>删除：&nbsp;&nbsp;delete  from 表名;</p>
-<p>dql:&nbsp;&nbsp;查询</p>
-<p>查询：&nbsp;&nbsp;select  字段列表  from 表名列表  where  条件列表  group by  分组条件列表  having  分组后条件列表  order  by   排序字段列表  limit  分页参数;</p>
-<p>聚合函数：&nbsp;&nbsp;count&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;&nbsp;min&nbsp;&nbsp;&nbsp;avg&nbsp;&nbsp;&nbsp;sum</p>
-<p>dcl:&nbsp;&nbsp;用户权限</p>
-<p>多表查询：</p>
-<p>连接查询：</p>
-<p>内连接：</p>
-<p>外连接：</p>
-<p>自连接：</p>
-<p>联合查询：</p>
-<p>子查询：</p>
-<p>标量子查询：</p>
-<p>列子查询：</p>
-<p>行子查询：</p>
-<p>表子查询：</p>
-<p>事务：&nbsp;&nbsp;原子性&nbsp;&nbsp;&nbsp;一致性&nbsp;&nbsp;&nbsp;隔离性&nbsp;&nbsp;&nbsp;持久性</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>redis</title>
-    <url>/2023/08/06/redis/</url>
-    <content><![CDATA[<p>redis的基本数据类型：<br>string &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortedset &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bitmap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hyperlog<br>redis常用命令：<br>keys *<br>del name<br>mset k1 v1 k2 v2 k3 v3<br>exists age<br>expire age 20<br>ttl age</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>redis</tag>
       </tags>
   </entry>
   <entry>
@@ -524,15 +469,58 @@
       </tags>
   </entry>
   <entry>
-    <title>video</title>
-    <url>/2023/08/07/video/</url>
-    <content><![CDATA[<p>这是一个视频</p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
-src="https://www.bilibili.com/video/BV1rc411c7mi/?spm_id_from=333.999.0.0&vd_source=c6b8b78d53ad1898051d946c0af958c7" scrolling="no" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
+    <title>mysql</title>
+    <url>/2023/08/05/mysql/</url>
+    <content><![CDATA[<p>mysql</p>
+<p>ddl:  操作数据库</p>
+<p>查询：&nbsp;&nbsp;show databases;(所有)&nbsp;&nbsp;&nbsp;select database();(当前)</p>
+<p>创建：&nbsp;&nbsp;create database&nbsp;&nbsp;&nbsp;ittest;&nbsp;&nbsp;&nbsp;(if not exists)</p>
+<p>删除：&nbsp;&nbsp;drop database ittest;&nbsp;&nbsp;&nbsp;(if  exists)</p>
+<p>使用：&nbsp;&nbsp;use ittest;</p>
+<p>ddl:&nbsp;&nbsp;操作表结构</p>
+<p>查询：&nbsp;&nbsp;show tables;(所有表)&nbsp;&nbsp;&nbsp;desc 表名;(表结构)&nbsp;&nbsp;&nbsp;show create table 表名;(建表语句) </p>
+<p>创建：&nbsp;&nbsp;create table 表名(字段1  字段1类型 comment 注释,字段2  字段2类型 comment 注释)</p>
+<p>数据类型：&nbsp;&nbsp;数据类型、字符串类型、日期时间类型。</p>
+<p>修改：&nbsp;&nbsp;alter table  表名 add 字段名 类型(长度);(添加)&nbsp;&nbsp;&nbsp;alter table  表名 change 旧字段名  新字段名  类型(长度);(修改)&nbsp;&nbsp;&nbsp;alter  table 表名 drop 字段名;(删除)&nbsp;&nbsp;&nbsp;alter  table 表名 rename to  新表名;(表名)</p>
+<p>删除：&nbsp;&nbsp;drop table  表名;&nbsp;&nbsp;&nbsp;truncate   table  表名;</p>
+<p>dml:&nbsp;&nbsp;增删改</p>
+<p>添加：&nbsp;&nbsp;insert  into 表名(字段1,字段2) values (值1,值2);</p>
+<p>修改：&nbsp;&nbsp;update  表名  set  字段1&#x3D;值1, 字段2&#x3D;值2;</p>
+<p>删除：&nbsp;&nbsp;delete  from 表名;</p>
+<p>dql:&nbsp;&nbsp;查询</p>
+<p>查询：&nbsp;&nbsp;select  字段列表  from 表名列表  where  条件列表  group by  分组条件列表  having  分组后条件列表  order  by   排序字段列表  limit  分页参数;</p>
+<p>聚合函数：&nbsp;&nbsp;count&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;&nbsp;min&nbsp;&nbsp;&nbsp;avg&nbsp;&nbsp;&nbsp;sum</p>
+<p>dcl:&nbsp;&nbsp;用户权限</p>
+<p>多表查询：</p>
+<p>连接查询：</p>
+<p>内连接：</p>
+<p>外连接：</p>
+<p>自连接：</p>
+<p>联合查询：</p>
+<p>子查询：</p>
+<p>标量子查询：</p>
+<p>列子查询：</p>
+<p>行子查询：</p>
+<p>表子查询：</p>
+<p>事务：&nbsp;&nbsp;原子性&nbsp;&nbsp;&nbsp;一致性&nbsp;&nbsp;&nbsp;隔离性&nbsp;&nbsp;&nbsp;持久性</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
       <tags>
-        <tag>video</tag>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>redis</title>
+    <url>/2023/08/06/redis/</url>
+    <content><![CDATA[<p>redis的基本数据类型：<br>string &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortedset &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bitmap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hyperlog<br>redis常用命令：<br>keys *<br>del name<br>mset k1 v1 k2 v2 k3 v3<br>exists age<br>expire age 20<br>ttl age</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>redis</tag>
       </tags>
   </entry>
   <entry>
@@ -548,12 +536,59 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>video</title>
+    <url>/2023/08/07/video/</url>
+    <content><![CDATA[<p>这是一个视频</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
+src="https://www.bilibili.com/video/BV1rc411c7mi/?spm_id_from=333.999.0.0&vd_source=c6b8b78d53ad1898051d946c0af958c7" scrolling="no" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
+      <tags>
+        <tag>video</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>图片</title>
     <url>/2023/08/07/%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<p>这是一张图片<br><img src="/img/20230801212452.jpg" alt="图片"></p>
 ]]></content>
       <tags>
         <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简历技能</title>
+    <url>/2023/08/07/%E7%AE%80%E5%8E%86%E6%8A%80%E8%83%BD/</url>
+    <content><![CDATA[<ol>
+<li><p>   具有扎实的Java基础，熟悉掌握面向对象编程思想、集合、泛型、IO流、多线程、反射。</p>
+</li>
+<li><p>   熟练掌握Spring、SpringMVC、MyBatis、MyBatisPlus等框架，熟悉对其进行整合为SSM，熟悉Spring的控制反转、依赖注入、面向切面编程等使用。</p>
+</li>
+<li><p>   熟练掌握SpringBoot框架快速构建项目，对项目进行热部署，多环境开发配置，使用常用的注解开发，RESTful的编码风格。</p>
+</li>
+<li><p>   熟练掌握SpringCloudAlibaba框架搭建微服务架构，熟悉其组件Nacos、OpenFeign、Sentinel、Gateway、Ribbon、Sleuth、Zipkin的功能和使用。</p>
+</li>
+<li><p>   熟练使用RabbitMQ消息队列，进行应用解耦，异步提速，削峰填谷，熟悉多种消息模式。</p>
+</li>
+<li><p>   熟练使用SpringSecurity和JWT安全框架，通过RBAC进行认证和授权，熟悉使用token登录认证。</p>
+</li>
+<li><p>   熟练使用Elasticsearch分布式搜索引擎，通过IK分词器，将中文文本进行分词，方便搜索和聚合。</p>
+</li>
+<li><p>   熟练掌握 MySQL关系型数据库，Redis非关系型数据库，熟悉SQL语句编写、事务机制、索引，熟悉Redis常用数据类型、AOF和RDB持久化操作机制、主从复制。</p>
+</li>
+<li><p>   熟悉Docker的基本使用，熟悉容器和镜像的操作，通过挂载实现数据的共享和持久化，熟悉Linux常用命令。</p>
+</li>
+<li><p>   熟悉Java虚拟机JVM的组成部分、运行时数据区、双亲委派模型、GC垃圾回收。</p>
+</li>
+<li><p>   熟悉若依框架开发前后端，熟悉使用Vue框架，并配合Element-ui组件库快速开发前端页面。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>简历技能</tag>
       </tags>
   </entry>
   <entry>
