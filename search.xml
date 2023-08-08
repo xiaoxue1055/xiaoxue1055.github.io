@@ -4,7 +4,7 @@
     <title>git</title>
     <url>/2023/08/06/git/</url>
     <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
-<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x65;&#101;&#x2e;&#x63;&#111;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x65;&#101;&#x2e;&#x63;&#111;&#109;</a>:abc&#x2F;abc.git</p>
+<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#x65;&#x65;&#46;&#x63;&#x6f;&#x6d;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#x65;&#x65;&#46;&#x63;&#x6f;&#x6d;</a>:abc&#x2F;abc.git</p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -469,6 +469,18 @@
       </tags>
   </entry>
   <entry>
+    <title>redis</title>
+    <url>/2023/08/06/redis/</url>
+    <content><![CDATA[<p>redis的基本数据类型：<br>string &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortedset &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bitmap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hyperlog<br>redis常用命令：<br>keys *<br>del name<br>mset k1 v1 k2 v2 k3 v3<br>exists age<br>expire age 20<br>ttl age</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mysql</title>
     <url>/2023/08/05/mysql/</url>
     <content><![CDATA[<p>mysql</p>
@@ -524,15 +536,29 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>redis</title>
-    <url>/2023/08/06/redis/</url>
-    <content><![CDATA[<p>redis的基本数据类型：<br>string &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortedset &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bitmap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hyperlog<br>redis常用命令：<br>keys *<br>del name<br>mset k1 v1 k2 v2 k3 v3<br>exists age<br>expire age 20<br>ttl age</p>
+    <title>图片</title>
+    <url>/2023/08/07/%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p>这是一张图片<br><img src="/img/20230801212452.jpg" alt="图片"></p>
 ]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
       <tags>
-        <tag>redis</tag>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>幸无题</title>
+    <url>/2023/08/08/%E5%B9%B8%E6%97%A0%E9%A2%98/</url>
+    <content><![CDATA[<p>明月不知晚，照几夜无眠。<br>和春风花影，相偕上阑干。<br>是心期到此都成茧。<br>化栩栩蝴蝶翩跹，越瀛洲渡万里蓬山。<br>远不过眉峰黛浅，催成哀艳。<br>抵死相思翻作二三言。</p>
+<p>隔钗头燕看镜里双鸾，<br>说心间灵犀相知一点。<br>枕上香痕浑似梦，<br>问春心知否如烟。</p>
+<p>折菱枝和露相看灯前，<br>未信此别后真隔河汉。<br>十二巫峰难留恋，<br>空误了锦堂月圆。</p>
+<p>归去横塘晓，<br>华星送宝鞍。<br>别时难，<br>蜡炬成灰泪始干。</p>
+<p>向灯盏酒盏，问心弦管弦。<br>将泪敛愁敛，托眉尖笔尖。<br>是心期到此都成典。<br>化纸上障目重帘，<br>待后世徒劳作郑笺。<br>解不出心肠百转，强说缠绵。<br>终古征尘未涴白袷衫。</p>
+<p>忘几夜星辰共春酒暖。<br>忆几行烛泪照水晶帘。<br>夜阑空余金烬暗，<br>赋到深愁每自缄。<br>访几层瑶台得遇神仙，<br>倾几盏云浆尽忘悲欢。<br>终朝悄立垂杨岸，<br>更倩何人为探看。</p>
+<p>春物岂相干，<br>人生只强欢。<br>俱难遣，<br>忍委芳心与暮蝉。</p>
+<p>或有所念思而不可见，<br>或有所叹微意终寓怨。<br>解未解间且掩卷，<br>留待某日一开颜。<br>是作风怀未敢信必然，<br>是抒不平未能尽其言。<br>七香车过雷声远，<br>碧桃开谢一千年。</p>
+<p>书长为报晚，<br>梦好更寻难。<br>终辗转。<br>只是当时已惘然。</p>
+]]></content>
+      <tags>
+        <tag>幸无题</tag>
       </tags>
   </entry>
   <entry>
@@ -545,15 +571,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </categories>
       <tags>
         <tag>单词</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图片</title>
-    <url>/2023/08/07/%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p>这是一张图片<br><img src="/img/20230801212452.jpg" alt="图片"></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
       </tags>
   </entry>
   <entry>
