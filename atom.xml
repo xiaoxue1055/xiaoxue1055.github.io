@@ -6,7 +6,7 @@
   <link href="https://xiaoxue1055.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaoxue1055.github.io/"/>
-  <updated>2023-08-08T00:04:22.841Z</updated>
+  <updated>2023-08-08T00:57:55.103Z</updated>
   <id>https://xiaoxue1055.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/08/linux/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/08/linux/</id>
+    <published>2023-08-08T00:46:48.000Z</published>
+    <updated>2023-08-08T00:57:55.103Z</updated>
+    
+    <content type="html"><![CDATA[<p>linux固定ip<br> 16 IPADDR&#x3D;”192.168.12.12”<br> 17 NETMASK&#x3D;”255.255.255.0”<br> 18 GATEWAY&#x3D;”192.168.12.2”<br> 19 DNS1&#x3D;”192.168.12.2”<br> BOOTPROTO&#x3D;”static”<br>service network restart</p><p><img src="/img/002.png" alt="002"></p><p><img src="/img/003.png" alt="003"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;linux固定ip&lt;br&gt; 16 IPADDR&amp;#x3D;”192.168.12.12”&lt;br&gt; 17 NETMASK&amp;#x3D;”255.255.255.0”&lt;br&gt; 18 GATEWAY&amp;#x3D;”192.168.12.2”&lt;br&gt; 19 DNS1&amp;#x3D;”192</summary>
+      
+    
+    
+    
+    
+    <category term="linux" scheme="https://xiaoxue1055.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>幸无题</title>

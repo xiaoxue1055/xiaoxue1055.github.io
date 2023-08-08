@@ -661,4 +661,15 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
         <tag>简历项目</tag>
       </tags>
   </entry>
+  <entry>
+    <title>linux</title>
+    <url>/2023/08/08/linux/</url>
+    <content><![CDATA[<p>linux固定ip<br> 16 IPADDR&#x3D;”192.168.12.12”<br> 17 NETMASK&#x3D;”255.255.255.0”<br> 18 GATEWAY&#x3D;”192.168.12.2”<br> 19 DNS1&#x3D;”192.168.12.2”<br> BOOTPROTO&#x3D;”static”<br>service network restart</p>
+<p><img src="/img/002.png" alt="002"></p>
+<p><img src="/img/003.png" alt="003"></p>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
 </search>
