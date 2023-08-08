@@ -214,7 +214,7 @@ src=&quot;https://www.bilibili.com/video/BV1</summary>
     <published>2023-08-06T14:06:21.000Z</published>
     <updated>2023-08-06T14:10:08.718Z</updated>
     
-    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x65;&#101;&#x2e;&#99;&#111;&#109;">&#x67;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x65;&#101;&#x2e;&#99;&#111;&#109;</a>:abc&#x2F;abc.git</p>]]></content>
+    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#116;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#116;&#101;&#x65;&#x2e;&#99;&#111;&#x6d;</a>:abc&#x2F;abc.git</p>]]></content>
     
     
       
