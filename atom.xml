@@ -6,7 +6,7 @@
   <link href="https://xiaoxue1055.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaoxue1055.github.io/"/>
-  <updated>2023-08-08T00:57:55.103Z</updated>
+  <updated>2023-08-08T14:15:19.241Z</updated>
   <id>https://xiaoxue1055.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>加密</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/08/%E5%8A%A0%E5%AF%86/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/08/%E5%8A%A0%E5%AF%86/</id>
+    <published>2023-08-08T14:14:10.000Z</published>
+    <updated>2023-08-08T14:15:19.241Z</updated>
+    
+    <content type="html"><![CDATA[<p>对称加密和非对称加密是两种不同的加密方法，用于保护数据的安全性和隐私。</p><p><strong>对称加密：</strong><br>在对称加密中，相同的密钥用于加密和解密数据。发送者和接收者在交换数据之前必须共享相同的密钥。这种方法的主要优点是加密和解密过程相对较快，但缺点是密钥的管理和分发可能会变得复杂，尤其在大规模系统中。</p><p>常见的对称加密算法有：AES（Advanced Encryption Standard）、DES（Data Encryption Standard）、3DES（Triple DES）、Blowfish 等。</p><p><strong>非对称加密：</strong><br>在非对称加密中，使用一对密钥：公钥和私钥。公钥用于加密数据，而私钥用于解密数据。发送者可以将数据用接收者的公钥加密，只有持有相应私钥的接收者才能解密数据。此外，非对称加密还可以用于数字签名，发送者可以使用自己的私钥来创建数字签名，接收者可以使用发送者的公钥验证签名的真实性。</p><p>非对称加密的主要优点是在数据传输过程中不需要共享密钥，因此解决了对称加密中密钥分发的问题。然而，由于加密和解密过程相对较慢，非对称加密通常用于加密少量的敏感数据或用于安全验证。</p><p>常见的非对称加密算法有：RSA（Rivest-Shamir-Adleman）、DSA（Digital Signature Algorithm）、ECC（Elliptic Curve Cryptography）等。</p><p>综合而言，对称加密适用于大量数据的加密，而非对称加密适用于密钥交换、数字签名和少量数据的安全传输。在实际应用中，通常会将对称和非对称加密结合使用，以平衡性能和安全性的需求。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;对称加密和非对称加密是两种不同的加密方法，用于保护数据的安全性和隐私。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对称加密：&lt;/strong&gt;&lt;br&gt;在对称加密中，相同的密钥用于加密和解密数据。发送者和接收者在交换数据之前必须共享相同的密钥。这种方法的主要优点是加密和解密过程相对较快，</summary>
+      
+    
+    
+    
+    
+    <category term="加密" scheme="https://xiaoxue1055.github.io/tags/%E5%8A%A0%E5%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>linux</title>
@@ -214,7 +237,7 @@ src=&quot;https://www.bilibili.com/video/BV1</summary>
     <published>2023-08-06T14:06:21.000Z</published>
     <updated>2023-08-06T14:10:08.718Z</updated>
     
-    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#x69;&#x74;&#101;&#101;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#64;&#103;&#x69;&#x74;&#101;&#101;&#46;&#99;&#x6f;&#x6d;</a>:abc&#x2F;abc.git</p>]]></content>
+    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#101;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#101;&#x65;&#x2e;&#x63;&#111;&#x6d;</a>:abc&#x2F;abc.git</p>]]></content>
     
     
       
