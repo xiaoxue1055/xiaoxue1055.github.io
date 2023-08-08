@@ -4,7 +4,7 @@
     <title>git</title>
     <url>/2023/08/06/git/</url>
     <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
-<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x65;&#101;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x65;&#101;&#x2e;&#99;&#111;&#x6d;</a>:abc&#x2F;abc.git</p>
+<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x65;&#101;&#x2e;&#99;&#111;&#109;">&#x67;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x65;&#101;&#x2e;&#99;&#111;&#109;</a>:abc&#x2F;abc.git</p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -523,18 +523,6 @@
       </tags>
   </entry>
   <entry>
-    <title>redis</title>
-    <url>/2023/08/06/redis/</url>
-    <content><![CDATA[<p>redis的基本数据类型：<br>string &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortedset &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bitmap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hyperlog<br>redis常用命令：<br>keys *<br>del name<br>mset k1 v1 k2 v2 k3 v3<br>exists age<br>expire age 20<br>ttl age</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>redis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>video</title>
     <url>/2023/08/07/video/</url>
     <content><![CDATA[<p>这是一个视频</p>
@@ -547,6 +535,18 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>redis</title>
+    <url>/2023/08/06/redis/</url>
+    <content><![CDATA[<p>redis的基本数据类型：<br>string &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortedset &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bitmap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hyperlog<br>redis常用命令：<br>keys *<br>del name<br>mset k1 v1 k2 v2 k3 v3<br>exists age<br>expire age 20<br>ttl age</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>单词</title>
     <url>/2023/08/05/%E5%8D%95%E8%AF%8D/</url>
     <content><![CDATA[<p>String<br>Object<br>equals<br>hashCode<br>true<br>final<br>String<br>StringBuffer<br>StringBuilder<br>reverse<br>indexOf<br>charAt<br>replace<br>trim<br>split<br>getBytes<br>length<br>toLowerCase<br>substring<br>equals<br>abstract<br>extends<br>public<br>input<br>BIO<br>NIO<br>Files<br>exists<br>createFile<br>delete<br>copy<br>move<br>size<br>read<br>write<br>collection<br>list<br>arraylist<br>linkedlist<br>vector<br>stack<br>set<br>hashset<br>linkedhashset<br>treeset<br>hashmap<br>linkedhsahmap<br>treemap<br>concurrenthashmap<br>hashtable<br>collection<br>collections<br>lterator<br>Thread<br>Runnable<br>Callable<br>new<br>runnable<br>blocked<br>waiting<br>timed_waiting<br>terminated</p>
@@ -556,6 +556,15 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </categories>
       <tags>
         <tag>单词</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图片</title>
+    <url>/2023/08/07/%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p>这是一张图片<br><img src="/img/20230801212452.jpg" alt="图片"></p>
+]]></content>
+      <tags>
+        <tag>图片</tag>
       </tags>
   </entry>
   <entry>
@@ -573,15 +582,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 ]]></content>
       <tags>
         <tag>幸无题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图片</title>
-    <url>/2023/08/07/%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p>这是一张图片<br><img src="/img/20230801212452.jpg" alt="图片"></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
       </tags>
   </entry>
   <entry>
