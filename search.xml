@@ -4,7 +4,7 @@
     <title>git</title>
     <url>/2023/08/06/git/</url>
     <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
-<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#x69;&#x74;&#101;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#64;&#103;&#x69;&#x74;&#101;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a>:abc&#x2F;abc.git</p>
+<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#x69;&#x74;&#101;&#101;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#64;&#103;&#x69;&#x74;&#101;&#101;&#46;&#99;&#x6f;&#x6d;</a>:abc&#x2F;abc.git</p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -116,6 +116,60 @@
 ]]></content>
       <tags>
         <tag>h文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux</title>
+    <url>/2023/08/08/linux/</url>
+    <content><![CDATA[<p>linux固定ip<br> 16 IPADDR&#x3D;”192.168.12.12”<br> 17 NETMASK&#x3D;”255.255.255.0”<br> 18 GATEWAY&#x3D;”192.168.12.2”<br> 19 DNS1&#x3D;”192.168.12.2”<br> BOOTPROTO&#x3D;”static”<br>service network restart</p>
+<p><img src="/img/002.png" alt="002"></p>
+<p><img src="/img/003.png" alt="003"></p>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql</title>
+    <url>/2023/08/05/mysql/</url>
+    <content><![CDATA[<p>mysql</p>
+<p>ddl:  操作数据库</p>
+<p>查询：&nbsp;&nbsp;show databases;(所有)&nbsp;&nbsp;&nbsp;select database();(当前)</p>
+<p>创建：&nbsp;&nbsp;create database&nbsp;&nbsp;&nbsp;ittest;&nbsp;&nbsp;&nbsp;(if not exists)</p>
+<p>删除：&nbsp;&nbsp;drop database ittest;&nbsp;&nbsp;&nbsp;(if  exists)</p>
+<p>使用：&nbsp;&nbsp;use ittest;</p>
+<p>ddl:&nbsp;&nbsp;操作表结构</p>
+<p>查询：&nbsp;&nbsp;show tables;(所有表)&nbsp;&nbsp;&nbsp;desc 表名;(表结构)&nbsp;&nbsp;&nbsp;show create table 表名;(建表语句) </p>
+<p>创建：&nbsp;&nbsp;create table 表名(字段1  字段1类型 comment 注释,字段2  字段2类型 comment 注释)</p>
+<p>数据类型：&nbsp;&nbsp;数据类型、字符串类型、日期时间类型。</p>
+<p>修改：&nbsp;&nbsp;alter table  表名 add 字段名 类型(长度);(添加)&nbsp;&nbsp;&nbsp;alter table  表名 change 旧字段名  新字段名  类型(长度);(修改)&nbsp;&nbsp;&nbsp;alter  table 表名 drop 字段名;(删除)&nbsp;&nbsp;&nbsp;alter  table 表名 rename to  新表名;(表名)</p>
+<p>删除：&nbsp;&nbsp;drop table  表名;&nbsp;&nbsp;&nbsp;truncate   table  表名;</p>
+<p>dml:&nbsp;&nbsp;增删改</p>
+<p>添加：&nbsp;&nbsp;insert  into 表名(字段1,字段2) values (值1,值2);</p>
+<p>修改：&nbsp;&nbsp;update  表名  set  字段1&#x3D;值1, 字段2&#x3D;值2;</p>
+<p>删除：&nbsp;&nbsp;delete  from 表名;</p>
+<p>dql:&nbsp;&nbsp;查询</p>
+<p>查询：&nbsp;&nbsp;select  字段列表  from 表名列表  where  条件列表  group by  分组条件列表  having  分组后条件列表  order  by   排序字段列表  limit  分页参数;</p>
+<p>聚合函数：&nbsp;&nbsp;count&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;&nbsp;min&nbsp;&nbsp;&nbsp;avg&nbsp;&nbsp;&nbsp;sum</p>
+<p>dcl:&nbsp;&nbsp;用户权限</p>
+<p>多表查询：</p>
+<p>连接查询：</p>
+<p>内连接：</p>
+<p>外连接：</p>
+<p>自连接：</p>
+<p>联合查询：</p>
+<p>子查询：</p>
+<p>标量子查询：</p>
+<p>列子查询：</p>
+<p>行子查询：</p>
+<p>表子查询：</p>
+<p>事务：&nbsp;&nbsp;原子性&nbsp;&nbsp;&nbsp;一致性&nbsp;&nbsp;&nbsp;隔离性&nbsp;&nbsp;&nbsp;持久性</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -466,60 +520,6 @@
       </categories>
       <tags>
         <tag>idea</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux</title>
-    <url>/2023/08/08/linux/</url>
-    <content><![CDATA[<p>linux固定ip<br> 16 IPADDR&#x3D;”192.168.12.12”<br> 17 NETMASK&#x3D;”255.255.255.0”<br> 18 GATEWAY&#x3D;”192.168.12.2”<br> 19 DNS1&#x3D;”192.168.12.2”<br> BOOTPROTO&#x3D;”static”<br>service network restart</p>
-<p><img src="/img/002.png" alt="002"></p>
-<p><img src="/img/003.png" alt="003"></p>
-]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql</title>
-    <url>/2023/08/05/mysql/</url>
-    <content><![CDATA[<p>mysql</p>
-<p>ddl:  操作数据库</p>
-<p>查询：&nbsp;&nbsp;show databases;(所有)&nbsp;&nbsp;&nbsp;select database();(当前)</p>
-<p>创建：&nbsp;&nbsp;create database&nbsp;&nbsp;&nbsp;ittest;&nbsp;&nbsp;&nbsp;(if not exists)</p>
-<p>删除：&nbsp;&nbsp;drop database ittest;&nbsp;&nbsp;&nbsp;(if  exists)</p>
-<p>使用：&nbsp;&nbsp;use ittest;</p>
-<p>ddl:&nbsp;&nbsp;操作表结构</p>
-<p>查询：&nbsp;&nbsp;show tables;(所有表)&nbsp;&nbsp;&nbsp;desc 表名;(表结构)&nbsp;&nbsp;&nbsp;show create table 表名;(建表语句) </p>
-<p>创建：&nbsp;&nbsp;create table 表名(字段1  字段1类型 comment 注释,字段2  字段2类型 comment 注释)</p>
-<p>数据类型：&nbsp;&nbsp;数据类型、字符串类型、日期时间类型。</p>
-<p>修改：&nbsp;&nbsp;alter table  表名 add 字段名 类型(长度);(添加)&nbsp;&nbsp;&nbsp;alter table  表名 change 旧字段名  新字段名  类型(长度);(修改)&nbsp;&nbsp;&nbsp;alter  table 表名 drop 字段名;(删除)&nbsp;&nbsp;&nbsp;alter  table 表名 rename to  新表名;(表名)</p>
-<p>删除：&nbsp;&nbsp;drop table  表名;&nbsp;&nbsp;&nbsp;truncate   table  表名;</p>
-<p>dml:&nbsp;&nbsp;增删改</p>
-<p>添加：&nbsp;&nbsp;insert  into 表名(字段1,字段2) values (值1,值2);</p>
-<p>修改：&nbsp;&nbsp;update  表名  set  字段1&#x3D;值1, 字段2&#x3D;值2;</p>
-<p>删除：&nbsp;&nbsp;delete  from 表名;</p>
-<p>dql:&nbsp;&nbsp;查询</p>
-<p>查询：&nbsp;&nbsp;select  字段列表  from 表名列表  where  条件列表  group by  分组条件列表  having  分组后条件列表  order  by   排序字段列表  limit  分页参数;</p>
-<p>聚合函数：&nbsp;&nbsp;count&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;&nbsp;min&nbsp;&nbsp;&nbsp;avg&nbsp;&nbsp;&nbsp;sum</p>
-<p>dcl:&nbsp;&nbsp;用户权限</p>
-<p>多表查询：</p>
-<p>连接查询：</p>
-<p>内连接：</p>
-<p>外连接：</p>
-<p>自连接：</p>
-<p>联合查询：</p>
-<p>子查询：</p>
-<p>标量子查询：</p>
-<p>列子查询：</p>
-<p>行子查询：</p>
-<p>表子查询：</p>
-<p>事务：&nbsp;&nbsp;原子性&nbsp;&nbsp;&nbsp;一致性&nbsp;&nbsp;&nbsp;隔离性&nbsp;&nbsp;&nbsp;持久性</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>

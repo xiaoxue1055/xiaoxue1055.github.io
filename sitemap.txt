@@ -20,9 +20,9 @@ https://xiaoxue1055.github.io/tags/index.html
 https://xiaoxue1055.github.io/
 https://xiaoxue1055.github.io/tags/git/
 https://xiaoxue1055.github.io/tags/h%E6%96%87/
-https://xiaoxue1055.github.io/tags/idea/
 https://xiaoxue1055.github.io/tags/linux/
 https://xiaoxue1055.github.io/tags/mysql/
+https://xiaoxue1055.github.io/tags/idea/
 https://xiaoxue1055.github.io/tags/redis/
 https://xiaoxue1055.github.io/tags/video/
 https://xiaoxue1055.github.io/tags/%E5%8D%95%E8%AF%8D/
