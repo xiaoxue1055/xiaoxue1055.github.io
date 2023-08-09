@@ -6,7 +6,7 @@
   <link href="https://xiaoxue1055.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaoxue1055.github.io/"/>
-  <updated>2023-08-08T14:15:19.241Z</updated>
+  <updated>2023-08-09T09:30:39.735Z</updated>
   <id>https://xiaoxue1055.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java内存模型</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/09/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/09/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/</id>
+    <published>2023-08-09T09:28:23.000Z</published>
+    <updated>2023-08-09T09:30:39.735Z</updated>
+    
+    <content type="html"><![CDATA[<p>Java内存模型（Java Memory Model，JMM）是一种规范，用于定义在多线程环境中，Java程序中的线程如何与主内存和各自的工作内存进行交互和访问共享数据。JMM确保了在多线程编程中的可见性、原子性、有序性等方面的一致性，以防止出现并发访问共享数据时可能出现的问题，如竞态条件（Race Conditions）、死锁（Deadlocks）等。</p><p>以下是JMM中的一些关键概念：</p><ol><li><p>主内存（Main Memory）：主内存是所有线程共享的内存区域，存储了程序中的共享变量和数据。</p></li><li><p>工作内存（Working Memory）：每个线程都有自己的工作内存，线程的工作内存包含了该线程需要使用的变量的副本，这些副本在线程执行过程中进行读写。</p></li><li><p>可见性（Visibility）：JMM确保一个线程对共享变量的修改对其他线程是可见的。这意味着当一个线程修改了一个共享变量的值，其他线程在读取该变量时能够看到最新的值。</p></li><li><p>原子性（Atomicity）：JMM保证一些特定操作以原子方式执行，即要么完全执行，要么完全不执行。例如，对一个基本数据类型的读写操作是原子性的。</p></li><li><p>有序性（Ordering）：JMM定义了一些规则来保证操作的执行顺序对所有线程都是一致的。这是为了避免由于指令重排等导致的程序执行顺序混乱问题。</p></li><li><p>volatile关键字：在Java中，使用volatile关键字可以确保变量的可见性和一定程度的有序性。对volatile变量的写操作会立即刷新到主内存，对volatile变量的读操作会从主内存中获取最新的值。</p></li><li><p>synchronized关键字：使用synchronized关键字可以创建一个临界区，确保多个线程在同一时间只有一个能够进入临界区执行，从而保证了数据的一致性和避免竞态条件。</p></li><li><p>final关键字：使用final关键字可以保证在构造函数执行完成后，其他线程能够看到已经构造好的对象。</p></li></ol><p>总之，Java内存模型为多线程编程提供了一组规则和约定，确保了在多线程环境下共享数据的正确性和一致性。程序员可以依靠这些规则来编写正确且高效的多线程程序。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Java内存模型（Java Memory Model，JMM）是一种规范，用于定义在多线程环境中，Java程序中的线程如何与主内存和各自的工作内存进行交互和访问共享数据。JMM确保了在多线程编程中的可见性、原子性、有序性等方面的一致性，以防止出现并发访问共享数据时可能出现的</summary>
+      
+    
+    
+    
+    
+    <category term="Java内存模型" scheme="https://xiaoxue1055.github.io/tags/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>加密</title>
@@ -237,7 +259,7 @@ src=&quot;https://www.bilibili.com/video/BV1</summary>
     <published>2023-08-06T14:06:21.000Z</published>
     <updated>2023-08-06T14:10:08.718Z</updated>
     
-    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#101;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#101;&#x65;&#x2e;&#x63;&#111;&#x6d;</a>:abc&#x2F;abc.git</p>]]></content>
+    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x65;&#101;&#x2e;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x65;&#101;&#x2e;&#x63;&#x6f;&#109;</a>:abc&#x2F;abc.git</p>]]></content>
     
     
       

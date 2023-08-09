@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Java内存模型</title>
+    <url>/2023/08/09/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<p>Java内存模型（Java Memory Model，JMM）是一种规范，用于定义在多线程环境中，Java程序中的线程如何与主内存和各自的工作内存进行交互和访问共享数据。JMM确保了在多线程编程中的可见性、原子性、有序性等方面的一致性，以防止出现并发访问共享数据时可能出现的问题，如竞态条件（Race Conditions）、死锁（Deadlocks）等。</p>
+<p>以下是JMM中的一些关键概念：</p>
+<ol>
+<li><p>主内存（Main Memory）：主内存是所有线程共享的内存区域，存储了程序中的共享变量和数据。</p>
+</li>
+<li><p>工作内存（Working Memory）：每个线程都有自己的工作内存，线程的工作内存包含了该线程需要使用的变量的副本，这些副本在线程执行过程中进行读写。</p>
+</li>
+<li><p>可见性（Visibility）：JMM确保一个线程对共享变量的修改对其他线程是可见的。这意味着当一个线程修改了一个共享变量的值，其他线程在读取该变量时能够看到最新的值。</p>
+</li>
+<li><p>原子性（Atomicity）：JMM保证一些特定操作以原子方式执行，即要么完全执行，要么完全不执行。例如，对一个基本数据类型的读写操作是原子性的。</p>
+</li>
+<li><p>有序性（Ordering）：JMM定义了一些规则来保证操作的执行顺序对所有线程都是一致的。这是为了避免由于指令重排等导致的程序执行顺序混乱问题。</p>
+</li>
+<li><p>volatile关键字：在Java中，使用volatile关键字可以确保变量的可见性和一定程度的有序性。对volatile变量的写操作会立即刷新到主内存，对volatile变量的读操作会从主内存中获取最新的值。</p>
+</li>
+<li><p>synchronized关键字：使用synchronized关键字可以创建一个临界区，确保多个线程在同一时间只有一个能够进入临界区执行，从而保证了数据的一致性和避免竞态条件。</p>
+</li>
+<li><p>final关键字：使用final关键字可以保证在构造函数执行完成后，其他线程能够看到已经构造好的对象。</p>
+</li>
+</ol>
+<p>总之，Java内存模型为多线程编程提供了一组规则和约定，确保了在多线程环境下共享数据的正确性和一致性。程序员可以依靠这些规则来编写正确且高效的多线程程序。</p>
+]]></content>
+      <tags>
+        <tag>Java内存模型</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>git</title>
     <url>/2023/08/06/git/</url>
     <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
-<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#101;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#101;&#x65;&#x2e;&#x63;&#111;&#x6d;</a>:abc&#x2F;abc.git</p>
+<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x65;&#101;&#x2e;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x65;&#101;&#x2e;&#x63;&#x6f;&#109;</a>:abc&#x2F;abc.git</p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -170,21 +199,6 @@
 ]]></content>
       <tags>
         <tag>h文</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>加密</title>
-    <url>/2023/08/08/%E5%8A%A0%E5%AF%86/</url>
-    <content><![CDATA[<p>对称加密和非对称加密是两种不同的加密方法，用于保护数据的安全性和隐私。</p>
-<p><strong>对称加密：</strong><br>在对称加密中，相同的密钥用于加密和解密数据。发送者和接收者在交换数据之前必须共享相同的密钥。这种方法的主要优点是加密和解密过程相对较快，但缺点是密钥的管理和分发可能会变得复杂，尤其在大规模系统中。</p>
-<p>常见的对称加密算法有：AES（Advanced Encryption Standard）、DES（Data Encryption Standard）、3DES（Triple DES）、Blowfish 等。</p>
-<p><strong>非对称加密：</strong><br>在非对称加密中，使用一对密钥：公钥和私钥。公钥用于加密数据，而私钥用于解密数据。发送者可以将数据用接收者的公钥加密，只有持有相应私钥的接收者才能解密数据。此外，非对称加密还可以用于数字签名，发送者可以使用自己的私钥来创建数字签名，接收者可以使用发送者的公钥验证签名的真实性。</p>
-<p>非对称加密的主要优点是在数据传输过程中不需要共享密钥，因此解决了对称加密中密钥分发的问题。然而，由于加密和解密过程相对较慢，非对称加密通常用于加密少量的敏感数据或用于安全验证。</p>
-<p>常见的非对称加密算法有：RSA（Rivest-Shamir-Adleman）、DSA（Digital Signature Algorithm）、ECC（Elliptic Curve Cryptography）等。</p>
-<p>综合而言，对称加密适用于大量数据的加密，而非对称加密适用于密钥交换、数字签名和少量数据的安全传输。在实际应用中，通常会将对称和非对称加密结合使用，以平衡性能和安全性的需求。</p>
-]]></content>
-      <tags>
-        <tag>加密</tag>
       </tags>
   </entry>
   <entry>
@@ -550,6 +564,33 @@
       </tags>
   </entry>
   <entry>
+    <title>加密</title>
+    <url>/2023/08/08/%E5%8A%A0%E5%AF%86/</url>
+    <content><![CDATA[<p>对称加密和非对称加密是两种不同的加密方法，用于保护数据的安全性和隐私。</p>
+<p><strong>对称加密：</strong><br>在对称加密中，相同的密钥用于加密和解密数据。发送者和接收者在交换数据之前必须共享相同的密钥。这种方法的主要优点是加密和解密过程相对较快，但缺点是密钥的管理和分发可能会变得复杂，尤其在大规模系统中。</p>
+<p>常见的对称加密算法有：AES（Advanced Encryption Standard）、DES（Data Encryption Standard）、3DES（Triple DES）、Blowfish 等。</p>
+<p><strong>非对称加密：</strong><br>在非对称加密中，使用一对密钥：公钥和私钥。公钥用于加密数据，而私钥用于解密数据。发送者可以将数据用接收者的公钥加密，只有持有相应私钥的接收者才能解密数据。此外，非对称加密还可以用于数字签名，发送者可以使用自己的私钥来创建数字签名，接收者可以使用发送者的公钥验证签名的真实性。</p>
+<p>非对称加密的主要优点是在数据传输过程中不需要共享密钥，因此解决了对称加密中密钥分发的问题。然而，由于加密和解密过程相对较慢，非对称加密通常用于加密少量的敏感数据或用于安全验证。</p>
+<p>常见的非对称加密算法有：RSA（Rivest-Shamir-Adleman）、DSA（Digital Signature Algorithm）、ECC（Elliptic Curve Cryptography）等。</p>
+<p>综合而言，对称加密适用于大量数据的加密，而非对称加密适用于密钥交换、数字签名和少量数据的安全传输。在实际应用中，通常会将对称和非对称加密结合使用，以平衡性能和安全性的需求。</p>
+]]></content>
+      <tags>
+        <tag>加密</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>video</title>
+    <url>/2023/08/07/video/</url>
+    <content><![CDATA[<p>这是一个视频</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
+src="https://www.bilibili.com/video/BV1rc411c7mi/?spm_id_from=333.999.0.0&vd_source=c6b8b78d53ad1898051d946c0af958c7" scrolling="no" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
+      <tags>
+        <tag>video</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>单词</title>
     <url>/2023/08/05/%E5%8D%95%E8%AF%8D/</url>
     <content><![CDATA[<p>String<br>Object<br>equals<br>hashCode<br>true<br>final<br>String<br>StringBuffer<br>StringBuilder<br>reverse<br>indexOf<br>charAt<br>replace<br>trim<br>split<br>getBytes<br>length<br>toLowerCase<br>substring<br>equals<br>abstract<br>extends<br>public<br>input<br>BIO<br>NIO<br>Files<br>exists<br>createFile<br>delete<br>copy<br>move<br>size<br>read<br>write<br>collection<br>list<br>arraylist<br>linkedlist<br>vector<br>stack<br>set<br>hashset<br>linkedhashset<br>treeset<br>hashmap<br>linkedhsahmap<br>treemap<br>concurrenthashmap<br>hashtable<br>collection<br>collections<br>lterator<br>Thread<br>Runnable<br>Callable<br>new<br>runnable<br>blocked<br>waiting<br>timed_waiting<br>terminated</p>
@@ -609,18 +650,6 @@
       </categories>
       <tags>
         <tag>怀古</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>video</title>
-    <url>/2023/08/07/video/</url>
-    <content><![CDATA[<p>这是一个视频</p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
-src="https://www.bilibili.com/video/BV1rc411c7mi/?spm_id_from=333.999.0.0&vd_source=c6b8b78d53ad1898051d946c0af958c7" scrolling="no" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
-      <tags>
-        <tag>video</tag>
       </tags>
   </entry>
   <entry>
