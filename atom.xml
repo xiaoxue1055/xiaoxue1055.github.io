@@ -6,7 +6,7 @@
   <link href="https://xiaoxue1055.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaoxue1055.github.io/"/>
-  <updated>2023-08-09T09:30:39.735Z</updated>
+  <updated>2023-08-09T12:25:28.275Z</updated>
   <id>https://xiaoxue1055.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>springboot</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/09/springboot/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/09/springboot/</id>
+    <published>2023-08-09T12:21:08.000Z</published>
+    <updated>2023-08-09T12:25:28.275Z</updated>
+    
+    <content type="html"><![CDATA[<p>save &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;增加 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @PostMapping<br>page &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分页  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@GetMapping(“&#x2F;page”)<br>update &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@PutMapping<br>getById &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;查询id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@GetMapping(“&#x2F;{id}”)<br>remove  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;删除&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@DeleteMapping(“&#x2F;{id}”)<br>batchRemove  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;批量删除   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@DeleteMapping<br>findAll &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;查询所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@GetMapping</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;save &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;增加 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; @PostMapping&lt;br&gt;page &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;分页  &amp;nbsp;&amp;nbsp;&amp;</summary>
+      
+    
+    
+    
+    
+    <category term="springboot" scheme="https://xiaoxue1055.github.io/tags/springboot/"/>
+    
+  </entry>
   
   <entry>
     <title>Java内存模型</title>
@@ -259,7 +281,7 @@ src=&quot;https://www.bilibili.com/video/BV1</summary>
     <published>2023-08-06T14:06:21.000Z</published>
     <updated>2023-08-06T14:10:08.718Z</updated>
     
-    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#101;&#101;&#46;&#99;&#x6f;&#109;">&#x67;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#101;&#101;&#46;&#99;&#x6f;&#109;</a>:abc&#x2F;abc.git</p>]]></content>
+    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#x65;&#x65;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#x65;&#x65;&#x2e;&#99;&#x6f;&#x6d;</a>:abc&#x2F;abc.git</p>]]></content>
     
     
       
