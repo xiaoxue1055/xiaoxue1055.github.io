@@ -6,7 +6,7 @@
   <link href="https://xiaoxue1055.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaoxue1055.github.io/"/>
-  <updated>2023-08-11T09:43:54.025Z</updated>
+  <updated>2023-08-11T09:55:44.133Z</updated>
   <id>https://xiaoxue1055.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>简历项目8月</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/11/%E7%AE%80%E5%8E%86%E9%A1%B9%E7%9B%AE8%E6%9C%88/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/11/%E7%AE%80%E5%8E%86%E9%A1%B9%E7%9B%AE8%E6%9C%88/</id>
+    <published>2023-08-11T09:54:56.000Z</published>
+    <updated>2023-08-11T09:55:44.133Z</updated>
+    
+    <content type="html"><![CDATA[<p>一. 智慧云课堂（2023.1-2023.7）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： MySql+MyBatisPlus+Redis+SpringBoot+SpringCloud+RabbitMQ+vue+Element-UI<br>项目描述: 智慧云课堂是线上课堂项目，主要功能是提供在线教育服务。项目分为：系统后台和系统前台。系统后台是管理员使用，系统前台是用户使用。后台系统主要有：讲师管理，课程分类管理，点播管理，课程订单，营销管理，直播管理，权限管理。用户通过登录，可以在点播课程和直播课程的模块来学习内容。讲师管理和课程分类管理，是老师人员和课程分类的详细信息。点播管理是老师上传的课程，有付费和免费的课程。课程订单是用户下单的管理，营销管理是活动时的打折销售。直播管理有聊天互动的功能，权限管理对用户的权限进行管理。<br>技术描述：</p><ol><li>使用SpringCloud作为后端框架，vue作为前端框架，前后端分离模式。</li><li>使用MyBatisPlus实现对数据库的增删改查，完成对数据的操作。</li><li>使用分级课程列表对课程展示,通过EasyExcal对Excal导入和导出。</li><li>使用腾讯云的COS对课程的图片上传，VOD对点播的视频上传。 </li><li>使用Nacos把后端服务注册，SpringCloudGateWay解决前后端跨域问题。 </li><li>使用Redis添加缓存、计数器、排行榜，缓存热门课程信息，课程点击量，热门课程排行。</li><li>使用SpringCache对课程信息进行缓存，减少查询对数据库的压力。</li><li>使用RabbitMQ将用户的学习记录和课程进度同步到不同的数据中心，以便于用户在不同地方使用课程。</li><li>使用Elasticsearch对课程信息进行搜索，提高查询的效率。</li><li>使用Swagger2进行前后端的衔接，规范开发流程。<br>二. 皖事通文件交换平台（2022.6-2023.1）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构：Mysql+MyBatisPlus+Redis+SpringBoot+ SpringCloud + RabbitMQ +SpringCache +vue+Element-UI<br>项目描述： 该平台主要实现用户在皖事通提交的文件信息推送给其他需要审核的地市，实现文件交换。其中文件传送的过程中还涉及文件的解压，拆分，压缩，备份过程，例如用户提交的一个压缩文件中有excel文件，有word文件，还有pdf文件，需要对这些文件进行筛选，然后推给不同的地市审核，最后收集所有的审核结果在皖事通进行进度展示。<br>技术描述：</li><li>负责日常需求开发迭代和技术文档的编写（从 0 到 1 开发的项目）。</li><li>封装自定义注解+aop+分布式锁，解决页面重复提交问题。设计分布式锁解决集群启动时定时任务重复扫描任务进行库表数据交换。</li><li>参与搭建rediscluster集群，并引入redis数据结构做缓存。</li><li>使用责任链模式优化文件操作流程，链式进行文件操作，操作完成后链式删除备份文件，方便后期扩展和维护。</li><li>优化申请页面展示速度，由4-5秒展示优化到1秒左右展示。</li><li>使用多线程异步回调机制异步获取广告插入皖事通申请页面。<br>三. 牙科医疗项目（2021.12-2022.6）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+Mybatis+Spring+SpringMVC+jQuery+Eachart+EasyUI<br>项目描述: 牙科医疗项目是医疗项目，主要用于提供一系列的牙科医疗服务。项目中有三个大的模块分为病历模块，付款和账单模块，角色管理模块。病历模块主要给医生办公用，对患者的一些信息进行录入，和开具治疗方案。付款和账单模块主要给用户使用，用户可以通过在线平台或移动应用程序在线支付诊疗费用，并管理个人的账单信息。角色管理模块主要给公司其他办公人员使用，主要是对公司岗位的一些层级管理。<br>技术描述：</li><li>使用Shiro进行系统部分功能的权限控制。</li><li>使用RESTfulAPI实现患者的预约管理、医生的诊断处理、管理员的系统管理等。</li><li>使用POI进行表单的导出和导入。</li><li>使用Eachart进行医生的诊断数量和财务分析报表的分析和可视化展示。</li><li>使用jQuery实现表单验证、数据提交、异步加载等操作。<br>四. OA办公系统（2021.7-2021.12）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+MyBatisPlus+Redis+SpringBoot+SpringSecurity+Activiti+vue+Element-UI<br>项目描述: OA办公系统是一套自动化办公系统，主要用于公司员工的日常工作和管理。系统主要包含：管理端和员工端。管理端包含：权限管理、审批管理、公众号菜单管理等功能。员工端包含：办公审批、微信授权登录、消息推送等功能。项目中也包括考勤打卡、代办记录、业务人员状态等办公辅助型功能。<br>技术描述：</li><li>使用MD5对登录的密码进行加密处理，JWT生成token实现用户登录。</li><li>使用SpringSecurity对后端接口进行用户认证和用户授权，自定义拦截方法不同的用户分配不同的角色操作不同的菜单。 </li><li>使用Activiti工作流，按照预定义的规则完成审批的流程，完成管理端的审批管理模块的编写。  </li><li>使用Activiti工作流，完成员工端的审批分类、记录提交信息、查询代办任务、显示审批详情、查询已处理任务等功能。</li><li>使用Swagger2进行前后端的衔接，规范开发流程。</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一. 智慧云课堂（2023.1-2023.7）&lt;br&gt;开发环境： jdk1.8+ maven+git+tomcat8&lt;br&gt;技术架构： MySql+MyBatisPlus+Redis+SpringBoot+SpringCloud+RabbitMQ+vue+Element-U</summary>
+      
+    
+    
+    
+    
+    <category term="简历项目" scheme="https://xiaoxue1055.github.io/tags/%E7%AE%80%E5%8E%86%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>面试题02</title>
@@ -447,29 +469,6 @@ src=&quot;https://www.bilibili.com/video/BV1</summary>
     
     
     <category term="video" scheme="https://xiaoxue1055.github.io/tags/video/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>图片</title>
-    <link href="https://xiaoxue1055.github.io/2023/08/07/%E5%9B%BE%E7%89%87/"/>
-    <id>https://xiaoxue1055.github.io/2023/08/07/%E5%9B%BE%E7%89%87/</id>
-    <published>2023-08-06T23:21:53.000Z</published>
-    <updated>2023-08-06T23:23:33.396Z</updated>
-    
-    <content type="html"><![CDATA[<p>这是一张图片<br><img src="/img/20230801212452.jpg" alt="图片"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;这是一张图片&lt;br&gt;&lt;img src=&quot;/img/20230801212452.jpg&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-    <category term="图片" scheme="https://xiaoxue1055.github.io/tags/%E5%9B%BE%E7%89%87/"/>
     
   </entry>
   
