@@ -6,7 +6,7 @@
   <link href="https://xiaoxue1055.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaoxue1055.github.io/"/>
-  <updated>2023-08-11T09:55:44.133Z</updated>
+  <updated>2023-08-11T10:00:28.782Z</updated>
   <id>https://xiaoxue1055.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>heima</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/11/heima/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/11/heima/</id>
+    <published>2023-08-11T09:59:04.000Z</published>
+    <updated>2023-08-11T10:00:28.782Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> Navicat Premium Data Transfer</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Source Server         : mysql01</span></span><br><span class="line"><span class="comment"> Source Server Type    : MySQL</span></span><br><span class="line"><span class="comment"> Source Server Version : 80027</span></span><br><span class="line"><span class="comment"> Source Host           : localhost:3306</span></span><br><span class="line"><span class="comment"> Source Schema         : itheima_information</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Target Server Type    : MySQL</span></span><br><span class="line"><span class="comment"> Target Server Version : 80027</span></span><br><span class="line"><span class="comment"> File Encoding         : 65001</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Date: 07/02/2023 19:15:49</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SET</span> NAMES utf8mb4;</span><br><span class="line"><span class="keyword">SET</span> FOREIGN_KEY_CHECKS <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="comment">-- Table structure for heimacontent</span></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> `heimacontent`;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `heimacontent`  (</span><br><span class="line">  `java` <span class="type">varchar</span>(<span class="number">255</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_bin <span class="keyword">NOT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;黑马的内容部分&#x27;</span>,</span><br><span class="line">  `url` <span class="type">varchar</span>(<span class="number">255</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_bin <span class="keyword">NOT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;网盘的地址&#x27;</span>,</span><br><span class="line">  <span class="keyword">PRIMARY</span> KEY (`java`) <span class="keyword">USING</span> BTREE</span><br><span class="line">) ENGINE <span class="operator">=</span> InnoDB <span class="type">CHARACTER</span> <span class="keyword">SET</span> <span class="operator">=</span> utf8 <span class="keyword">COLLATE</span> <span class="operator">=</span> utf8_bin ROW_FORMAT <span class="operator">=</span> <span class="keyword">Dynamic</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="comment">-- Records of heimacontent</span></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;Java基础-20天学会Java&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1rI7E3wL8E1Fj7cxYV_yQww?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;Maven从基础到高级应用&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1Xpm49CXW2KVUa1K9AYQWzA?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;MySQL数据库&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1zQ0AQn68WaLvihEEiX312A?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;Redis入门到实战教程&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1189u6u4icQYHg_9_7ovWmA?pwd=eh11&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;SSM框架Spring+SpringMVC+MyBatis全覆盖_S S M整合&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1B0qofUEVZKZgHvZIG1xC4A?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;SpringBoot2全套&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1z8I4IXEuYBepDYbg4ijzUw?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;全面学习Mybatis插件之Mybatis-Plus&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1EzPtX8lYepOOBWG6JaXd9g?pwd=5678&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;容器化技术Docker精讲&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1PFkU9hh0yjMXcGwrpnvgMw?pwd=hhh2&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;微服务开发框架SpringCloud+RabbitMQ+Docker+Redis+搜索+分布式微服务全技术栈课程&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1zRmwSvSvoDkWh0-MynwERA?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;最新14天学会JavaWeb（高效学习版）&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1OwoTxJvsQ6Ka4ZATBjhuHg?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;黑马程序员Git全套教程&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/12X-CVPV0X3F4lSsUL6gBhw?pwd=1234&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">SET</span> FOREIGN_KEY_CHECKS <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="heima" scheme="https://xiaoxue1055.github.io/tags/heima/"/>
+    
+  </entry>
   
   <entry>
     <title>简历项目8月</title>
@@ -445,30 +467,6 @@
     
     
     <category term="h文" scheme="https://xiaoxue1055.github.io/tags/h%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>video</title>
-    <link href="https://xiaoxue1055.github.io/2023/08/07/video/"/>
-    <id>https://xiaoxue1055.github.io/2023/08/07/video/</id>
-    <published>2023-08-07T00:22:04.000Z</published>
-    <updated>2023-08-07T09:26:20.594Z</updated>
-    
-    <content type="html"><![CDATA[<p>这是一个视频</p><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://www.bilibili.com/video/BV1rc411c7mi/?spm_id_from=333.999.0.0&vd_source=c6b8b78d53ad1898051d946c0af958c7" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;这是一个视频&lt;/p&gt;
-&lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;&lt;iframe 
-src=&quot;https://www.bilibili.com/video/BV1</summary>
-      
-    
-    
-    
-    
-    <category term="video" scheme="https://xiaoxue1055.github.io/tags/video/"/>
     
   </entry>
   

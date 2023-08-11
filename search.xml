@@ -18,6 +18,19 @@
       </tags>
   </entry>
   <entry>
+    <title>git</title>
+    <url>/2023/08/06/git/</url>
+    <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
+<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#105;&#x74;&#101;&#101;&#46;&#99;&#x6f;&#109;">&#x67;&#105;&#116;&#x40;&#103;&#105;&#x74;&#101;&#101;&#46;&#99;&#x6f;&#109;</a>:abc&#x2F;abc.git</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java内存模型</title>
     <url>/2023/08/09/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/</url>
     <content><![CDATA[<p>Java内存模型（Java Memory Model，JMM）是一种规范，用于定义在多线程环境中，Java程序中的线程如何与主内存和各自的工作内存进行交互和访问共享数据。JMM确保了在多线程编程中的可见性、原子性、有序性等方面的一致性，以防止出现并发访问共享数据时可能出现的问题，如竞态条件（Race Conditions）、死锁（Deadlocks）等。</p>
@@ -47,25 +60,31 @@
       </tags>
   </entry>
   <entry>
-    <title>git</title>
-    <url>/2023/08/06/git/</url>
-    <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
-<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x65;&#101;&#46;&#x63;&#x6f;&#109;">&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x65;&#101;&#46;&#x63;&#x6f;&#109;</a>:abc&#x2F;abc.git</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git02</title>
     <url>/2023/08/11/git02/</url>
     <content><![CDATA[<p>git  init<br>git clone<br>git add 文件或者目录<br>git rm 文件或者目录<br>git rm –cache 文件或者目录<br>git commit -m “”<br>git status<br>git branch –list<br>git branch aaa<br>git checkout aaa<br>git log –pretty&#x3D;oneline</p>
 ]]></content>
       <tags>
         <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git03</title>
+    <url>/2023/08/11/git03/</url>
+    <content><![CDATA[<p>先把github创建一个仓库，要跟用户名一样后面加.github.io<br>比如：xiaoxue1055.github.io<br>用hexo创建<br>npm install hexo-cli -g<br>hexo init blog<br>cd blog<br>npm install<br>hexo server</p>
+]]></content>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>heima</title>
+    <url>/2023/08/11/heima/</url>
+    <content><![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> Navicat Premium Data Transfer</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Source Server         : mysql01</span></span><br><span class="line"><span class="comment"> Source Server Type    : MySQL</span></span><br><span class="line"><span class="comment"> Source Server Version : 80027</span></span><br><span class="line"><span class="comment"> Source Host           : localhost:3306</span></span><br><span class="line"><span class="comment"> Source Schema         : itheima_information</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Target Server Type    : MySQL</span></span><br><span class="line"><span class="comment"> Target Server Version : 80027</span></span><br><span class="line"><span class="comment"> File Encoding         : 65001</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Date: 07/02/2023 19:15:49</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SET</span> NAMES utf8mb4;</span><br><span class="line"><span class="keyword">SET</span> FOREIGN_KEY_CHECKS <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="comment">-- Table structure for heimacontent</span></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> `heimacontent`;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `heimacontent`  (</span><br><span class="line">  `java` <span class="type">varchar</span>(<span class="number">255</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_bin <span class="keyword">NOT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;黑马的内容部分&#x27;</span>,</span><br><span class="line">  `url` <span class="type">varchar</span>(<span class="number">255</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_bin <span class="keyword">NOT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;网盘的地址&#x27;</span>,</span><br><span class="line">  <span class="keyword">PRIMARY</span> KEY (`java`) <span class="keyword">USING</span> BTREE</span><br><span class="line">) ENGINE <span class="operator">=</span> InnoDB <span class="type">CHARACTER</span> <span class="keyword">SET</span> <span class="operator">=</span> utf8 <span class="keyword">COLLATE</span> <span class="operator">=</span> utf8_bin ROW_FORMAT <span class="operator">=</span> <span class="keyword">Dynamic</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="comment">-- Records of heimacontent</span></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;Java基础-20天学会Java&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1rI7E3wL8E1Fj7cxYV_yQww?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;Maven从基础到高级应用&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1Xpm49CXW2KVUa1K9AYQWzA?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;MySQL数据库&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1zQ0AQn68WaLvihEEiX312A?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;Redis入门到实战教程&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1189u6u4icQYHg_9_7ovWmA?pwd=eh11&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;SSM框架Spring+SpringMVC+MyBatis全覆盖_S S M整合&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1B0qofUEVZKZgHvZIG1xC4A?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;SpringBoot2全套&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1z8I4IXEuYBepDYbg4ijzUw?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;全面学习Mybatis插件之Mybatis-Plus&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1EzPtX8lYepOOBWG6JaXd9g?pwd=5678&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;容器化技术Docker精讲&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1PFkU9hh0yjMXcGwrpnvgMw?pwd=hhh2&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;微服务开发框架SpringCloud+RabbitMQ+Docker+Redis+搜索+分布式微服务全技术栈课程&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1zRmwSvSvoDkWh0-MynwERA?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;最新14天学会JavaWeb（高效学习版）&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/1OwoTxJvsQ6Ka4ZATBjhuHg?pwd=1234&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `heimacontent` <span class="keyword">VALUES</span> (<span class="string">&#x27;黑马程序员Git全套教程&#x27;</span>, <span class="string">&#x27;https://pan.baidu.com/s/12X-CVPV0X3F4lSsUL6gBhw?pwd=1234&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">SET</span> FOREIGN_KEY_CHECKS <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>heima</tag>
       </tags>
   </entry>
   <entry>
@@ -171,15 +190,6 @@
 ]]></content>
       <tags>
         <tag>h文</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git03</title>
-    <url>/2023/08/11/git03/</url>
-    <content><![CDATA[<p>先把github创建一个仓库，要跟用户名一样后面加.github.io<br>比如：xiaoxue1055.github.io<br>用hexo创建<br>npm install hexo-cli -g<br>hexo init blog<br>cd blog<br>npm install<br>hexo server</p>
-]]></content>
-      <tags>
-        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -533,17 +543,6 @@
       </tags>
   </entry>
   <entry>
-    <title>linux</title>
-    <url>/2023/08/08/linux/</url>
-    <content><![CDATA[<p>linux固定ip<br> 16 IPADDR&#x3D;”192.168.12.12”<br> 17 NETMASK&#x3D;”255.255.255.0”<br> 18 GATEWAY&#x3D;”192.168.12.2”<br> 19 DNS1&#x3D;”192.168.12.2”<br> BOOTPROTO&#x3D;”static”<br>service network restart</p>
-<p><img src="/img/002.png" alt="002"></p>
-<p><img src="/img/003.png" alt="003"></p>
-]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mysql</title>
     <url>/2023/08/05/mysql/</url>
     <content><![CDATA[<p>mysql</p>
@@ -584,6 +583,17 @@
       </categories>
       <tags>
         <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux</title>
+    <url>/2023/08/08/linux/</url>
+    <content><![CDATA[<p>linux固定ip<br> 16 IPADDR&#x3D;”192.168.12.12”<br> 17 NETMASK&#x3D;”255.255.255.0”<br> 18 GATEWAY&#x3D;”192.168.12.2”<br> 19 DNS1&#x3D;”192.168.12.2”<br> BOOTPROTO&#x3D;”static”<br>service network restart</p>
+<p><img src="/img/002.png" alt="002"></p>
+<p><img src="/img/003.png" alt="003"></p>
+]]></content>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -644,6 +654,15 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>图片</title>
+    <url>/2023/08/07/%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p>这是一张图片<br><img src="/img/20230801212452.jpg" alt="图片"></p>
+]]></content>
+      <tags>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>单词</title>
     <url>/2023/08/05/%E5%8D%95%E8%AF%8D/</url>
     <content><![CDATA[<p>String<br>Object<br>equals<br>hashCode<br>true<br>final<br>String<br>StringBuffer<br>StringBuilder<br>reverse<br>indexOf<br>charAt<br>replace<br>trim<br>split<br>getBytes<br>length<br>toLowerCase<br>substring<br>equals<br>abstract<br>extends<br>public<br>input<br>BIO<br>NIO<br>Files<br>exists<br>createFile<br>delete<br>copy<br>move<br>size<br>read<br>write<br>collection<br>list<br>arraylist<br>linkedlist<br>vector<br>stack<br>set<br>hashset<br>linkedhashset<br>treeset<br>hashmap<br>linkedhsahmap<br>treemap<br>concurrenthashmap<br>hashtable<br>collection<br>collections<br>lterator<br>Thread<br>Runnable<br>Callable<br>new<br>runnable<br>blocked<br>waiting<br>timed_waiting<br>terminated</p>
@@ -653,15 +672,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </categories>
       <tags>
         <tag>单词</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图片</title>
-    <url>/2023/08/07/%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p>这是一张图片<br><img src="/img/20230801212452.jpg" alt="图片"></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
       </tags>
   </entry>
   <entry>
@@ -770,6 +780,43 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>简历项目8月</title>
+    <url>/2023/08/11/%E7%AE%80%E5%8E%86%E9%A1%B9%E7%9B%AE8%E6%9C%88/</url>
+    <content><![CDATA[<p>一. 智慧云课堂（2023.1-2023.7）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： MySql+MyBatisPlus+Redis+SpringBoot+SpringCloud+RabbitMQ+vue+Element-UI<br>项目描述: 智慧云课堂是线上课堂项目，主要功能是提供在线教育服务。项目分为：系统后台和系统前台。系统后台是管理员使用，系统前台是用户使用。后台系统主要有：讲师管理，课程分类管理，点播管理，课程订单，营销管理，直播管理，权限管理。用户通过登录，可以在点播课程和直播课程的模块来学习内容。讲师管理和课程分类管理，是老师人员和课程分类的详细信息。点播管理是老师上传的课程，有付费和免费的课程。课程订单是用户下单的管理，营销管理是活动时的打折销售。直播管理有聊天互动的功能，权限管理对用户的权限进行管理。<br>技术描述：</p>
+<ol>
+<li>使用SpringCloud作为后端框架，vue作为前端框架，前后端分离模式。</li>
+<li>使用MyBatisPlus实现对数据库的增删改查，完成对数据的操作。</li>
+<li>使用分级课程列表对课程展示,通过EasyExcal对Excal导入和导出。</li>
+<li>使用腾讯云的COS对课程的图片上传，VOD对点播的视频上传。 </li>
+<li>使用Nacos把后端服务注册，SpringCloudGateWay解决前后端跨域问题。 </li>
+<li>使用Redis添加缓存、计数器、排行榜，缓存热门课程信息，课程点击量，热门课程排行。</li>
+<li>使用SpringCache对课程信息进行缓存，减少查询对数据库的压力。</li>
+<li>使用RabbitMQ将用户的学习记录和课程进度同步到不同的数据中心，以便于用户在不同地方使用课程。</li>
+<li>使用Elasticsearch对课程信息进行搜索，提高查询的效率。</li>
+<li>使用Swagger2进行前后端的衔接，规范开发流程。<br>二. 皖事通文件交换平台（2022.6-2023.1）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构：Mysql+MyBatisPlus+Redis+SpringBoot+ SpringCloud + RabbitMQ +SpringCache +vue+Element-UI<br>项目描述： 该平台主要实现用户在皖事通提交的文件信息推送给其他需要审核的地市，实现文件交换。其中文件传送的过程中还涉及文件的解压，拆分，压缩，备份过程，例如用户提交的一个压缩文件中有excel文件，有word文件，还有pdf文件，需要对这些文件进行筛选，然后推给不同的地市审核，最后收集所有的审核结果在皖事通进行进度展示。<br>技术描述：</li>
+<li>负责日常需求开发迭代和技术文档的编写（从 0 到 1 开发的项目）。</li>
+<li>封装自定义注解+aop+分布式锁，解决页面重复提交问题。设计分布式锁解决集群启动时定时任务重复扫描任务进行库表数据交换。</li>
+<li>参与搭建rediscluster集群，并引入redis数据结构做缓存。</li>
+<li>使用责任链模式优化文件操作流程，链式进行文件操作，操作完成后链式删除备份文件，方便后期扩展和维护。</li>
+<li>优化申请页面展示速度，由4-5秒展示优化到1秒左右展示。</li>
+<li>使用多线程异步回调机制异步获取广告插入皖事通申请页面。<br>三. 牙科医疗项目（2021.12-2022.6）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+Mybatis+Spring+SpringMVC+jQuery+Eachart+EasyUI<br>项目描述: 牙科医疗项目是医疗项目，主要用于提供一系列的牙科医疗服务。项目中有三个大的模块分为病历模块，付款和账单模块，角色管理模块。病历模块主要给医生办公用，对患者的一些信息进行录入，和开具治疗方案。付款和账单模块主要给用户使用，用户可以通过在线平台或移动应用程序在线支付诊疗费用，并管理个人的账单信息。角色管理模块主要给公司其他办公人员使用，主要是对公司岗位的一些层级管理。<br>技术描述：</li>
+<li>使用Shiro进行系统部分功能的权限控制。</li>
+<li>使用RESTfulAPI实现患者的预约管理、医生的诊断处理、管理员的系统管理等。</li>
+<li>使用POI进行表单的导出和导入。</li>
+<li>使用Eachart进行医生的诊断数量和财务分析报表的分析和可视化展示。</li>
+<li>使用jQuery实现表单验证、数据提交、异步加载等操作。<br>四. OA办公系统（2021.7-2021.12）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+MyBatisPlus+Redis+SpringBoot+SpringSecurity+Activiti+vue+Element-UI<br>项目描述: OA办公系统是一套自动化办公系统，主要用于公司员工的日常工作和管理。系统主要包含：管理端和员工端。管理端包含：权限管理、审批管理、公众号菜单管理等功能。员工端包含：办公审批、微信授权登录、消息推送等功能。项目中也包括考勤打卡、代办记录、业务人员状态等办公辅助型功能。<br>技术描述：</li>
+<li>使用MD5对登录的密码进行加密处理，JWT生成token实现用户登录。</li>
+<li>使用SpringSecurity对后端接口进行用户认证和用户授权，自定义拦截方法不同的用户分配不同的角色操作不同的菜单。 </li>
+<li>使用Activiti工作流，按照预定义的规则完成审批的流程，完成管理端的审批管理模块的编写。  </li>
+<li>使用Activiti工作流，完成员工端的审批分类、记录提交信息、查询代办任务、显示审批详情、查询已处理任务等功能。</li>
+<li>使用Swagger2进行前后端的衔接，规范开发流程。</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>简历项目</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网址</title>
     <url>/2023/08/11/%E7%BD%91%E5%9D%80/</url>
     <content><![CDATA[<p>做笔记了：<br>码市：<a href="https://codemart.com/">https://codemart.com</a><br>开源众包<a href="https://zb.oschina.net/">https://zb.oschina.net</a><br>猪八戒<a href="https://zbj.com/">https://zbj.com</a><br>程序员客栈<a href="https://www.proginn.com/">https://www.proginn.com</a><br>猿急送<a href="https://www.yuanjisong.com/">https://www.yuanjisong.com</a></p>
@@ -801,6 +848,15 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>面试题</title>
+    <url>/2023/08/11/%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+    <content><![CDATA[<p>JDK和JRE有什么区别？<br>&#x3D;&#x3D;和equals的区别是什么？<br>两个对象的hashCode()相同，则equals()也一定为true,对吗？<br>final在java中有什么作用？<br>java中的Math.round(-1.5)等于多少？<br>String属于基础的数据类型吗？<br>java中操作字符串都有哪些类？他们之间有什么区别？<br>String str&#x3D;”i”与String str&#x3D;new String(“i”)一样吗？<br>如何将字符串反转？<br>String类的常用方法都有哪些？<br>抽象类必须要有抽象方法吗？<br>普通类和抽象类有哪些区别？<br>抽象类能使用final修饰吗？<br>接口和抽象类有什么区别？<br>java种IO流分为几种？<br>BIO、NIO、AIO有什么区别？<br>Files的常用方法都有哪些？<br>java容器都有哪些？<br>Collection和Collections有什么区别？<br>List、Set、Map之间的区别是什么？<br>HashMap和HashTable有什么区别？<br>如何决定使用HashMap还是TreeMap？<br>说一下HashMap的实现原理？<br>说一下HashSet的实现原理？<br>ArrayList和linkedlist的区别是什么？<br>如何实现数组和list之间的转换？<br>ArrayList和Vector的区别是什么？<br>在Queue中poll()和remove()有什么区别？<br>哪些集合类是线程安全的？<br>迭代器Iterator是什么？<br>Iterator怎么使用？有什么特点？<br>Iterator和ListIterator有什么区别？<br>怎么确保一个集合不能被修改？<br>并行和并发有什么区别？<br>线程和进程的区别？<br>守护线程是什么？<br>创建线程有哪几种方式？<br>说一下runnable和callable有什么区别？<br>线程有哪些状态？<br>sleep()和wait()有什么区别？<br>notify()和notifyAll()有什么区别？<br>线程的run()和start()有什么区别？<br>创建线程池有哪几种方式？<br>线程池都有哪些状态？<br>线程池中submit()和execute()方法有什么区别？<br>在java程序中怎么保证多线程的运行安全？<br>多线程中synchronized锁升级的原理是什么？<br>什么是死锁？<br>怎么防止死锁？<br>ThreadLocal是什么？<br>说一下synchronized底层实现原理？<br>synchronized和volatile的区别是什么？<br>synchronized和lock有什么区别？<br>synchronized和reentrantlock区别是什么？<br>说一下atomic的原理？<br>什么是反射？<br>什么是java序列化？什么情况下需要序列化？<br>动态代理是什么？有哪些应用？<br>怎么实现动态代理？<br>为什么要使用克隆？<br>深拷贝和浅拷贝区别是什么？<br>jsp和servlet有什么区别？<br>jsp有哪些内置对象？作用分别是什么？<br>说一下jsp的4种作用域？<br>session和cookie有什么区别？<br>说一下session的工作原理？<br>springmvc和struts的区别是什么？<br>如何避免sql注入？<br>什么是xss攻击，如何避免？<br>什么是csrf攻击，如何避免？<br>throw和throws的区别？<br>final、finally、finalize有什么区别？<br>try-catch-finally中哪个部分可以省略？<br>常用的异常类有哪些？<br>http响应码301和302代表的是什么？有什么作用？<br>forward和redirect的区别？<br>简述tcp和udp的区别？<br>tcp为什么要三次握手，两次不行吗？为什么？<br>说一下tcp粘包是怎么产生的？<br>osi的七层模型都有哪些？<br>get和post请求有哪些区别？</p>
+]]></content>
+      <tags>
+        <tag>面试题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>记事本02</title>
     <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC02/</url>
     <content><![CDATA[<p>jps<br>jmap -heap<br>jconsole<br>jvitualvm</p>
@@ -810,15 +866,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 ]]></content>
       <tags>
         <tag>记事本</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面试题</title>
-    <url>/2023/08/11/%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
-    <content><![CDATA[<p>JDK和JRE有什么区别？<br>&#x3D;&#x3D;和equals的区别是什么？<br>两个对象的hashCode()相同，则equals()也一定为true,对吗？<br>final在java中有什么作用？<br>java中的Math.round(-1.5)等于多少？<br>String属于基础的数据类型吗？<br>java中操作字符串都有哪些类？他们之间有什么区别？<br>String str&#x3D;”i”与String str&#x3D;new String(“i”)一样吗？<br>如何将字符串反转？<br>String类的常用方法都有哪些？<br>抽象类必须要有抽象方法吗？<br>普通类和抽象类有哪些区别？<br>抽象类能使用final修饰吗？<br>接口和抽象类有什么区别？<br>java种IO流分为几种？<br>BIO、NIO、AIO有什么区别？<br>Files的常用方法都有哪些？<br>java容器都有哪些？<br>Collection和Collections有什么区别？<br>List、Set、Map之间的区别是什么？<br>HashMap和HashTable有什么区别？<br>如何决定使用HashMap还是TreeMap？<br>说一下HashMap的实现原理？<br>说一下HashSet的实现原理？<br>ArrayList和linkedlist的区别是什么？<br>如何实现数组和list之间的转换？<br>ArrayList和Vector的区别是什么？<br>在Queue中poll()和remove()有什么区别？<br>哪些集合类是线程安全的？<br>迭代器Iterator是什么？<br>Iterator怎么使用？有什么特点？<br>Iterator和ListIterator有什么区别？<br>怎么确保一个集合不能被修改？<br>并行和并发有什么区别？<br>线程和进程的区别？<br>守护线程是什么？<br>创建线程有哪几种方式？<br>说一下runnable和callable有什么区别？<br>线程有哪些状态？<br>sleep()和wait()有什么区别？<br>notify()和notifyAll()有什么区别？<br>线程的run()和start()有什么区别？<br>创建线程池有哪几种方式？<br>线程池都有哪些状态？<br>线程池中submit()和execute()方法有什么区别？<br>在java程序中怎么保证多线程的运行安全？<br>多线程中synchronized锁升级的原理是什么？<br>什么是死锁？<br>怎么防止死锁？<br>ThreadLocal是什么？<br>说一下synchronized底层实现原理？<br>synchronized和volatile的区别是什么？<br>synchronized和lock有什么区别？<br>synchronized和reentrantlock区别是什么？<br>说一下atomic的原理？<br>什么是反射？<br>什么是java序列化？什么情况下需要序列化？<br>动态代理是什么？有哪些应用？<br>怎么实现动态代理？<br>为什么要使用克隆？<br>深拷贝和浅拷贝区别是什么？<br>jsp和servlet有什么区别？<br>jsp有哪些内置对象？作用分别是什么？<br>说一下jsp的4种作用域？<br>session和cookie有什么区别？<br>说一下session的工作原理？<br>springmvc和struts的区别是什么？<br>如何避免sql注入？<br>什么是xss攻击，如何避免？<br>什么是csrf攻击，如何避免？<br>throw和throws的区别？<br>final、finally、finalize有什么区别？<br>try-catch-finally中哪个部分可以省略？<br>常用的异常类有哪些？<br>http响应码301和302代表的是什么？有什么作用？<br>forward和redirect的区别？<br>简述tcp和udp的区别？<br>tcp为什么要三次握手，两次不行吗？为什么？<br>说一下tcp粘包是怎么产生的？<br>osi的七层模型都有哪些？<br>get和post请求有哪些区别？</p>
-]]></content>
-      <tags>
-        <tag>面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -858,43 +905,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 ]]></content>
       <tags>
         <tag>面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>简历项目8月</title>
-    <url>/2023/08/11/%E7%AE%80%E5%8E%86%E9%A1%B9%E7%9B%AE8%E6%9C%88/</url>
-    <content><![CDATA[<p>一. 智慧云课堂（2023.1-2023.7）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： MySql+MyBatisPlus+Redis+SpringBoot+SpringCloud+RabbitMQ+vue+Element-UI<br>项目描述: 智慧云课堂是线上课堂项目，主要功能是提供在线教育服务。项目分为：系统后台和系统前台。系统后台是管理员使用，系统前台是用户使用。后台系统主要有：讲师管理，课程分类管理，点播管理，课程订单，营销管理，直播管理，权限管理。用户通过登录，可以在点播课程和直播课程的模块来学习内容。讲师管理和课程分类管理，是老师人员和课程分类的详细信息。点播管理是老师上传的课程，有付费和免费的课程。课程订单是用户下单的管理，营销管理是活动时的打折销售。直播管理有聊天互动的功能，权限管理对用户的权限进行管理。<br>技术描述：</p>
-<ol>
-<li>使用SpringCloud作为后端框架，vue作为前端框架，前后端分离模式。</li>
-<li>使用MyBatisPlus实现对数据库的增删改查，完成对数据的操作。</li>
-<li>使用分级课程列表对课程展示,通过EasyExcal对Excal导入和导出。</li>
-<li>使用腾讯云的COS对课程的图片上传，VOD对点播的视频上传。 </li>
-<li>使用Nacos把后端服务注册，SpringCloudGateWay解决前后端跨域问题。 </li>
-<li>使用Redis添加缓存、计数器、排行榜，缓存热门课程信息，课程点击量，热门课程排行。</li>
-<li>使用SpringCache对课程信息进行缓存，减少查询对数据库的压力。</li>
-<li>使用RabbitMQ将用户的学习记录和课程进度同步到不同的数据中心，以便于用户在不同地方使用课程。</li>
-<li>使用Elasticsearch对课程信息进行搜索，提高查询的效率。</li>
-<li>使用Swagger2进行前后端的衔接，规范开发流程。<br>二. 皖事通文件交换平台（2022.6-2023.1）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构：Mysql+MyBatisPlus+Redis+SpringBoot+ SpringCloud + RabbitMQ +SpringCache +vue+Element-UI<br>项目描述： 该平台主要实现用户在皖事通提交的文件信息推送给其他需要审核的地市，实现文件交换。其中文件传送的过程中还涉及文件的解压，拆分，压缩，备份过程，例如用户提交的一个压缩文件中有excel文件，有word文件，还有pdf文件，需要对这些文件进行筛选，然后推给不同的地市审核，最后收集所有的审核结果在皖事通进行进度展示。<br>技术描述：</li>
-<li>负责日常需求开发迭代和技术文档的编写（从 0 到 1 开发的项目）。</li>
-<li>封装自定义注解+aop+分布式锁，解决页面重复提交问题。设计分布式锁解决集群启动时定时任务重复扫描任务进行库表数据交换。</li>
-<li>参与搭建rediscluster集群，并引入redis数据结构做缓存。</li>
-<li>使用责任链模式优化文件操作流程，链式进行文件操作，操作完成后链式删除备份文件，方便后期扩展和维护。</li>
-<li>优化申请页面展示速度，由4-5秒展示优化到1秒左右展示。</li>
-<li>使用多线程异步回调机制异步获取广告插入皖事通申请页面。<br>三. 牙科医疗项目（2021.12-2022.6）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+Mybatis+Spring+SpringMVC+jQuery+Eachart+EasyUI<br>项目描述: 牙科医疗项目是医疗项目，主要用于提供一系列的牙科医疗服务。项目中有三个大的模块分为病历模块，付款和账单模块，角色管理模块。病历模块主要给医生办公用，对患者的一些信息进行录入，和开具治疗方案。付款和账单模块主要给用户使用，用户可以通过在线平台或移动应用程序在线支付诊疗费用，并管理个人的账单信息。角色管理模块主要给公司其他办公人员使用，主要是对公司岗位的一些层级管理。<br>技术描述：</li>
-<li>使用Shiro进行系统部分功能的权限控制。</li>
-<li>使用RESTfulAPI实现患者的预约管理、医生的诊断处理、管理员的系统管理等。</li>
-<li>使用POI进行表单的导出和导入。</li>
-<li>使用Eachart进行医生的诊断数量和财务分析报表的分析和可视化展示。</li>
-<li>使用jQuery实现表单验证、数据提交、异步加载等操作。<br>四. OA办公系统（2021.7-2021.12）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+MyBatisPlus+Redis+SpringBoot+SpringSecurity+Activiti+vue+Element-UI<br>项目描述: OA办公系统是一套自动化办公系统，主要用于公司员工的日常工作和管理。系统主要包含：管理端和员工端。管理端包含：权限管理、审批管理、公众号菜单管理等功能。员工端包含：办公审批、微信授权登录、消息推送等功能。项目中也包括考勤打卡、代办记录、业务人员状态等办公辅助型功能。<br>技术描述：</li>
-<li>使用MD5对登录的密码进行加密处理，JWT生成token实现用户登录。</li>
-<li>使用SpringSecurity对后端接口进行用户认证和用户授权，自定义拦截方法不同的用户分配不同的角色操作不同的菜单。 </li>
-<li>使用Activiti工作流，按照预定义的规则完成审批的流程，完成管理端的审批管理模块的编写。  </li>
-<li>使用Activiti工作流，完成员工端的审批分类、记录提交信息、查询代办任务、显示审批详情、查询已处理任务等功能。</li>
-<li>使用Swagger2进行前后端的衔接，规范开发流程。</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>简历项目</tag>
       </tags>
   </entry>
 </search>
