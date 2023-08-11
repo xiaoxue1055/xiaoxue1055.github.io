@@ -18,6 +18,19 @@
       </tags>
   </entry>
   <entry>
+    <title>git</title>
+    <url>/2023/08/06/git/</url>
+    <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
+<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#101;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#101;&#x65;&#x2e;&#x63;&#x6f;&#109;</a>:abc&#x2F;abc.git</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java内存模型</title>
     <url>/2023/08/09/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/</url>
     <content><![CDATA[<p>Java内存模型（Java Memory Model，JMM）是一种规范，用于定义在多线程环境中，Java程序中的线程如何与主内存和各自的工作内存进行交互和访问共享数据。JMM确保了在多线程编程中的可见性、原子性、有序性等方面的一致性，以防止出现并发访问共享数据时可能出现的问题，如竞态条件（Race Conditions）、死锁（Deadlocks）等。</p>
@@ -44,82 +57,6 @@
 ]]></content>
       <tags>
         <tag>Java内存模型</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git02</title>
-    <url>/2023/08/11/git02/</url>
-    <content><![CDATA[<p>git  init<br>git clone<br>git add 文件或者目录<br>git rm 文件或者目录<br>git rm –cache 文件或者目录<br>git commit -m “”<br>git status<br>git branch –list<br>git branch aaa<br>git checkout aaa<br>git log –pretty&#x3D;oneline</p>
-]]></content>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git</title>
-    <url>/2023/08/06/git/</url>
-    <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
-<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x65;&#101;&#46;&#x63;&#111;&#x6d;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x65;&#101;&#46;&#x63;&#111;&#x6d;</a>:abc&#x2F;abc.git</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux</title>
-    <url>/2023/08/08/linux/</url>
-    <content><![CDATA[<p>linux固定ip<br> 16 IPADDR&#x3D;”192.168.12.12”<br> 17 NETMASK&#x3D;”255.255.255.0”<br> 18 GATEWAY&#x3D;”192.168.12.2”<br> 19 DNS1&#x3D;”192.168.12.2”<br> BOOTPROTO&#x3D;”static”<br>service network restart</p>
-<p><img src="/img/002.png" alt="002"></p>
-<p><img src="/img/003.png" alt="003"></p>
-]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql</title>
-    <url>/2023/08/05/mysql/</url>
-    <content><![CDATA[<p>mysql</p>
-<p>ddl:  操作数据库</p>
-<p>查询：&nbsp;&nbsp;show databases;(所有)&nbsp;&nbsp;&nbsp;select database();(当前)</p>
-<p>创建：&nbsp;&nbsp;create database&nbsp;&nbsp;&nbsp;ittest;&nbsp;&nbsp;&nbsp;(if not exists)</p>
-<p>删除：&nbsp;&nbsp;drop database ittest;&nbsp;&nbsp;&nbsp;(if  exists)</p>
-<p>使用：&nbsp;&nbsp;use ittest;</p>
-<p>ddl:&nbsp;&nbsp;操作表结构</p>
-<p>查询：&nbsp;&nbsp;show tables;(所有表)&nbsp;&nbsp;&nbsp;desc 表名;(表结构)&nbsp;&nbsp;&nbsp;show create table 表名;(建表语句) </p>
-<p>创建：&nbsp;&nbsp;create table 表名(字段1  字段1类型 comment 注释,字段2  字段2类型 comment 注释)</p>
-<p>数据类型：&nbsp;&nbsp;数据类型、字符串类型、日期时间类型。</p>
-<p>修改：&nbsp;&nbsp;alter table  表名 add 字段名 类型(长度);(添加)&nbsp;&nbsp;&nbsp;alter table  表名 change 旧字段名  新字段名  类型(长度);(修改)&nbsp;&nbsp;&nbsp;alter  table 表名 drop 字段名;(删除)&nbsp;&nbsp;&nbsp;alter  table 表名 rename to  新表名;(表名)</p>
-<p>删除：&nbsp;&nbsp;drop table  表名;&nbsp;&nbsp;&nbsp;truncate   table  表名;</p>
-<p>dml:&nbsp;&nbsp;增删改</p>
-<p>添加：&nbsp;&nbsp;insert  into 表名(字段1,字段2) values (值1,值2);</p>
-<p>修改：&nbsp;&nbsp;update  表名  set  字段1&#x3D;值1, 字段2&#x3D;值2;</p>
-<p>删除：&nbsp;&nbsp;delete  from 表名;</p>
-<p>dql:&nbsp;&nbsp;查询</p>
-<p>查询：&nbsp;&nbsp;select  字段列表  from 表名列表  where  条件列表  group by  分组条件列表  having  分组后条件列表  order  by   排序字段列表  limit  分页参数;</p>
-<p>聚合函数：&nbsp;&nbsp;count&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;&nbsp;min&nbsp;&nbsp;&nbsp;avg&nbsp;&nbsp;&nbsp;sum</p>
-<p>dcl:&nbsp;&nbsp;用户权限</p>
-<p>多表查询：</p>
-<p>连接查询：</p>
-<p>内连接：</p>
-<p>外连接：</p>
-<p>自连接：</p>
-<p>联合查询：</p>
-<p>子查询：</p>
-<p>标量子查询：</p>
-<p>列子查询：</p>
-<p>行子查询：</p>
-<p>表子查询：</p>
-<p>事务：&nbsp;&nbsp;原子性&nbsp;&nbsp;&nbsp;一致性&nbsp;&nbsp;&nbsp;隔离性&nbsp;&nbsp;&nbsp;持久性</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -225,6 +162,26 @@
 ]]></content>
       <tags>
         <tag>h文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git02</title>
+    <url>/2023/08/11/git02/</url>
+    <content><![CDATA[<p>git  init<br>git clone<br>git add 文件或者目录<br>git rm 文件或者目录<br>git rm –cache 文件或者目录<br>git commit -m “”<br>git status<br>git branch –list<br>git branch aaa<br>git checkout aaa<br>git log –pretty&#x3D;oneline</p>
+]]></content>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux</title>
+    <url>/2023/08/08/linux/</url>
+    <content><![CDATA[<p>linux固定ip<br> 16 IPADDR&#x3D;”192.168.12.12”<br> 17 NETMASK&#x3D;”255.255.255.0”<br> 18 GATEWAY&#x3D;”192.168.12.2”<br> 19 DNS1&#x3D;”192.168.12.2”<br> BOOTPROTO&#x3D;”static”<br>service network restart</p>
+<p><img src="/img/002.png" alt="002"></p>
+<p><img src="/img/003.png" alt="003"></p>
+]]></content>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -590,12 +547,64 @@
       </tags>
   </entry>
   <entry>
+    <title>mysql</title>
+    <url>/2023/08/05/mysql/</url>
+    <content><![CDATA[<p>mysql</p>
+<p>ddl:  操作数据库</p>
+<p>查询：&nbsp;&nbsp;show databases;(所有)&nbsp;&nbsp;&nbsp;select database();(当前)</p>
+<p>创建：&nbsp;&nbsp;create database&nbsp;&nbsp;&nbsp;ittest;&nbsp;&nbsp;&nbsp;(if not exists)</p>
+<p>删除：&nbsp;&nbsp;drop database ittest;&nbsp;&nbsp;&nbsp;(if  exists)</p>
+<p>使用：&nbsp;&nbsp;use ittest;</p>
+<p>ddl:&nbsp;&nbsp;操作表结构</p>
+<p>查询：&nbsp;&nbsp;show tables;(所有表)&nbsp;&nbsp;&nbsp;desc 表名;(表结构)&nbsp;&nbsp;&nbsp;show create table 表名;(建表语句) </p>
+<p>创建：&nbsp;&nbsp;create table 表名(字段1  字段1类型 comment 注释,字段2  字段2类型 comment 注释)</p>
+<p>数据类型：&nbsp;&nbsp;数据类型、字符串类型、日期时间类型。</p>
+<p>修改：&nbsp;&nbsp;alter table  表名 add 字段名 类型(长度);(添加)&nbsp;&nbsp;&nbsp;alter table  表名 change 旧字段名  新字段名  类型(长度);(修改)&nbsp;&nbsp;&nbsp;alter  table 表名 drop 字段名;(删除)&nbsp;&nbsp;&nbsp;alter  table 表名 rename to  新表名;(表名)</p>
+<p>删除：&nbsp;&nbsp;drop table  表名;&nbsp;&nbsp;&nbsp;truncate   table  表名;</p>
+<p>dml:&nbsp;&nbsp;增删改</p>
+<p>添加：&nbsp;&nbsp;insert  into 表名(字段1,字段2) values (值1,值2);</p>
+<p>修改：&nbsp;&nbsp;update  表名  set  字段1&#x3D;值1, 字段2&#x3D;值2;</p>
+<p>删除：&nbsp;&nbsp;delete  from 表名;</p>
+<p>dql:&nbsp;&nbsp;查询</p>
+<p>查询：&nbsp;&nbsp;select  字段列表  from 表名列表  where  条件列表  group by  分组条件列表  having  分组后条件列表  order  by   排序字段列表  limit  分页参数;</p>
+<p>聚合函数：&nbsp;&nbsp;count&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;&nbsp;min&nbsp;&nbsp;&nbsp;avg&nbsp;&nbsp;&nbsp;sum</p>
+<p>dcl:&nbsp;&nbsp;用户权限</p>
+<p>多表查询：</p>
+<p>连接查询：</p>
+<p>内连接：</p>
+<p>外连接：</p>
+<p>自连接：</p>
+<p>联合查询：</p>
+<p>子查询：</p>
+<p>标量子查询：</p>
+<p>列子查询：</p>
+<p>行子查询：</p>
+<p>表子查询：</p>
+<p>事务：&nbsp;&nbsp;原子性&nbsp;&nbsp;&nbsp;一致性&nbsp;&nbsp;&nbsp;隔离性&nbsp;&nbsp;&nbsp;持久性</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>springboot</title>
     <url>/2023/08/09/springboot/</url>
     <content><![CDATA[<p>save &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;增加 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @PostMapping<br>page &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分页  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@GetMapping(“&#x2F;page”)<br>update &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@PutMapping<br>getById &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;查询id		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@GetMapping(“&#x2F;{id}”)<br>remove  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;删除	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@DeleteMapping(“&#x2F;{id}”)<br>batchRemove  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;批量删除   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@DeleteMapping<br>findAll &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;查询所有	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@GetMapping</p>
 ]]></content>
       <tags>
         <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一点图片</title>
+    <url>/2023/08/09/%E4%B8%80%E7%82%B9%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p>一点婧婧的图片<br><img src="/img/004.jpg" alt="004"><br><img src="/img/005.jpg" alt="005"><br><img src="/img/006.jpg" alt="006"></p>
+]]></content>
+      <tags>
+        <tag>图片</tag>
       </tags>
   </entry>
   <entry>
@@ -611,12 +620,15 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>一点图片</title>
-    <url>/2023/08/09/%E4%B8%80%E7%82%B9%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p>一点婧婧的图片<br><img src="/img/004.jpg" alt="004"><br><img src="/img/005.jpg" alt="005"><br><img src="/img/006.jpg" alt="006"></p>
+    <title>单词</title>
+    <url>/2023/08/05/%E5%8D%95%E8%AF%8D/</url>
+    <content><![CDATA[<p>String<br>Object<br>equals<br>hashCode<br>true<br>final<br>String<br>StringBuffer<br>StringBuilder<br>reverse<br>indexOf<br>charAt<br>replace<br>trim<br>split<br>getBytes<br>length<br>toLowerCase<br>substring<br>equals<br>abstract<br>extends<br>public<br>input<br>BIO<br>NIO<br>Files<br>exists<br>createFile<br>delete<br>copy<br>move<br>size<br>read<br>write<br>collection<br>list<br>arraylist<br>linkedlist<br>vector<br>stack<br>set<br>hashset<br>linkedhashset<br>treeset<br>hashmap<br>linkedhsahmap<br>treemap<br>concurrenthashmap<br>hashtable<br>collection<br>collections<br>lterator<br>Thread<br>Runnable<br>Callable<br>new<br>runnable<br>blocked<br>waiting<br>timed_waiting<br>terminated</p>
 ]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
       <tags>
-        <tag>图片</tag>
+        <tag>单词</tag>
       </tags>
   </entry>
   <entry>
@@ -632,18 +644,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 ]]></content>
       <tags>
         <tag>加密</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>单词</title>
-    <url>/2023/08/05/%E5%8D%95%E8%AF%8D/</url>
-    <content><![CDATA[<p>String<br>Object<br>equals<br>hashCode<br>true<br>final<br>String<br>StringBuffer<br>StringBuilder<br>reverse<br>indexOf<br>charAt<br>replace<br>trim<br>split<br>getBytes<br>length<br>toLowerCase<br>substring<br>equals<br>abstract<br>extends<br>public<br>input<br>BIO<br>NIO<br>Files<br>exists<br>createFile<br>delete<br>copy<br>move<br>size<br>read<br>write<br>collection<br>list<br>arraylist<br>linkedlist<br>vector<br>stack<br>set<br>hashset<br>linkedhashset<br>treeset<br>hashmap<br>linkedhsahmap<br>treemap<br>concurrenthashmap<br>hashtable<br>collection<br>collections<br>lterator<br>Thread<br>Runnable<br>Callable<br>new<br>runnable<br>blocked<br>waiting<br>timed_waiting<br>terminated</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>单词</tag>
       </tags>
   </entry>
   <entry>
@@ -758,6 +758,28 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </categories>
       <tags>
         <tag>简历项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记事本02</title>
+    <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC02/</url>
+    <content><![CDATA[<p>jps<br>jmap -heap<br>jconsole<br>jvitualvm</p>
+<p>vue create wms01<br>cd wms01<br>npm run serve<br>npm i element-ui -S</p>
+<p>interface  abstract </p>
+<p>链接：<a href="https://pan.xunlei.com/s/VNZ7-a6GK02kEjRV11jTf6lqA1">https://pan.xunlei.com/s/VNZ7-a6GK02kEjRV11jTf6lqA1</a> 提取码：vzgh 复制这段内容后打开手机迅雷App，查看更方便</p>
+]]></content>
+      <tags>
+        <tag>记事本</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记事本01</title>
+    <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC01/</url>
+    <content><![CDATA[<p>权限管理模块，用户登录，获取用户信息，通过jwt生成token，整合框架springsecurity把权限管理进一步实现，springsecurity完成用户认证和用户授权。权限有三种，页面权限，操作权限，数据权限。菜单级的权限，粗粒度的权限，不同角色用户进入系统之后，可以看到不同的菜单。管理员可以看到全部，销售只能看到销售的。操作权限是按钮级，细粒度权限，具体功能按钮，添加，修改，删除等。用户表，角色表，菜单表，用户角色关系表，角色菜单关系表。<br>使用用户登录，登录之后获取用户操作的菜单权限，进行显示和相关操作。<br>实现后端的接口：用户登录，登录后获取用户可以操作的菜单<br>用户接口分析：根据用户名查询数据库，是否存在，如果存在，判断用户是否禁用<br>登录成功之后保持登录状态，基于token实现，使用登录信息生成唯一的字符串，对生成<br>进行编码加密处理放到cookie中，从cookie获取用户信息<br>cookie不能跨域传递，前端和后端端口不一样。<br>cookie的值放到请求头，每次从请求头获取信息。<br>jwt  json web  token 令牌<br>登录之后，获取用户可以操作菜单     从请求头获取token，从字符串获取用户id<br>根据用户id查询，用户可以操作菜单和按钮<br>jwt头  有效载荷   签名哈希  头部有签名的算法  类型jwt  载荷放入你要存的信息，比如用户id<br>签名哈希通过指定算法生成   base64  jwt防止信息被伪造<br>用jwt第一步：引入依赖 jjwt  创建jwt帮助类  jwthelper<br>生成token<br>设置字符串的有效时间   签名加密的秘钥<br>分类    设置token有效时长   设置主体部分  id和名称  签名和压缩<br>从生成的token中获取id<br>判断  stringutils.isempty(token)  解密<br>从生成的token中获取name<br>登录的接口<br>获取用户名和密码   getone  lambdawarapper<br>判断用户名是否存在   对密码进行加密  md5.encrypt<br>判断密码是否一样  把输入的密码也加密<br>判断用户是否被禁用0&#x3D;&#x3D;&#x3D;1<br>判断用户的角色和菜单<br>从请求<br>request.getHeader(“header”)<br>filter  过滤器   方法级的过滤器   最底端   异常过滤器   对&#x2F;login的post请求做拦截</p>
+<p>springcloud :Hoxton   springboot :2.3.x<br>@LoadBalanced<br>ribbon</p>
+]]></content>
+      <tags>
+        <tag>记事本</tag>
       </tags>
   </entry>
 </search>
