@@ -6,7 +6,7 @@
   <link href="https://xiaoxue1055.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaoxue1055.github.io/"/>
-  <updated>2023-08-09T13:07:45.951Z</updated>
+  <updated>2023-08-11T03:29:33.727Z</updated>
   <id>https://xiaoxue1055.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git02</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/11/git02/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/11/git02/</id>
+    <published>2023-08-11T03:23:00.000Z</published>
+    <updated>2023-08-11T03:29:33.727Z</updated>
+    
+    <content type="html"><![CDATA[<p>git  init<br>git clone<br>git add 文件或者目录<br>git rm 文件或者目录<br>git rm –cache 文件或者目录<br>git commit -m “”<br>git status<br>git branch –list<br>git branch aaa<br>git checkout aaa<br>git log –pretty&#x3D;oneline</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;git  init&lt;br&gt;git clone&lt;br&gt;git add 文件或者目录&lt;br&gt;git rm 文件或者目录&lt;br&gt;git rm –cache 文件或者目录&lt;br&gt;git commit -m “”&lt;br&gt;git status&lt;br&gt;git branch –list&lt;b</summary>
+      
+    
+    
+    
+    
+    <category term="git" scheme="https://xiaoxue1055.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>一点图片</title>
@@ -304,7 +326,7 @@ src=&quot;https://www.bilibili.com/video/BV1</summary>
     <published>2023-08-06T14:06:21.000Z</published>
     <updated>2023-08-06T14:10:08.718Z</updated>
     
-    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#101;&#x65;&#46;&#99;&#x6f;&#109;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#101;&#x65;&#46;&#99;&#x6f;&#109;</a>:abc&#x2F;abc.git</p>]]></content>
+    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#105;&#116;&#64;&#103;&#x69;&#116;&#101;&#101;&#46;&#99;&#x6f;&#x6d;">&#103;&#105;&#116;&#64;&#103;&#x69;&#116;&#101;&#101;&#46;&#99;&#x6f;&#x6d;</a>:abc&#x2F;abc.git</p>]]></content>
     
     
       
