@@ -6,7 +6,7 @@
   <link href="https://xiaoxue1055.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaoxue1055.github.io/"/>
-  <updated>2023-08-11T04:00:16.148Z</updated>
+  <updated>2023-08-11T09:43:54.025Z</updated>
   <id>https://xiaoxue1055.github.io/</id>
   
   <author>
@@ -15,6 +15,116 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面试题02</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/11/%E9%9D%A2%E8%AF%95%E9%A2%9802/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/11/%E9%9D%A2%E8%AF%95%E9%A2%9802/</id>
+    <published>2023-08-11T09:43:18.000Z</published>
+    <updated>2023-08-11T09:43:54.025Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="为什么2个对象的hashcode-会相同"><a href="#为什么2个对象的hashcode-会相同" class="headerlink" title="为什么2个对象的hashcode()会相同"></a>为什么2个对象的hashcode()会相同</h5><p>在Java中，hashcode()方法是用来返回对象的哈希码的。每个对象都应该有一个唯一的哈希码。然而，在某些情况下，两个不同的对象可能会返回相同的哈希码。</p><p>这种情况通常被称为哈希冲突。哈希冲突发生的原因是因为哈希函数将不同的输入映射到相同的输出。在Java中，Object类中提供的默认实现的hashcode()方法只返回对象的内存地址，这样就很容易出现哈希冲突的情况。</p><p>如果要避免哈希冲突，可以重写hashcode()方法，确保相同的对象返回相同的哈希码，而不同的对象返回不同的哈希码。</p><h5 id="哈希冲突的原因"><a href="#哈希冲突的原因" class="headerlink" title="哈希冲突的原因"></a>哈希冲突的原因</h5><p>哈希冲突的主要原因是哈希函数的输入域大于输出域。这意味着有不同的输入值可以映射到相同的输出值。</p><p>此外，当使用散列表（hash table）时，也可能会出现哈希冲突。散列表是一种数据结构，用于存储键值对。散列表内部包含一个数组和一个哈希函数。</p><p>在散列表中，键通过哈希函数转换为索引，然后在数组中存储对应的值。由于哈希函数的输入域大于输出域，这意味着多个键可能会映射到同一个索引位置，从而产生哈希冲突。</p><p>哈希冲突的解决方法包括：</p><ul><li>重新设计哈希函数</li><li>使用更好的散列算法</li><li>增加散列表的容量，使其能够容纳更多的元素</li></ul><h5 id="如何解决哈希冲突"><a href="#如何解决哈希冲突" class="headerlink" title="如何解决哈希冲突"></a>如何解决哈希冲突</h5><p>哈希冲突是指两个不同的对象拥有相同的哈希码。解决哈希冲突的方法通常有以下几种：</p><ol><li>开放定址法</li></ol><p>开放定址法是一种解决哈希冲突的方法，它会尝试找到下一个可用的散列槽来存储冲突的元素。这可以通过简单地检查下一个空位来实现。</p><ol><li>链地址法</li></ol><p>链地址法是一种解决哈希冲突的方法，它将多个元素存储在同一个散列槽中，并使用链表或其他数据结构来连接这些元素。当出现哈希冲突时，只需将新元素添加到已有元素的链表末尾即可。</p><ol><li>双重散列</li></ol><p>双重散列是一种解决哈希冲突的方法，它使用两个哈希函数来计算键的索引位置。如果第一个哈希函数产生了冲突，则使用第二个哈希函数计算新的索引位置。</p><p>总之，解决哈希冲突的方法有很多种，每种方法都有其适用的情况。在选择解决哈希冲突的方法时，需要考虑以下因素：</p><ul><li>散列表的大小</li><li>数据集的大小</li><li>期望的性能和效率</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h5 id=&quot;为什么2个对象的hashcode-会相同&quot;&gt;&lt;a href=&quot;#为什么2个对象的hashcode-会相同&quot; class=&quot;headerlink&quot; title=&quot;为什么2个对象的hashcode()会相同&quot;&gt;&lt;/a&gt;为什么2个对象的hashcode()会相同&lt;/h5</summary>
+      
+    
+    
+    
+    
+    <category term="面试题" scheme="https://xiaoxue1055.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网址</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/11/%E7%BD%91%E5%9D%80/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/11/%E7%BD%91%E5%9D%80/</id>
+    <published>2023-08-11T09:38:08.000Z</published>
+    <updated>2023-08-11T09:38:43.342Z</updated>
+    
+    <content type="html"><![CDATA[<p>做笔记了：<br>码市：<a href="https://codemart.com/">https://codemart.com</a><br>开源众包<a href="https://zb.oschina.net/">https://zb.oschina.net</a><br>猪八戒<a href="https://zbj.com/">https://zbj.com</a><br>程序员客栈<a href="https://www.proginn.com/">https://www.proginn.com</a><br>猿急送<a href="https://www.yuanjisong.com/">https://www.yuanjisong.com</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;做笔记了：&lt;br&gt;码市：&lt;a href=&quot;https://codemart.com/&quot;&gt;https://codemart.com&lt;/a&gt;&lt;br&gt;开源众包&lt;a href=&quot;https://zb.oschina.net/&quot;&gt;https://zb.oschina.net&lt;/a&gt;&lt;</summary>
+      
+    
+    
+    
+    
+    <category term="网址" scheme="https://xiaoxue1055.github.io/tags/%E7%BD%91%E5%9D%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记事本03</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC03/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC03/</id>
+    <published>2023-08-11T09:06:23.000Z</published>
+    <updated>2023-08-11T09:07:16.154Z</updated>
+    
+    <content type="html"><![CDATA[<p>create_time   timestampCURRENT_TIMESTAMP<br>update_time   timestampCURRENT_TIMESTAMP<br>create user ‘123456‘@’127.0.0.1’ identified by ‘123456’;<br>grant replication slave on <em>.</em> to ‘123456‘@’127.0.0.1’;<br>show master status;<br> File  STAR-bin.000034<br>Position  19171<br> systemctl start docker<br>vi &#x2F;etc&#x2F;resolv.conf<br>docker pull mysql:8.0.27<br>docker images<br>mkdir ~&#x2F;mysql<br> cd ~&#x2F;mysql<br> docker run -id \</p><blockquote><p>-p 3306:3306 <br>–name&#x3D;mysql01 <br>-v $PWD&#x2F;conf:&#x2F;etc&#x2F;mysql&#x2F;conf.d <br>-v $PWD&#x2F;logs:&#x2F;logs <br>-v $PWD&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql <br>-e MYSQL_ROOT_PASSWORD&#x3D;123456 <br>mysql:8.0.27<br> docker exec -it mysql01 &#x2F;bin&#x2F;bash<br>mysql -uroot -p<br>show databases;<br>change master to master_host&#x3D;’127.0.0.1’,master_user&#x3D;’123456’, master_password&#x3D;’123456’,master_log_file&#x3D;’STAR-bin.000034’,master_log_pos&#x3D;19171;<br>change master to master_host&#x3D;’127.0.0.1’,master_user&#x3D;’123456’, master_password&#x3D;’123456’,master_log_file&#x3D;’STAR-bin.000034’,master_log_pos&#x3D;21232;<br>change master to master_host&#x3D;’127.0.0.1’,master_user&#x3D;’123456’, master_password&#x3D;’123456’,master_log_file&#x3D;’mysql-bin.000002’,master_log_pos&#x3D;395;<br>stop slave;<br> start slave;<br>show slave status;<br> SELECT @@server_id as SERVER_ID;<br>GRANT REPLICATION SLAVE ON <em>.</em> to ‘123456‘@’%’ identified by ‘123456’;<br>use mysql;<br>select host ,user from user;<br>&#x2F;etc&#x2F;my.cnf &#x2F;etc&#x2F;mysql&#x2F;my.cnf ~&#x2F;.my.cnf<br>master_host&#x3D;’192.168.138.100 ‘, master_user&#x3D; ‘xiaoming ‘ , master_password&#x3D; ‘Root@123456’ ,master_log_file&#x3D;</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;create_time   timestamp		CURRENT_TIMESTAMP&lt;br&gt;update_time   timestamp		CURRENT_TIMESTAMP&lt;br&gt;create user ‘123456‘@’127.0.0.1’ identified b</summary>
+      
+    
+    
+    
+    
+    <category term="记事本" scheme="https://xiaoxue1055.github.io/tags/%E8%AE%B0%E4%BA%8B%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试题</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/11/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/11/%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+    <published>2023-08-11T08:53:44.000Z</published>
+    <updated>2023-08-11T08:58:59.008Z</updated>
+    
+    <content type="html"><![CDATA[<p>JDK和JRE有什么区别？<br>&#x3D;&#x3D;和equals的区别是什么？<br>两个对象的hashCode()相同，则equals()也一定为true,对吗？<br>final在java中有什么作用？<br>java中的Math.round(-1.5)等于多少？<br>String属于基础的数据类型吗？<br>java中操作字符串都有哪些类？他们之间有什么区别？<br>String str&#x3D;”i”与String str&#x3D;new String(“i”)一样吗？<br>如何将字符串反转？<br>String类的常用方法都有哪些？<br>抽象类必须要有抽象方法吗？<br>普通类和抽象类有哪些区别？<br>抽象类能使用final修饰吗？<br>接口和抽象类有什么区别？<br>java种IO流分为几种？<br>BIO、NIO、AIO有什么区别？<br>Files的常用方法都有哪些？<br>java容器都有哪些？<br>Collection和Collections有什么区别？<br>List、Set、Map之间的区别是什么？<br>HashMap和HashTable有什么区别？<br>如何决定使用HashMap还是TreeMap？<br>说一下HashMap的实现原理？<br>说一下HashSet的实现原理？<br>ArrayList和linkedlist的区别是什么？<br>如何实现数组和list之间的转换？<br>ArrayList和Vector的区别是什么？<br>在Queue中poll()和remove()有什么区别？<br>哪些集合类是线程安全的？<br>迭代器Iterator是什么？<br>Iterator怎么使用？有什么特点？<br>Iterator和ListIterator有什么区别？<br>怎么确保一个集合不能被修改？<br>并行和并发有什么区别？<br>线程和进程的区别？<br>守护线程是什么？<br>创建线程有哪几种方式？<br>说一下runnable和callable有什么区别？<br>线程有哪些状态？<br>sleep()和wait()有什么区别？<br>notify()和notifyAll()有什么区别？<br>线程的run()和start()有什么区别？<br>创建线程池有哪几种方式？<br>线程池都有哪些状态？<br>线程池中submit()和execute()方法有什么区别？<br>在java程序中怎么保证多线程的运行安全？<br>多线程中synchronized锁升级的原理是什么？<br>什么是死锁？<br>怎么防止死锁？<br>ThreadLocal是什么？<br>说一下synchronized底层实现原理？<br>synchronized和volatile的区别是什么？<br>synchronized和lock有什么区别？<br>synchronized和reentrantlock区别是什么？<br>说一下atomic的原理？<br>什么是反射？<br>什么是java序列化？什么情况下需要序列化？<br>动态代理是什么？有哪些应用？<br>怎么实现动态代理？<br>为什么要使用克隆？<br>深拷贝和浅拷贝区别是什么？<br>jsp和servlet有什么区别？<br>jsp有哪些内置对象？作用分别是什么？<br>说一下jsp的4种作用域？<br>session和cookie有什么区别？<br>说一下session的工作原理？<br>springmvc和struts的区别是什么？<br>如何避免sql注入？<br>什么是xss攻击，如何避免？<br>什么是csrf攻击，如何避免？<br>throw和throws的区别？<br>final、finally、finalize有什么区别？<br>try-catch-finally中哪个部分可以省略？<br>常用的异常类有哪些？<br>http响应码301和302代表的是什么？有什么作用？<br>forward和redirect的区别？<br>简述tcp和udp的区别？<br>tcp为什么要三次握手，两次不行吗？为什么？<br>说一下tcp粘包是怎么产生的？<br>osi的七层模型都有哪些？<br>get和post请求有哪些区别？</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;JDK和JRE有什么区别？&lt;br&gt;&amp;#x3D;&amp;#x3D;和equals的区别是什么？&lt;br&gt;两个对象的hashCode()相同，则equals()也一定为true,对吗？&lt;br&gt;final在java中有什么作用？&lt;br&gt;java中的Math.round(-1.5)等于多少</summary>
+      
+    
+    
+    
+    
+    <category term="面试题" scheme="https://xiaoxue1055.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git03</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/11/git03/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/11/git03/</id>
+    <published>2023-08-11T08:48:41.000Z</published>
+    <updated>2023-08-11T08:49:13.122Z</updated>
+    
+    <content type="html"><![CDATA[<p>先把github创建一个仓库，要跟用户名一样后面加.github.io<br>比如：xiaoxue1055.github.io<br>用hexo创建<br>npm install hexo-cli -g<br>hexo init blog<br>cd blog<br>npm install<br>hexo server</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;先把github创建一个仓库，要跟用户名一样后面加.github.io&lt;br&gt;比如：xiaoxue1055.github.io&lt;br&gt;用hexo创建&lt;br&gt;npm install hexo-cli -g&lt;br&gt;hexo init blog&lt;br&gt;cd blog&lt;br&gt;npm</summary>
+      
+    
+    
+    
+    
+    <category term="git" scheme="https://xiaoxue1055.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>记事本02</title>
@@ -360,131 +470,6 @@ src=&quot;https://www.bilibili.com/video/BV1</summary>
     
     
     <category term="图片" scheme="https://xiaoxue1055.github.io/tags/%E5%9B%BE%E7%89%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>redis</title>
-    <link href="https://xiaoxue1055.github.io/2023/08/06/redis/"/>
-    <id>https://xiaoxue1055.github.io/2023/08/06/redis/</id>
-    <published>2023-08-06T14:18:28.000Z</published>
-    <updated>2023-08-06T14:20:29.996Z</updated>
-    
-    <content type="html"><![CDATA[<p>redis的基本数据类型：<br>string &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortedset &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bitmap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hyperlog<br>redis常用命令：<br>keys *<br>del name<br>mset k1 v1 k2 v2 k3 v3<br>exists age<br>expire age 20<br>ttl age</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;redis的基本数据类型：&lt;br&gt;string &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;hash &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;list&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; set &amp;nbsp;&amp;nb</summary>
-      
-    
-    
-    
-    <category term="学习" scheme="https://xiaoxue1055.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="redis" scheme="https://xiaoxue1055.github.io/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git</title>
-    <link href="https://xiaoxue1055.github.io/2023/08/06/git/"/>
-    <id>https://xiaoxue1055.github.io/2023/08/06/git/</id>
-    <published>2023-08-06T14:06:21.000Z</published>
-    <updated>2023-08-06T14:10:08.718Z</updated>
-    
-    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#101;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#101;&#x65;&#x2e;&#x63;&#x6f;&#109;</a>:abc&#x2F;abc.git</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;git status&lt;br&gt;git add 文件&lt;br&gt;git rm –cached 文件&lt;br&gt;git commit -m “提交说明”&lt;br&gt;git log&lt;br&gt;git log –oneline&lt;br&gt;git restore 文件&lt;br&gt;git reset –hard</summary>
-      
-    
-    
-    
-    <category term="学习" scheme="https://xiaoxue1055.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="git" scheme="https://xiaoxue1055.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>idea</title>
-    <link href="https://xiaoxue1055.github.io/2023/08/06/idea/"/>
-    <id>https://xiaoxue1055.github.io/2023/08/06/idea/</id>
-    <published>2023-08-06T13:32:39.000Z</published>
-    <updated>2023-08-06T13:43:23.230Z</updated>
-    
-    <content type="html"><![CDATA[<p>main方法          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;psvm<br>输出方法           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sout<br>复制一行           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ctrl + d<br>一行代码上、下移动          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ctrl +shift + ↑ 或者 ↓<br>导包，生成变量          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt + enter<br>单行注释或者取消         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ctrl + &#x2F;<br>多行注释或者取消         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ctrl + shift + &#x2F;<br>处理异常           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ctrl + alt + t<br>构造方法           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alt + insert<br>idea          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;debug<br>折现蓝色箭头单步执行，会把方法当做一行代码执行，不会进入方法<br>向下的蓝色箭头﹐单步执行，但会进入自定义的方法，不会进入jdk源码的方法<br>向下的红色箭头单步执行，但是会进入jdk自带的方法<br>向上的蓝色箭头跳出当前所在的方法<br>斜着的蓝色箭头执行到光标所在的行<br>左侧绿色三角执行到下一个断点</p><p>整理了一些IDEA开发常用的快捷键：</p><table><thead><tr><th>快捷键组合</th><th>实现效果</th></tr></thead><tbody><tr><td>psvm + Tab键 &#x2F; main + Tab键</td><td>public static void main(String[] args)</td></tr><tr><td>sout + Tab键</td><td>System.out.println()</td></tr><tr><td>Ctrl + X</td><td>删除当前行</td></tr><tr><td>Ctrl +D</td><td>复制当前行</td></tr><tr><td>Alt+Insert(或右键Generate)</td><td>生成代码(如get,set方法,构造函数等)</td></tr><tr><td>Ctrl+Alt+T</td><td>生成try catch （或者 Alt+enter选择）</td></tr><tr><td>CTRL+ALT+T</td><td>把选中的代码放在 TRY{} IF{} ELSE{} 里</td></tr><tr><td>Ctr+shift+U</td><td>实现大小写之间的转化</td></tr><tr><td>ALT+回车</td><td>导入包,自动修正</td></tr><tr><td>CTRL+ALT+L</td><td>格式化代码</td></tr><tr><td>CTRL+ALT+I</td><td>自动缩进</td></tr><tr><td>CTRL+E</td><td>最近更改的代码</td></tr><tr><td>fori</td><td>生成for (int i &#x3D; 0; i &lt; ; i++) {}</td></tr><tr><td>Alt + &lt;–左右–&gt;键</td><td>实现窗口左右更换（多窗口）</td></tr><tr><td>Ctrl + 鼠标点击</td><td>快速找到成员变量的出处</td></tr><tr><td>Shift+F6</td><td>重构&#x2F;重命名 (包、类、方法、变量、甚至注释等)</td></tr><tr><td>CTRL+Q</td><td>查看当前方法的声明</td></tr><tr><td>Ctrl+Alt+V</td><td>自动创建变量（new 对象();之后选择按快捷键）</td></tr><tr><td>Ctrl+O</td><td>重写方法</td></tr><tr><td>Ctrl+I</td><td>实现方法</td></tr><tr><td>ALT+&#x2F;</td><td>代码提示</td></tr><tr><td>Ctrl+Shift+R</td><td>在当前项目中替换指定内容</td></tr><tr><td>Ctrl+E</td><td>最近编辑的文件列表</td></tr><tr><td>Ctrl+P</td><td>显示方法参数信息</td></tr><tr><td>Ctrl+Shift+Insert</td><td>查看历史复制记录，idea可以保留历史复制的 100 条记录</td></tr></tbody></table><p>控制台语句 System.out 相关：</p><table><thead><tr><th>生成控制台的相关快捷键</th><th>描述</th></tr></thead><tbody><tr><td>sout + Tab键</td><td>生成System.out.println();，输出到控制台语句并换行。</td></tr><tr><td>souf + Tab键</td><td>生成System.out.printf(“”);,输出一个格式化字符串到控制台。</td></tr><tr><td>soutm + Tab键</td><td>生成System.out.println(“类名.方法名”);，输出当前 类和方法名 到控制台。</td></tr><tr><td>soutp + Tab键</td><td>生成System.out.println(所有方法参数名+值);，输出当前 方法的参数名和值 到控制台。</td></tr></tbody></table><h3 id="————————————–日常使用-必备快捷键—————————————"><a href="#————————————–日常使用-必备快捷键—————————————" class="headerlink" title="————————————–日常使用 必备快捷键—————————————"></a>————————————–日常使用 必备快捷键—————————————</h3><h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><table><thead><tr><th>快捷键</th><th>介绍</th></tr></thead><tbody><tr><td>Ctrl + F</td><td>在当前文件进行文本查找</td></tr><tr><td>Ctrl + R</td><td>在当前文件进行文本替换</td></tr><tr><td>Shift + Ctrl + F</td><td>在项目进行文本查找</td></tr><tr><td>Shift + Ctrl + R</td><td>在项目进行文本替换</td></tr><tr><td>Shift + Shift</td><td>快速搜索</td></tr><tr><td>Ctrl + N</td><td>查找class</td></tr><tr><td>Ctrl + Shift + N</td><td>查找文件</td></tr><tr><td>Ctrl + Shift + Alt + N</td><td>查找symbol（查找某个方法名）</td></tr></tbody></table><h3 id="跳转切换"><a href="#跳转切换" class="headerlink" title="跳转切换"></a>跳转切换</h3><table><thead><tr><th>快捷键</th><th>介绍</th></tr></thead><tbody><tr><td>Ctrl + E</td><td>最近文件</td></tr><tr><td>Ctrl + Tab</td><td>切换文件</td></tr><tr><td>Ctrl + Alt + ←&#x2F;→</td><td>跳转历史光标所在处</td></tr><tr><td>Alt + ←&#x2F;→ 方向键</td><td>切换子tab</td></tr><tr><td>Ctrl + G</td><td>go to（跳转指定行号）</td></tr></tbody></table><h3 id="编码相关"><a href="#编码相关" class="headerlink" title="编码相关"></a>编码相关</h3><table><thead><tr><th>快捷键</th><th>介绍</th></tr></thead><tbody><tr><td>Ctrl + W</td><td>快速选中</td></tr><tr><td>(Shift + Ctrl) + Alt + J</td><td>快速选中同文本</td></tr><tr><td>Ctrl + C&#x2F;Ctrl + X&#x2F;Ctrl + D</td><td>快速复制或剪切</td></tr><tr><td>多行选中 Tab &#x2F; Shift + Tab</td><td>tab</td></tr><tr><td>Ctrl + Y</td><td>删除整行</td></tr><tr><td>滚轮点击变量&#x2F;方法&#x2F;类</td><td>快速进入变量&#x2F;方法&#x2F;类的定义处</td></tr><tr><td>Shift + 点击Tab</td><td>快速关闭tab</td></tr><tr><td>Ctrl + Z 、Ctrl + Shift + Z</td><td>后悔药，撤销&#x2F;取消撤销</td></tr><tr><td>Ctrl + Shift + enter</td><td>自动收尾，代码自动补全</td></tr><tr><td>Alt + enter</td><td>IntelliJ IDEA 根据光标所在问题，提供快速修复选择，光标放在的位置不同提示的结果也不同</td></tr><tr><td>Alt + ↑&#x2F;↓</td><td>方法快速跳转</td></tr><tr><td>F2</td><td>跳转到下一个高亮错误 或 警告位置</td></tr><tr><td>Alt + Insert</td><td>代码自动生成，如生成对象的 set &#x2F; get 方法，构造函数，toString() 等</td></tr><tr><td>Ctrl + Shift + L</td><td>格式化代码</td></tr><tr><td>Shift + F6</td><td>快速修改方法名、变量名、文件名、类名等</td></tr><tr><td>Ctrl + F6</td><td>快速修改方法签名</td></tr></tbody></table><h3 id="代码阅读相关"><a href="#代码阅读相关" class="headerlink" title="代码阅读相关"></a>代码阅读相关</h3><table><thead><tr><th>快捷键</th><th>介绍</th></tr></thead><tbody><tr><td>Ctrl + P</td><td>方法参数提示显示</td></tr><tr><td>Ctrl + Shift + i</td><td>就可以在当前类里再弹出一个窗口出来</td></tr><tr><td>Alt + F7</td><td>可以列出变量在哪些地方被使用了</td></tr><tr><td>光标在子类接口名，Ctrl + u</td><td>跳到父类接口</td></tr><tr><td>Alt + F1 + 1， esc</td><td></td></tr><tr><td>(Shift) + Ctrl + +&#x2F;-</td><td>代码块折叠</td></tr><tr><td>Ctrl + Shift + ←&#x2F;→</td><td>移动窗口分割线</td></tr><tr><td>Ctrl + (Alt) + B</td><td>跳转方法定义&#x2F;实现</td></tr><tr><td>Ctrl + H</td><td>类的层级关系</td></tr><tr><td>Ctrl + F12</td><td>Show Members 类成员快速显示</td></tr></tbody></table><h3 id="版本管理相关"><a href="#版本管理相关" class="headerlink" title="版本管理相关"></a>版本管理相关</h3><table><thead><tr><th>快捷键</th><th>介绍</th></tr></thead><tbody><tr><td>Ctrl + D</td><td>Show Diff</td></tr><tr><td>(Shift) + F7</td><td>（上）下一处修改</td></tr></tbody></table>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;main方法          &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;psvm&lt;br&gt;输出方法           &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;sout&lt;br&gt;复制一行  </summary>
-      
-    
-    
-    
-    <category term="学习" scheme="https://xiaoxue1055.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="idea" scheme="https://xiaoxue1055.github.io/tags/idea/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单词</title>
-    <link href="https://xiaoxue1055.github.io/2023/08/05/%E5%8D%95%E8%AF%8D/"/>
-    <id>https://xiaoxue1055.github.io/2023/08/05/%E5%8D%95%E8%AF%8D/</id>
-    <published>2023-08-05T14:07:47.000Z</published>
-    <updated>2023-08-05T14:09:52.960Z</updated>
-    
-    <content type="html"><![CDATA[<p>String<br>Object<br>equals<br>hashCode<br>true<br>final<br>String<br>StringBuffer<br>StringBuilder<br>reverse<br>indexOf<br>charAt<br>replace<br>trim<br>split<br>getBytes<br>length<br>toLowerCase<br>substring<br>equals<br>abstract<br>extends<br>public<br>input<br>BIO<br>NIO<br>Files<br>exists<br>createFile<br>delete<br>copy<br>move<br>size<br>read<br>write<br>collection<br>list<br>arraylist<br>linkedlist<br>vector<br>stack<br>set<br>hashset<br>linkedhashset<br>treeset<br>hashmap<br>linkedhsahmap<br>treemap<br>concurrenthashmap<br>hashtable<br>collection<br>collections<br>lterator<br>Thread<br>Runnable<br>Callable<br>new<br>runnable<br>blocked<br>waiting<br>timed_waiting<br>terminated</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;String&lt;br&gt;Object&lt;br&gt;equals&lt;br&gt;hashCode&lt;br&gt;true&lt;br&gt;final&lt;br&gt;String&lt;br&gt;StringBuffer&lt;br&gt;StringBuilder&lt;br&gt;reverse&lt;br&gt;indexOf&lt;br&gt;charAt&lt;br&gt;rep</summary>
-      
-    
-    
-    
-    <category term="学习" scheme="https://xiaoxue1055.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="单词" scheme="https://xiaoxue1055.github.io/tags/%E5%8D%95%E8%AF%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>怀古</title>
-    <link href="https://xiaoxue1055.github.io/2023/08/05/%E6%80%80%E5%8F%A4/"/>
-    <id>https://xiaoxue1055.github.io/2023/08/05/%E6%80%80%E5%8F%A4/</id>
-    <published>2023-08-05T12:08:02.000Z</published>
-    <updated>2023-08-06T11:47:34.273Z</updated>
-    
-    <content type="html"><![CDATA[<p>举樽空对西江月，清光曾照苑中人。</p><p>沉沙铺了几场雪，折戟坍落覆忠魂。</p><p>莫叹歌钟高台立，一炬焦土皆做尘。</p><p>石崩木朽昔人尽，墟间一花探清晨。</p><p>我笔下咏史三两篇，观轮回反反复复。</p><p>清风嗔我没个斤两偏钟情于翻乱书牍。</p><p>我虚有拙作三两篇，不必去赞叹熟读。</p><p>人不过在世数十年，那便难得糊涂。</p><p>（人为何要怀古？）是赏花煮酒不美吗？</p><p>（为何要怀古？）你快给我住嘴吧？</p><p>（为何要怀古？）你写这些有什么用啊？</p><p>（消极的态度）能缓解受到的痛吗？</p><p>雾蒙和夕阳，山河的意象</p><p>为何你要驻足于这件穷乡僻壤？</p><p>笔锋的抑扬，诗句的力量。</p><p>泛黄的宣纸向无力的凄凉。</p><p>你若赋过名堂，何必曾去叹那越中鹧鸪。</p><p>你曾醉听萧鼓，为何忧虑今宵酒醒何处？</p><p>我笔下咏诗三两篇，观轮回反反复复。</p><p>清风嗔我没个斤两偏钟情于翻乱书牍。</p><p>我虚有拙作三两篇，不必去赞叹熟读。</p><p>人不过在世数十年，那便难得糊涂。</p><p>（人为何要怀古？）是赏花煮酒不美吗？</p><p>（为何要怀古？）你快给我住嘴吧！</p><p>（为何要怀古？）你写这些有什么用啊？</p><p>（消极的态度）能缓解受到的痛吗？</p><p>（你为何要怀古？）总要有人去赴会吧！</p><p>（为何要怀古？）你真的丝毫无悔吗？</p><p>（为何要怀古？）你写这些有什么用啊？</p><p>（消极的态度）后人会把你歌颂吗？</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;举樽空对西江月，清光曾照苑中人。&lt;/p&gt;
-&lt;p&gt;沉沙铺了几场雪，折戟坍落覆忠魂。&lt;/p&gt;
-&lt;p&gt;莫叹歌钟高台立，一炬焦土皆做尘。&lt;/p&gt;
-&lt;p&gt;石崩木朽昔人尽，墟间一花探清晨。&lt;/p&gt;
-&lt;p&gt;我笔下咏史三两篇，观轮回反反复复。&lt;/p&gt;
-&lt;p&gt;清风嗔我没个斤两偏钟情于翻乱书牍</summary>
-      
-    
-    
-    
-    <category term="阅读" scheme="https://xiaoxue1055.github.io/categories/%E9%98%85%E8%AF%BB/"/>
-    
-    
-    <category term="怀古" scheme="https://xiaoxue1055.github.io/tags/%E6%80%80%E5%8F%A4/"/>
     
   </entry>
   
