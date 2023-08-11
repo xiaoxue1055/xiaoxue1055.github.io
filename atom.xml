@@ -6,7 +6,7 @@
   <link href="https://xiaoxue1055.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaoxue1055.github.io/"/>
-  <updated>2023-08-11T03:29:33.727Z</updated>
+  <updated>2023-08-11T03:34:04.271Z</updated>
   <id>https://xiaoxue1055.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Elasticsearch</title>
+    <link href="https://xiaoxue1055.github.io/2023/08/11/Elasticsearch/"/>
+    <id>https://xiaoxue1055.github.io/2023/08/11/Elasticsearch/</id>
+    <published>2023-08-11T03:33:19.000Z</published>
+    <updated>2023-08-11T03:34:04.271Z</updated>
+    
+    <content type="html"><![CDATA[<p>{<br>    “mappings”:{<br>        “properties”:{<br>            “id”:{<br>                “type”:”keyword”<br>            },<br>            “name”:{<br>                “type”:”text”,<br>                “analyzer”:”ik_max_word”,<br>                “copy_to”:”all”<br>            },<br>            “type”:{<br>                “type”:”keyword”<br>            },<br>            “description”:{<br>                “type”:”text”,<br>                “analyzer”:”ik_max_word”,<br>                “copy_to”:”all”<br>            },<br>            “all”:{<br>                “type”:”text”,<br>                “analyzer”:”ik_max_word”</p><pre><code>        &#125;    &#125;&#125;</code></pre><p>}</p><p>{<br>    “books”: {<br>        “aliases”: {},<br>        “mappings”: {<br>            “properties”: {<br>                “all”: {<br>                    “type”: “text”,<br>                    “analyzer”: “ik_max_word”<br>                },<br>                “description”: {<br>                    “type”: “text”,<br>                    “copy_to”: [<br>                        “all”<br>                    ],<br>                    “analyzer”: “ik_max_word”<br>                },<br>                “id”: {<br>                    “type”: “keyword”<br>                },<br>                “name”: {<br>                    “type”: “text”,<br>                    “copy_to”: [<br>                        “all”<br>                    ],<br>                    “analyzer”: “ik_max_word”<br>                },<br>                “type”: {<br>                    “type”: “keyword”<br>                }<br>            }<br>        },<br>        “settings”: {<br>            “index”: {<br>                “routing”: {<br>                    “allocation”: {<br>                        “include”: {<br>                            “_tier_preference”: “data_content”<br>                        }<br>                    }<br>                },<br>                “number_of_shards”: “1”,<br>                “provided_name”: “books”,<br>                “creation_date”: “1685976593848”,<br>                “number_of_replicas”: “1”,<br>                “uuid”: “EQm8uf0JR3yLK7TvmxMlZg”,<br>                “version”: {<br>                    “created”: “7160299”<br>                }<br>            }<br>        }<br>    }<br>}</p><p>{<br>    “id”:1,<br>    “name”:”springboot”,<br>    “type”:”springboot”,<br>    “description”:”springboot”<br>}</p><p>localhost:9200&#x2F;books&#x2F;_doc&#x2F;2</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;{&lt;br&gt;    “mappings”:{&lt;br&gt;        “properties”:{&lt;br&gt;            “id”:{&lt;br&gt;                “type”:”keyword”&lt;br&gt;            },&lt;br&gt;          </summary>
+      
+    
+    
+    
+    
+    <category term="Elasticsearch" scheme="https://xiaoxue1055.github.io/tags/Elasticsearch/"/>
+    
+  </entry>
   
   <entry>
     <title>git02</title>
@@ -326,7 +348,7 @@ src=&quot;https://www.bilibili.com/video/BV1</summary>
     <published>2023-08-06T14:06:21.000Z</published>
     <updated>2023-08-06T14:10:08.718Z</updated>
     
-    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#105;&#116;&#64;&#103;&#x69;&#116;&#101;&#101;&#46;&#99;&#x6f;&#x6d;">&#103;&#105;&#116;&#64;&#103;&#x69;&#116;&#101;&#101;&#46;&#99;&#x6f;&#x6d;</a>:abc&#x2F;abc.git</p>]]></content>
+    <content type="html"><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p><p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x65;&#101;&#46;&#x63;&#111;&#x6d;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x65;&#101;&#46;&#x63;&#111;&#x6d;</a>:abc&#x2F;abc.git</p>]]></content>
     
     
       
