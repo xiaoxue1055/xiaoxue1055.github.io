@@ -80,23 +80,23 @@
       </tags>
   </entry>
   <entry>
-    <title>git02</title>
-    <url>/2023/08/11/git02/</url>
-    <content><![CDATA[<p>git  init<br>git clone<br>git add 文件或者目录<br>git rm 文件或者目录<br>git rm –cache 文件或者目录<br>git commit -m “”<br>git status<br>git branch –list<br>git branch aaa<br>git checkout aaa<br>git log –pretty&#x3D;oneline</p>
+    <title>git</title>
+    <url>/2023/08/06/git/</url>
+    <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
+<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#x65;&#x65;&#46;&#x63;&#111;&#x6d;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#x65;&#x65;&#46;&#x63;&#111;&#x6d;</a>:abc&#x2F;abc.git</p>
 ]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
       <tags>
         <tag>git</tag>
       </tags>
   </entry>
   <entry>
-    <title>git</title>
-    <url>/2023/08/06/git/</url>
-    <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
-<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#101;&#x65;&#x2e;&#99;&#111;&#109;">&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#101;&#x65;&#x2e;&#99;&#111;&#109;</a>:abc&#x2F;abc.git</p>
+    <title>git02</title>
+    <url>/2023/08/11/git02/</url>
+    <content><![CDATA[<p>git  init<br>git clone<br>git add 文件或者目录<br>git rm 文件或者目录<br>git rm –cache 文件或者目录<br>git commit -m “”<br>git status<br>git branch –list<br>git branch aaa<br>git checkout aaa<br>git log –pretty&#x3D;oneline</p>
 ]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
       <tags>
         <tag>git</tag>
       </tags>
@@ -693,18 +693,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>单词</title>
-    <url>/2023/08/05/%E5%8D%95%E8%AF%8D/</url>
-    <content><![CDATA[<p>String<br>Object<br>equals<br>hashCode<br>true<br>final<br>String<br>StringBuffer<br>StringBuilder<br>reverse<br>indexOf<br>charAt<br>replace<br>trim<br>split<br>getBytes<br>length<br>toLowerCase<br>substring<br>equals<br>abstract<br>extends<br>public<br>input<br>BIO<br>NIO<br>Files<br>exists<br>createFile<br>delete<br>copy<br>move<br>size<br>read<br>write<br>collection<br>list<br>arraylist<br>linkedlist<br>vector<br>stack<br>set<br>hashset<br>linkedhashset<br>treeset<br>hashmap<br>linkedhsahmap<br>treemap<br>concurrenthashmap<br>hashtable<br>collection<br>collections<br>lterator<br>Thread<br>Runnable<br>Callable<br>new<br>runnable<br>blocked<br>waiting<br>timed_waiting<br>terminated</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>单词</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>加密</title>
     <url>/2023/08/08/%E5%8A%A0%E5%AF%86/</url>
     <content><![CDATA[<p>对称加密和非对称加密是两种不同的加密方法，用于保护数据的安全性和隐私。</p>
@@ -717,6 +705,18 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 ]]></content>
       <tags>
         <tag>加密</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>单词</title>
+    <url>/2023/08/05/%E5%8D%95%E8%AF%8D/</url>
+    <content><![CDATA[<p>String<br>Object<br>equals<br>hashCode<br>true<br>final<br>String<br>StringBuffer<br>StringBuilder<br>reverse<br>indexOf<br>charAt<br>replace<br>trim<br>split<br>getBytes<br>length<br>toLowerCase<br>substring<br>equals<br>abstract<br>extends<br>public<br>input<br>BIO<br>NIO<br>Files<br>exists<br>createFile<br>delete<br>copy<br>move<br>size<br>read<br>write<br>collection<br>list<br>arraylist<br>linkedlist<br>vector<br>stack<br>set<br>hashset<br>linkedhashset<br>treeset<br>hashmap<br>linkedhsahmap<br>treemap<br>concurrenthashmap<br>hashtable<br>collection<br>collections<br>lterator<br>Thread<br>Runnable<br>Callable<br>new<br>runnable<br>blocked<br>waiting<br>timed_waiting<br>terminated</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>单词</tag>
       </tags>
   </entry>
   <entry>
@@ -856,15 +856,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>组件</title>
-    <url>/2023/08/11/%E7%BB%84%E4%BB%B6/</url>
-    <content><![CDATA[<p>Shiro：Shiro是一个用于身份验证、授权和加密的框架。<br>Elasticsearch：Elasticsearch是一个分布式搜索和分析引擎，可用于存储、搜索和分析大量的结构化或非结构化数据。<br>POI：POI是一个用于操作Microsoft Office文件的Java库。<br>Highcharts：Highcharts是一个用于制作交互式图表的JavaScript库。<br>Element-UI：Element-UI是一个基于Vue.js的组件库，提供了丰富的UI组件和交互效果。<br>Swagger2：Swagger2是一个API文档工具，可以生成和展示API的描述信息。<br>fastjson：fastjson是一种用于JSON格式数据的Java库。<br>JWT：JWT（JSON Web Token）是一种用于身份验证和授权的标准，通常用于在客户端和服务器之间传递信息。<br>Activiti：Activiti是一个开源的BPM（Business Process Management）框架，用于实现工作流和业务流程管理。<br>Nginx：nginx是一款常用的Web服务器和反向代理服务软件。<br>Redis：Redis是一款高性能的开源内存数据库。<br>Spring Security：Spring Security是基于Spring框架的安全认证和授权框架。<br>Nacos：Nacos是一款开源的服务发现和配置管理平台。<br>Spring Cloud Gateway：Spring Cloud Gateway是基于Spring Framework 5、Project Reactor和Spring Boot 2的API网关。<br>腾讯云对象存储（COS）：腾讯云对象存储（COS）是一种高可靠、高扩展性、低成本的云存储服务。<br>腾讯云点播（VOD）：腾讯云点播（VOD）是一种基于云技术的视频服务。<br>EasyExcel：EasyExcel是一款基于Java语言的Excel操作类库，能够快速、灵活地处理Excel文件，支持读取和写入多种格式的Excel文件。<br>MyBatis-Plus：MyBatis-Plus是一款基于MyBatis的增强工具，提供了多种实用的功能和特性。<br>Keepalived：Keepalived是一款Linux平台上常用的高可用性解决方案，可以实现多个服务器之间的状态同步和自动故障切换等功能。<br>Vue：Vue（也称为Vue.js）是一款流行的JavaScript框架，用于开发用户界面和单页应用程序。<br>JVM：JVM代表Java虚拟机（Java Virtual Machine），是一个在计算机上运行Java程序的虚拟机。<br>GC：”垃圾回收” (Garbage Collection) - 是一种计算机程序技术，用于自动管理动态分配的内存，并在没有被引用时释放无用的内存。<br>Docker：Docker是一种开源的容器化平台，用于运行和管理应用程序。<br>Linux：Linux是一种开源的Unix-like操作系统内核。<br>Maven：Maven是一个开源的项目管理和构建工具，用于管理Java项目中的依赖关系、构建过程和文档生成等任务。<br>Git：Git是一种开源的分布式版本控制系统，最初由Linus Torvalds创建。<br>MySQL：MySQL是一种开源的关系型数据库管理系统（RDBMS），最初由瑞典公司MySQL AB开发。<br>RabbitMQ：RabbitMQ是一种开源的消息队列（message broker）软件，它用于在不同的应用程序和服务之间传递消息。<br>OpenFeign：OpenFeign是一种基于Java的声明式HTTP客户端框架，用于简化服务之间的通信。<br>Sentinel：Sentinel是一种开源的分布式系统的流量控制、熔断和降级的框架，由阿里巴巴集团开源。<br>Seata：Seata是一种开源的分布式事务解决方案，它可以解决跨多个数据源、多个服务实例的事务管理问题。<br>Spring Boot：Spring Boot是一种基于Spring框架的开源、快速开发的Java Web框架。<br>Spring MVC：Spring MVC是一种基于Spring框架的开源Web应用程序框架，它提供了一套Model-View-Controller（MVC）设计模式的实现，用于构建灵活、高效的Web应用程序。<br>Spring：Spring是一种开源的Java应用程序框架，它由Rod Johnson在2003年创建。<br>MyBatis：MyBatis（原名为ibatis）是一种开源的Java持久化框架，它提供了一套简单易用、高性能且功能强大的API，可用于访问关系型数据库。</p>
-]]></content>
-      <tags>
-        <tag>组件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>简历项目8月</title>
     <url>/2023/08/11/%E7%AE%80%E5%8E%86%E9%A1%B9%E7%9B%AE8%E6%9C%88/</url>
     <content><![CDATA[<p>一. 智慧云课堂（2023.1-2023.7）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： MySql+MyBatisPlus+Redis+SpringBoot+SpringCloud+RabbitMQ+vue+Element-UI<br>项目描述: 智慧云课堂是线上课堂项目，主要功能是提供在线教育服务。项目分为：系统后台和系统前台。系统后台是管理员使用，系统前台是用户使用。后台系统主要有：讲师管理，课程分类管理，点播管理，课程订单，营销管理，直播管理，权限管理。用户通过登录，可以在点播课程和直播课程的模块来学习内容。讲师管理和课程分类管理，是老师人员和课程分类的详细信息。点播管理是老师上传的课程，有付费和免费的课程。课程订单是用户下单的管理，营销管理是活动时的打折销售。直播管理有聊天互动的功能，权限管理对用户的权限进行管理。<br>技术描述：</p>
@@ -902,22 +893,21 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>组件</title>
+    <url>/2023/08/11/%E7%BB%84%E4%BB%B6/</url>
+    <content><![CDATA[<p>Shiro：Shiro是一个用于身份验证、授权和加密的框架。<br>Elasticsearch：Elasticsearch是一个分布式搜索和分析引擎，可用于存储、搜索和分析大量的结构化或非结构化数据。<br>POI：POI是一个用于操作Microsoft Office文件的Java库。<br>Highcharts：Highcharts是一个用于制作交互式图表的JavaScript库。<br>Element-UI：Element-UI是一个基于Vue.js的组件库，提供了丰富的UI组件和交互效果。<br>Swagger2：Swagger2是一个API文档工具，可以生成和展示API的描述信息。<br>fastjson：fastjson是一种用于JSON格式数据的Java库。<br>JWT：JWT（JSON Web Token）是一种用于身份验证和授权的标准，通常用于在客户端和服务器之间传递信息。<br>Activiti：Activiti是一个开源的BPM（Business Process Management）框架，用于实现工作流和业务流程管理。<br>Nginx：nginx是一款常用的Web服务器和反向代理服务软件。<br>Redis：Redis是一款高性能的开源内存数据库。<br>Spring Security：Spring Security是基于Spring框架的安全认证和授权框架。<br>Nacos：Nacos是一款开源的服务发现和配置管理平台。<br>Spring Cloud Gateway：Spring Cloud Gateway是基于Spring Framework 5、Project Reactor和Spring Boot 2的API网关。<br>腾讯云对象存储（COS）：腾讯云对象存储（COS）是一种高可靠、高扩展性、低成本的云存储服务。<br>腾讯云点播（VOD）：腾讯云点播（VOD）是一种基于云技术的视频服务。<br>EasyExcel：EasyExcel是一款基于Java语言的Excel操作类库，能够快速、灵活地处理Excel文件，支持读取和写入多种格式的Excel文件。<br>MyBatis-Plus：MyBatis-Plus是一款基于MyBatis的增强工具，提供了多种实用的功能和特性。<br>Keepalived：Keepalived是一款Linux平台上常用的高可用性解决方案，可以实现多个服务器之间的状态同步和自动故障切换等功能。<br>Vue：Vue（也称为Vue.js）是一款流行的JavaScript框架，用于开发用户界面和单页应用程序。<br>JVM：JVM代表Java虚拟机（Java Virtual Machine），是一个在计算机上运行Java程序的虚拟机。<br>GC：”垃圾回收” (Garbage Collection) - 是一种计算机程序技术，用于自动管理动态分配的内存，并在没有被引用时释放无用的内存。<br>Docker：Docker是一种开源的容器化平台，用于运行和管理应用程序。<br>Linux：Linux是一种开源的Unix-like操作系统内核。<br>Maven：Maven是一个开源的项目管理和构建工具，用于管理Java项目中的依赖关系、构建过程和文档生成等任务。<br>Git：Git是一种开源的分布式版本控制系统，最初由Linus Torvalds创建。<br>MySQL：MySQL是一种开源的关系型数据库管理系统（RDBMS），最初由瑞典公司MySQL AB开发。<br>RabbitMQ：RabbitMQ是一种开源的消息队列（message broker）软件，它用于在不同的应用程序和服务之间传递消息。<br>OpenFeign：OpenFeign是一种基于Java的声明式HTTP客户端框架，用于简化服务之间的通信。<br>Sentinel：Sentinel是一种开源的分布式系统的流量控制、熔断和降级的框架，由阿里巴巴集团开源。<br>Seata：Seata是一种开源的分布式事务解决方案，它可以解决跨多个数据源、多个服务实例的事务管理问题。<br>Spring Boot：Spring Boot是一种基于Spring框架的开源、快速开发的Java Web框架。<br>Spring MVC：Spring MVC是一种基于Spring框架的开源Web应用程序框架，它提供了一套Model-View-Controller（MVC）设计模式的实现，用于构建灵活、高效的Web应用程序。<br>Spring：Spring是一种开源的Java应用程序框架，它由Rod Johnson在2003年创建。<br>MyBatis：MyBatis（原名为ibatis）是一种开源的Java持久化框架，它提供了一套简单易用、高性能且功能强大的API，可用于访问关系型数据库。</p>
+]]></content>
+      <tags>
+        <tag>组件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网址</title>
     <url>/2023/08/11/%E7%BD%91%E5%9D%80/</url>
     <content><![CDATA[<p>做笔记了：<br>码市：<a href="https://codemart.com/">https://codemart.com</a><br>开源众包<a href="https://zb.oschina.net/">https://zb.oschina.net</a><br>猪八戒<a href="https://zbj.com/">https://zbj.com</a><br>程序员客栈<a href="https://www.proginn.com/">https://www.proginn.com</a><br>猿急送<a href="https://www.yuanjisong.com/">https://www.yuanjisong.com</a></p>
 ]]></content>
       <tags>
         <tag>网址</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记事本01</title>
-    <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC01/</url>
-    <content><![CDATA[<p>权限管理模块，用户登录，获取用户信息，通过jwt生成token，整合框架springsecurity把权限管理进一步实现，springsecurity完成用户认证和用户授权。权限有三种，页面权限，操作权限，数据权限。菜单级的权限，粗粒度的权限，不同角色用户进入系统之后，可以看到不同的菜单。管理员可以看到全部，销售只能看到销售的。操作权限是按钮级，细粒度权限，具体功能按钮，添加，修改，删除等。用户表，角色表，菜单表，用户角色关系表，角色菜单关系表。<br>使用用户登录，登录之后获取用户操作的菜单权限，进行显示和相关操作。<br>实现后端的接口：用户登录，登录后获取用户可以操作的菜单<br>用户接口分析：根据用户名查询数据库，是否存在，如果存在，判断用户是否禁用<br>登录成功之后保持登录状态，基于token实现，使用登录信息生成唯一的字符串，对生成<br>进行编码加密处理放到cookie中，从cookie获取用户信息<br>cookie不能跨域传递，前端和后端端口不一样。<br>cookie的值放到请求头，每次从请求头获取信息。<br>jwt  json web  token 令牌<br>登录之后，获取用户可以操作菜单     从请求头获取token，从字符串获取用户id<br>根据用户id查询，用户可以操作菜单和按钮<br>jwt头  有效载荷   签名哈希  头部有签名的算法  类型jwt  载荷放入你要存的信息，比如用户id<br>签名哈希通过指定算法生成   base64  jwt防止信息被伪造<br>用jwt第一步：引入依赖 jjwt  创建jwt帮助类  jwthelper<br>生成token<br>设置字符串的有效时间   签名加密的秘钥<br>分类    设置token有效时长   设置主体部分  id和名称  签名和压缩<br>从生成的token中获取id<br>判断  stringutils.isempty(token)  解密<br>从生成的token中获取name<br>登录的接口<br>获取用户名和密码   getone  lambdawarapper<br>判断用户名是否存在   对密码进行加密  md5.encrypt<br>判断密码是否一样  把输入的密码也加密<br>判断用户是否被禁用0&#x3D;&#x3D;&#x3D;1<br>判断用户的角色和菜单<br>从请求<br>request.getHeader(“header”)<br>filter  过滤器   方法级的过滤器   最底端   异常过滤器   对&#x2F;login的post请求做拦截</p>
-<p>springcloud :Hoxton   springboot :2.3.x<br>@LoadBalanced<br>ribbon</p>
-]]></content>
-      <tags>
-        <tag>记事本</tag>
       </tags>
   </entry>
   <entry>
@@ -933,12 +923,10 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>记事本03</title>
-    <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC03/</url>
-    <content><![CDATA[<p>create_time   timestamp		CURRENT_TIMESTAMP<br>update_time   timestamp		CURRENT_TIMESTAMP<br>create user ‘123456‘@’127.0.0.1’ identified by ‘123456’;<br>grant replication slave on <em>.</em> to ‘123456‘@’127.0.0.1’;<br>show master status;<br> File  STAR-bin.000034<br>Position  19171<br> systemctl start docker<br>vi &#x2F;etc&#x2F;resolv.conf<br>docker pull mysql:8.0.27<br>docker images<br>mkdir ~&#x2F;mysql<br> cd ~&#x2F;mysql<br> docker run -id \</p>
-<blockquote>
-<p>-p 3306:3306 <br>–name&#x3D;mysql01 <br>-v $PWD&#x2F;conf:&#x2F;etc&#x2F;mysql&#x2F;conf.d <br>-v $PWD&#x2F;logs:&#x2F;logs <br>-v $PWD&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql <br>-e MYSQL_ROOT_PASSWORD&#x3D;123456 <br>mysql:8.0.27<br> docker exec -it mysql01 &#x2F;bin&#x2F;bash<br>mysql -uroot -p<br>show databases;<br>change master to master_host&#x3D;’127.0.0.1’,master_user&#x3D;’123456’, master_password&#x3D;’123456’,master_log_file&#x3D;’STAR-bin.000034’,master_log_pos&#x3D;19171;<br>change master to master_host&#x3D;’127.0.0.1’,master_user&#x3D;’123456’, master_password&#x3D;’123456’,master_log_file&#x3D;’STAR-bin.000034’,master_log_pos&#x3D;21232;<br>change master to master_host&#x3D;’127.0.0.1’,master_user&#x3D;’123456’, master_password&#x3D;’123456’,master_log_file&#x3D;’mysql-bin.000002’,master_log_pos&#x3D;395;<br>stop slave;<br> start slave;<br>show slave status;<br> SELECT @@server_id as SERVER_ID;<br>GRANT REPLICATION SLAVE ON <em>.</em> to ‘123456‘@’%’ identified by ‘123456’;<br>use mysql;<br>select host ,user from user;<br>&#x2F;etc&#x2F;my.cnf &#x2F;etc&#x2F;mysql&#x2F;my.cnf ~&#x2F;.my.cnf<br>master_host&#x3D;’192.168.138.100 ‘, master_user&#x3D; ‘xiaoming ‘ , master_password&#x3D; ‘Root@123456’ ,master_log_file&#x3D;</p>
-</blockquote>
+    <title>记事本01</title>
+    <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC01/</url>
+    <content><![CDATA[<p>权限管理模块，用户登录，获取用户信息，通过jwt生成token，整合框架springsecurity把权限管理进一步实现，springsecurity完成用户认证和用户授权。权限有三种，页面权限，操作权限，数据权限。菜单级的权限，粗粒度的权限，不同角色用户进入系统之后，可以看到不同的菜单。管理员可以看到全部，销售只能看到销售的。操作权限是按钮级，细粒度权限，具体功能按钮，添加，修改，删除等。用户表，角色表，菜单表，用户角色关系表，角色菜单关系表。<br>使用用户登录，登录之后获取用户操作的菜单权限，进行显示和相关操作。<br>实现后端的接口：用户登录，登录后获取用户可以操作的菜单<br>用户接口分析：根据用户名查询数据库，是否存在，如果存在，判断用户是否禁用<br>登录成功之后保持登录状态，基于token实现，使用登录信息生成唯一的字符串，对生成<br>进行编码加密处理放到cookie中，从cookie获取用户信息<br>cookie不能跨域传递，前端和后端端口不一样。<br>cookie的值放到请求头，每次从请求头获取信息。<br>jwt  json web  token 令牌<br>登录之后，获取用户可以操作菜单     从请求头获取token，从字符串获取用户id<br>根据用户id查询，用户可以操作菜单和按钮<br>jwt头  有效载荷   签名哈希  头部有签名的算法  类型jwt  载荷放入你要存的信息，比如用户id<br>签名哈希通过指定算法生成   base64  jwt防止信息被伪造<br>用jwt第一步：引入依赖 jjwt  创建jwt帮助类  jwthelper<br>生成token<br>设置字符串的有效时间   签名加密的秘钥<br>分类    设置token有效时长   设置主体部分  id和名称  签名和压缩<br>从生成的token中获取id<br>判断  stringutils.isempty(token)  解密<br>从生成的token中获取name<br>登录的接口<br>获取用户名和密码   getone  lambdawarapper<br>判断用户名是否存在   对密码进行加密  md5.encrypt<br>判断密码是否一样  把输入的密码也加密<br>判断用户是否被禁用0&#x3D;&#x3D;&#x3D;1<br>判断用户的角色和菜单<br>从请求<br>request.getHeader(“header”)<br>filter  过滤器   方法级的过滤器   最底端   异常过滤器   对&#x2F;login的post请求做拦截</p>
+<p>springcloud :Hoxton   springboot :2.3.x<br>@LoadBalanced<br>ribbon</p>
 ]]></content>
       <tags>
         <tag>记事本</tag>
@@ -947,7 +935,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
   <entry>
     <title>记事本04</title>
     <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC04/</url>
-    <content><![CDATA[<p>Mozilla&#x2F;5.0 (Windows NT 6.1; Trident&#x2F;7.0; rv:11.0) like Gecko;<br>npm install -g @vue&#x2F;cli<br>get-ExecutionPolicy<br>start-process PowerShell -verb runas<br>set-ExecutionPolicy RemoteSigned<br>get-ExecutionPolicy<br>vue create wms-web<br>cd wms-web<br>npm run dev<br>npm i element-ui -S<br>npm install axios –save<br>npm i <a href="mailto:&#x76;&#117;&#101;&#45;&#x72;&#x6f;&#x75;&#x74;&#101;&#x72;&#x40;&#x33;&#46;&#53;&#46;&#x34;">&#x76;&#117;&#101;&#45;&#x72;&#x6f;&#x75;&#x74;&#101;&#x72;&#x40;&#x33;&#46;&#53;&#46;&#x34;</a><br>npm i <a href="mailto:&#x76;&#117;&#101;&#120;&#x40;&#51;&#46;&#x30;&#46;&#48;">&#x76;&#117;&#101;&#120;&#x40;&#51;&#46;&#x30;&#46;&#48;</a><br>com.itheima</p>
+    <content><![CDATA[<p>Mozilla&#x2F;5.0 (Windows NT 6.1; Trident&#x2F;7.0; rv:11.0) like Gecko;<br>npm install -g @vue&#x2F;cli<br>get-ExecutionPolicy<br>start-process PowerShell -verb runas<br>set-ExecutionPolicy RemoteSigned<br>get-ExecutionPolicy<br>vue create wms-web<br>cd wms-web<br>npm run dev<br>npm i element-ui -S<br>npm install axios –save<br>npm i <a href="mailto:&#x76;&#x75;&#x65;&#x2d;&#114;&#111;&#117;&#x74;&#x65;&#114;&#x40;&#51;&#x2e;&#53;&#46;&#52;">&#x76;&#x75;&#x65;&#x2d;&#114;&#111;&#117;&#x74;&#x65;&#114;&#x40;&#51;&#x2e;&#53;&#46;&#52;</a><br>npm i <a href="mailto:&#118;&#x75;&#x65;&#120;&#x40;&#x33;&#46;&#x30;&#46;&#x30;">&#118;&#x75;&#x65;&#120;&#x40;&#x33;&#46;&#x30;&#46;&#x30;</a><br>com.itheima</p>
 <p>硅谷课堂项目视频<br>B站直达：<a href="https://www.bilibili.com/video/BV13T411372x">https://www.bilibili.com/video/BV13T411372x</a><br>百度网盘：<a href="https://pan.baidu.com/s/1SSh5oGfzW2X7PMF9QvoELw?pwd=yyds">https://pan.baidu.com/s/1SSh5oGfzW2X7PMF9QvoELw?pwd=yyds</a> 提取码：yyds<br>阿里云盘：<a href="https://www.aliyundrive.com/s/rKWiadocFfo%EF%BC%88%E6%95%99%E7%A8%8B%E9%85%8D%E5%A5%97%E8%B5%84%E6%96%99%E8%AF%B7%E4%BB%8E%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%EF%BC%89">https://www.aliyundrive.com/s/rKWiadocFfo（教程配套资料请从百度网盘下载）</a></p>
 <p>围观尚硅谷Java课程：<a href="http://www.atguigu.com/kecheng.shtml">http://www.atguigu.com/kecheng.shtml</a><br>更多尚硅谷视频教程请访问：<a href="http://www.atguigu.com/download.shtml">http://www.atguigu.com/download.shtml</a><br>1.25磅<br>extends继承    implements实现   implements  implements   extends   extends  input  output<br>public  final  abstract    abstract   final   extends  implements indexof  charat  replace   trim  split  getbytes  length  tolowercase  touppercase   substring  equals stringbuffer  stringbuilder   reverse  append  string byte  short int long double float boolean  char  round  hashcode() object jdk jre bio nio channel aio  exists  createfile  delete  copy  move  size  read<br>size  read  write  collection  list  arraylist  linkedlist vector<br>set hashset  treeset  hashmap  linkedhashmap  treemap  concurrenthashmap  hashtable  collection  collections  list   set   map   key  value  Arrays.asList(array)   queue  poll  remove iterator  thread  runnable  callable<br>sleep  wait  notify    notifyall  run  start  threadpoolexecutor<br>submit  execute  synchronized  synchronized  struts  sql  responsebody  preparedstatement  throw  throws  final   finally  finalize  try-catch-finally<br>forward   redirect   tcp udp osi  context  core   dao  aop  web   webmvc<br>setter  构造方法注入   bean singleton  prototype   request  session  global-session  no  bytype  autodetect autowired  requestmapping springboot<br>springcloud  propertites innodb myiasm<br>groupId   artifactId  version   properties  dependencies  connector<br>junit   slf4j-api  logback-classic  logback-core   logback.xml  mybatis-config.xml   UserMapper.xml  additivity  namespace  typeAliases  environments  dataSource  mappers  resultType<br>src\main\webapp<br>源码下载云盘链接: 链接：<br><a href="https://pan.baidu.com/s/1djb2BmP3S6l9OfzT62Nd6A">https://pan.baidu.com/s/1djb2BmP3S6l9OfzT62Nd6A</a> 提取码：lry9</p>
 <p>复制这段内容后打开百度网盘手机App，操作更方便哦<br>crossorigin:克rua丝欧津<br>cors:可而丝<br>jsonp:杰森p<br>get  post  osi  tcp  udp<br>forward:佛沃的<br>redirect:锐滴ruai克特<br>pointer:泼in特<br>exception:一克赛普审<br>try catch<br>finally:fai了里<br>final finally finalize<br>throw:丝肉     throws<br>csrf  xss  sql<br>prepared:普锐的派耳的 statement<br>spring mvc<br>struts:丝jwua丝<br>cookie session<br>page  request session  application<br>request response pagecontext session application out config page exception<br>jsp servlet<br>cloneable serializable<br>cglib<br>spring aop<br>hibernate:还波累特<br>mock rpc<br>atomic:唉它密克<br>volatile   native<br>synchronized  reentrantlock lock  volatile threadlocal<br>thread runnable callable<br>new runnable blocked waiting timed_waiting terminated<br>sleep  wait<br>notify notifyall<br>run  strat<br>threadpoolexecutor<br>execute  submit<br>concurrent<br>monitorenter<br>lterator:因特锐特<br>listlterator collection vector  hashtable stack  queue  poll<br>array arraylist<br>vector:歪克特<br>linkedlist  hashmap  treemap  collection  collections<br>collection list arraylist linkedlist vector  stack set hashset linkedhashset<br>treeset  exists  createfile createdirectory delete copy move size read write<br>bio nio aio extends implements final<br>indexof  charat replace trim split getbytes<br>单例模式  工厂模式  观察者模式  外观模式  状态模式<br>spring  ioc aop 事务支持<br>面向切面编程    spring core context dao web mvc<br>setter属性 构造方法  注解方式<br>singleton  prototype<br>前置控制器  映射控制器  处理器  模型和视图   视图解析器<br>requestmapping  autowired 配置简单 运行独立 自动装配 提供应用监控<br>bootstrap  application<br>properties  yml  devtools<br>ribbon  feign  eureka  hystrix zuul<br>show processlist   explain  dispatcherservlet  handlermapping controller<br>sqlsessionfactory  sqlsession  mysql navicat<br>redis  list  lpush  list  one  1  lpush  list  two  2  lrange  list  0  -1 拿取全部的值  lrange  list  0   1 获取2个    倒着拿取的，从后面往前面拿取<br>maven常用单词：project  modelVersion  groupId  artifactId  version  SNAPSHOT  RELEASE packaging  Basics  dependencies  dependency  compile  provided  runtime  test  exclusions<br>springboot常用单词：SpringBootApplication  SpringApplication getBean redisTemplate Condition  Enable Configuration Bean ComponentScan Import @interface context.getbean  EnableAutoConfiguration<br>startup.cmd -m standalone<br>redis-server redis.windows.conf<br>systemctl start docker<br>docker ps -a<br>docker start ca6fd965509a<br><property name="driver" value="com.mysql.cj.jdbc.Driver"/><br>                <property name="url" value="jdbc:mysql:///abc01?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;useServerPrepStmts=true"/><br>                <property name="username" value="root"/><br>                <property name="password" value="123456"/><br>useSSL&#x3D;false&amp;useUnicode&#x3D;true&amp;characterEncoding&#x3D;UTF-8&amp;useServerPrepStmts&#x3D;true<br>&#x2F;&#x2F;1. 获取SqlSessionFactory<br>        String resource &#x3D; “mybatis-config.xml”;<br>        InputStream inputStream &#x3D; Resources.getResourceAsStream(resource);<br>        SqlSessionFactory sqlSessionFactory &#x3D; new SqlSessionFactoryBuilder().build(inputStream);</p>
@@ -985,6 +973,18 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 <p>update account set money &#x3D; money -500 where name &#x3D; ‘’</p>
 <p>‘ or ‘1’&#x3D;’1</p>
 <p>1.使用Shiro进行系统部分功能的权限控制。<br>2.使用了Ajax方式实现在单页面内完成增删改查功能。<br>3.使用了ElasticSearch进行药品明细的查询。<br>4.使用POI进行表单的导出和导入。<br>5.使用Highcharts进行查询和财务分析报表的打印。</p>
+]]></content>
+      <tags>
+        <tag>记事本</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记事本03</title>
+    <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC03/</url>
+    <content><![CDATA[<p>create_time   timestamp		CURRENT_TIMESTAMP<br>update_time   timestamp		CURRENT_TIMESTAMP<br>create user ‘123456‘@’127.0.0.1’ identified by ‘123456’;<br>grant replication slave on <em>.</em> to ‘123456‘@’127.0.0.1’;<br>show master status;<br> File  STAR-bin.000034<br>Position  19171<br> systemctl start docker<br>vi &#x2F;etc&#x2F;resolv.conf<br>docker pull mysql:8.0.27<br>docker images<br>mkdir ~&#x2F;mysql<br> cd ~&#x2F;mysql<br> docker run -id \</p>
+<blockquote>
+<p>-p 3306:3306 <br>–name&#x3D;mysql01 <br>-v $PWD&#x2F;conf:&#x2F;etc&#x2F;mysql&#x2F;conf.d <br>-v $PWD&#x2F;logs:&#x2F;logs <br>-v $PWD&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql <br>-e MYSQL_ROOT_PASSWORD&#x3D;123456 <br>mysql:8.0.27<br> docker exec -it mysql01 &#x2F;bin&#x2F;bash<br>mysql -uroot -p<br>show databases;<br>change master to master_host&#x3D;’127.0.0.1’,master_user&#x3D;’123456’, master_password&#x3D;’123456’,master_log_file&#x3D;’STAR-bin.000034’,master_log_pos&#x3D;19171;<br>change master to master_host&#x3D;’127.0.0.1’,master_user&#x3D;’123456’, master_password&#x3D;’123456’,master_log_file&#x3D;’STAR-bin.000034’,master_log_pos&#x3D;21232;<br>change master to master_host&#x3D;’127.0.0.1’,master_user&#x3D;’123456’, master_password&#x3D;’123456’,master_log_file&#x3D;’mysql-bin.000002’,master_log_pos&#x3D;395;<br>stop slave;<br> start slave;<br>show slave status;<br> SELECT @@server_id as SERVER_ID;<br>GRANT REPLICATION SLAVE ON <em>.</em> to ‘123456‘@’%’ identified by ‘123456’;<br>use mysql;<br>select host ,user from user;<br>&#x2F;etc&#x2F;my.cnf &#x2F;etc&#x2F;mysql&#x2F;my.cnf ~&#x2F;.my.cnf<br>master_host&#x3D;’192.168.138.100 ‘, master_user&#x3D; ‘xiaoming ‘ , master_password&#x3D; ‘Root@123456’ ,master_log_file&#x3D;</p>
+</blockquote>
 ]]></content>
       <tags>
         <tag>记事本</tag>
