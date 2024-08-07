@@ -431,13 +431,6 @@
   </url>
   
   <url>
-    <loc>https://xiaoxue1055.github.io/tags/jdk/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xiaoxue1055.github.io/tags/linux/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -445,7 +438,7 @@
   </url>
   
   <url>
-    <loc>https://xiaoxue1055.github.io/tags/mysql/</loc>
+    <loc>https://xiaoxue1055.github.io/tags/jdk/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -459,7 +452,7 @@
   </url>
   
   <url>
-    <loc>https://xiaoxue1055.github.io/tags/springboot/</loc>
+    <loc>https://xiaoxue1055.github.io/tags/mysql/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -467,6 +460,13 @@
   
   <url>
     <loc>https://xiaoxue1055.github.io/tags/redis/</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiaoxue1055.github.io/tags/springboot/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -508,13 +508,6 @@
   </url>
   
   <url>
-    <loc>https://xiaoxue1055.github.io/tags/%E5%B9%B8%E6%97%A0%E9%A2%98/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xiaoxue1055.github.io/tags/%E6%80%80%E5%8F%A4/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -522,7 +515,7 @@
   </url>
   
   <url>
-    <loc>https://xiaoxue1055.github.io/tags/%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>https://xiaoxue1055.github.io/tags/%E5%B9%B8%E6%97%A0%E9%A2%98/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -530,6 +523,13 @@
   
   <url>
     <loc>https://xiaoxue1055.github.io/tags/%E7%AE%80%E5%8E%86%E6%8A%80%E8%83%BD/</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiaoxue1055.github.io/tags/%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -550,14 +550,14 @@
   </url>
   
   <url>
-    <loc>https://xiaoxue1055.github.io/tags/%E8%AE%B0%E4%BA%8B%E6%9C%AC/</loc>
+    <loc>https://xiaoxue1055.github.io/tags/%E7%BD%91%E5%9D%80/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xiaoxue1055.github.io/tags/%E7%BD%91%E5%9D%80/</loc>
+    <loc>https://xiaoxue1055.github.io/tags/%E8%AE%B0%E4%BA%8B%E6%9C%AC/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
