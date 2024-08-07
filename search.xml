@@ -47,6 +47,19 @@
       </tags>
   </entry>
   <entry>
+    <title>git</title>
+    <url>/2023/08/06/git/</url>
+    <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
+<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#105;&#x74;&#x65;&#101;&#46;&#99;&#x6f;&#109;">&#x67;&#105;&#116;&#x40;&#103;&#105;&#x74;&#x65;&#101;&#46;&#99;&#x6f;&#109;</a>:abc&#x2F;abc.git</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>docker</title>
     <url>/2023/08/11/docker/</url>
     <content><![CDATA[<h3 id="使用Docker"><a href="#使用Docker" class="headerlink" title="使用Docker"></a>使用Docker</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">1、yum 包更新到最新</span> </span><br><span class="line">yum update</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">2、安装需要的软件包， yum-util 提供yum-config-manager功能，另外两个是devicemapper驱动依赖的</span> </span><br><span class="line">yum install -y yum-utils device-mapper-persistent-data lvm2</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">3、 设置yum源</span></span><br><span class="line">yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">4、 安装docker，出现输入的界面都按 y</span> </span><br><span class="line">yum install -y docker-ce</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">5、 查看docker版本，验证是否验证成功</span></span><br><span class="line">docker -v</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"> 配置阿里镜像加速</span></span><br><span class="line">sudo mkdir -p /etc/docker</span><br><span class="line">sudo tee /etc/docker/daemon.json &lt;&lt;-&#x27;EOF&#x27;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://p4intcvz.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">启动docker</span></span><br><span class="line">systemctl  start docker</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看docker</span></span><br><span class="line">systemctl  status  docker</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"> 查看镜像</span></span><br><span class="line">docker images</span><br><span class="line">docker images -q</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"> 搜索镜像</span></span><br><span class="line">docker search 镜像名称</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"> 拉取镜像</span></span><br><span class="line">docker pull 镜像名称:版本号   (在hub.docker.com找)</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">删除镜像</span></span><br><span class="line">docker rmi 镜像id  </span><br><span class="line">docker rmi `docker 	images -q`</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">创建容器(退出后会自动关闭)</span></span><br><span class="line">docker run -it --name=cl  centos:7  /bin/bash</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">退出容器</span></span><br><span class="line">exit</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">查看现在运行的容器</span></span><br><span class="line">docker ps</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">查看历史运行的容器</span></span><br><span class="line">docker ps -a</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">创建容器(退出后不会自动关闭)</span></span><br><span class="line">docker run -id --name=cl  centos:7  /bin/bash</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">进入运行容器的内部</span></span><br><span class="line">docker exec -it  容器id  /bin/bash</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">运行已经有的容器</span></span><br><span class="line">docker start 容器id</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">停止容器</span></span><br><span class="line">docker stop 容器名称</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除容器</span></span><br><span class="line">docker rm  容器id</span><br><span class="line">docker rm  `docker ps -aq`</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">查看容器信息</span></span><br><span class="line">docker inspect 容器名称</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">创建数据卷</span></span><br><span class="line">docker run -it --name=cl -v 宿主机目录:容器内目录   centos:7  /bin/bash</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">使用docker镜像nginx:latest以后台模式启动一个容器,并将容器命名为mynginx。</span></span><br><span class="line">docker run --name mynginx -d nginx:latest</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">容器转镜像</span></span><br><span class="line">docker commit 容器id 自己命名:自己命名版本  (数据卷的不会生效)</span><br></pre></td></tr></table></figure>
@@ -80,31 +93,18 @@
       </tags>
   </entry>
   <entry>
-    <title>git02</title>
-    <url>/2023/08/11/git02/</url>
-    <content><![CDATA[<p>git  init<br>git clone<br>git add 文件或者目录<br>git rm 文件或者目录<br>git rm –cache 文件或者目录<br>git commit -m “”<br>git status<br>git branch –list<br>git branch aaa<br>git checkout aaa<br>git log –pretty&#x3D;oneline</p>
-]]></content>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git</title>
-    <url>/2023/08/06/git/</url>
-    <content><![CDATA[<p>git status<br>git add 文件<br>git rm –cached 文件<br>git commit -m “提交说明”<br>git log<br>git log –oneline<br>git restore 文件<br>git reset –hard 要恢复的版本号<br>git revert 要恢复的上一个版本号<br>git branch 新的分支<br>git branch -v<br>git checkout 分支名称<br>git branch -d 分支名称<br>git tag<br>git tag 标签名 版本号<br>git tag -d 标签名</p>
-<p>gitee远程仓库和本地仓库关联<br>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#105;&#116;&#101;&#x65;&#x2e;&#99;&#111;&#109;">&#103;&#x69;&#116;&#x40;&#x67;&#105;&#116;&#101;&#x65;&#x2e;&#99;&#111;&#109;</a>:abc&#x2F;abc.git</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git03</title>
     <url>/2023/08/11/git03/</url>
     <content><![CDATA[<p>先把github创建一个仓库，要跟用户名一样后面加.github.io<br>比如：xiaoxue1055.github.io<br>用hexo创建<br>npm install hexo-cli -g<br>hexo init blog<br>cd blog<br>npm install<br>hexo server</p>
+]]></content>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git02</title>
+    <url>/2023/08/11/git02/</url>
+    <content><![CDATA[<p>git  init<br>git clone<br>git add 文件或者目录<br>git rm 文件或者目录<br>git rm –cache 文件或者目录<br>git commit -m “”<br>git status<br>git branch –list<br>git branch aaa<br>git checkout aaa<br>git log –pretty&#x3D;oneline</p>
 ]]></content>
       <tags>
         <tag>git</tag>
@@ -471,6 +471,15 @@
       </tags>
   </entry>
   <entry>
+    <title>jdk</title>
+    <url>/2023/08/11/jdk/</url>
+    <content><![CDATA[<p>JDK常用的方法包括：java.lang.Object类的equals（）、hashCode（）和toString（）方法;<br>java.lang.Class类的forName（）方法;java.lang.reflect包中的Field、Method和Constructor类;<br>java.lang.String类的split（）方法;<br>java.util.Arrays类的sort（）方法;<br>java.util.Collections类的sort（）方法;<br>java.util.Date类的getTime（）方法;<br>java.util.Calendar类的getTime（）方法;<br>java.text.SimpleDateFormat类的format（）方法;<br>java.io.File类的listFiles（）方法;<br>java.net.URL类的openStream（）方法;<br>java.sql.Connectionclass的createStatement（）方法;<br>java.sql.ResultSet类的next（）方法;<br>java.awt.Graphics类的drawString（）方法;<br>java.awt.event.ActionListener类的actionPerformed（）方法;<br>java.applet.Applet类的init（）方法;<br>java.applet.AppletContext类的getApplet（）方法;<br>java.applet.AudioClip类的play（）方法;<br>java.awt.Image类的getWidth（）方法;<br>java.awt.image.BufferedImage类的getRGB（）方法;<br>java.awt.Robot类的createScreenCapture（）方法;<br>java.awt.Toolkit类的getImage（）方法;<br>java.awt.datatransfer.Clipboard类的getContent（）方法;<br>java.awt.datatransfer.DataFlavor类的getMimeType（）方法;<br>java.awt.dnd.DragGestureRecognizer类的startDrag（）方法;<br>java.awt.dnd.DragSource类的createDefaultDragGestureRecognizer（）方法;<br>java.awt.dnd.DropTarget类的drop（）方法;<br>java.awt.event.InputEvent类的getModifiers（）方法;<br>java.awt.event.KeyEvent类的getKeyCode（）方法;<br>java.awt.event.MouseEvent类的getX（）方法;<br>java.awt.event.WindowEvent类的getWindow（）方法;<br>java.awt.font.TextAttribute类的FAMILY属性;<br>java.awt.geom.AffineTransform类的getScaleInstance（）方法;<br>java.awt.image.BufferedImage类的getSubimage（）方法;<br>java.awt.image.ImageObserver类的imageUpdate（）方法;<br>java.awt.image.RenderedImage类的getWidth（）方法;<br>java.beans.BeanInfo类的getBeanDescriptor（）方法;<br>java.beans.PropertyDescriptor类的getReadMethod（）方法;<br>java.io.FileInputStream类的read（）方法;<br>java.io.FileOutputStream类的write（）方法;<br>java.io.ObjectInputStream类的readObject（）方法;<br>java.io.ObjectOutputStream类的writeObject（）方法;<br>java.lang.ClassLoader类的loadClass（）方法;<br>java.lang.System类的getProperty（）方法;<br>java.lang.Thread类的start（）方法;<br>java.lang.reflect.Method类的invoke（）方法;java.net.URLConnection类的getInputStream（）方法;<br>java.sql.Statement类的executeQuery（）方法;<br>java.util.ArrayList类的add（）方法;<br>java.util.HashMap类的put（）方法;<br>java.util.Iterator类的hasNext（）方法;<br>java.util.Properties类的getProperty（）方法;<br>java.util.Random类的nextInt（）方法;<br>java.util.ResourceBundle类的getBundle（）方法;<br>java.util.Vector类的addElement（）方法;<br>java.util.zip.ZipFile类的getInputStream（）方法。</p>
+]]></content>
+      <tags>
+        <tag>jdk</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux</title>
     <url>/2023/08/08/linux/</url>
     <content><![CDATA[<h2 id="linux固定ip-1-vi-etc-sysconfig-network-scripts-ifcfg-ens33-2-BOOTPROTO-”static”-3-16-IPADDR-”192-168-12-12”-4-17-NETMASK-”255-255-255-0”-5-18-GATEWAY-”192-168-12-2”-6-19-DNS1-”192-168-12-2”-7-systemctl-stop-network-8-systemctl-start-network-9-ifconfig"><a href="#linux固定ip-1-vi-etc-sysconfig-network-scripts-ifcfg-ens33-2-BOOTPROTO-”static”-3-16-IPADDR-”192-168-12-12”-4-17-NETMASK-”255-255-255-0”-5-18-GATEWAY-”192-168-12-2”-6-19-DNS1-”192-168-12-2”-7-systemctl-stop-network-8-systemctl-start-network-9-ifconfig" class="headerlink" title="linux固定ip 1. vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33 2. BOOTPROTO&#x3D;”static” 3. 16 IPADDR&#x3D;”192.168.12.12” 4. 17 NETMASK&#x3D;”255.255.255.0” 5. 18 GATEWAY&#x3D;”192.168.12.2” 6. 19 DNS1&#x3D;”192.168.12.2” 7. systemctl stop network 8. systemctl start network 9. ifconfig
@@ -492,15 +501,6 @@
 ]]></content>
       <tags>
         <tag>maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jdk</title>
-    <url>/2023/08/11/jdk/</url>
-    <content><![CDATA[<p>JDK常用的方法包括：java.lang.Object类的equals（）、hashCode（）和toString（）方法;<br>java.lang.Class类的forName（）方法;java.lang.reflect包中的Field、Method和Constructor类;<br>java.lang.String类的split（）方法;<br>java.util.Arrays类的sort（）方法;<br>java.util.Collections类的sort（）方法;<br>java.util.Date类的getTime（）方法;<br>java.util.Calendar类的getTime（）方法;<br>java.text.SimpleDateFormat类的format（）方法;<br>java.io.File类的listFiles（）方法;<br>java.net.URL类的openStream（）方法;<br>java.sql.Connectionclass的createStatement（）方法;<br>java.sql.ResultSet类的next（）方法;<br>java.awt.Graphics类的drawString（）方法;<br>java.awt.event.ActionListener类的actionPerformed（）方法;<br>java.applet.Applet类的init（）方法;<br>java.applet.AppletContext类的getApplet（）方法;<br>java.applet.AudioClip类的play（）方法;<br>java.awt.Image类的getWidth（）方法;<br>java.awt.image.BufferedImage类的getRGB（）方法;<br>java.awt.Robot类的createScreenCapture（）方法;<br>java.awt.Toolkit类的getImage（）方法;<br>java.awt.datatransfer.Clipboard类的getContent（）方法;<br>java.awt.datatransfer.DataFlavor类的getMimeType（）方法;<br>java.awt.dnd.DragGestureRecognizer类的startDrag（）方法;<br>java.awt.dnd.DragSource类的createDefaultDragGestureRecognizer（）方法;<br>java.awt.dnd.DropTarget类的drop（）方法;<br>java.awt.event.InputEvent类的getModifiers（）方法;<br>java.awt.event.KeyEvent类的getKeyCode（）方法;<br>java.awt.event.MouseEvent类的getX（）方法;<br>java.awt.event.WindowEvent类的getWindow（）方法;<br>java.awt.font.TextAttribute类的FAMILY属性;<br>java.awt.geom.AffineTransform类的getScaleInstance（）方法;<br>java.awt.image.BufferedImage类的getSubimage（）方法;<br>java.awt.image.ImageObserver类的imageUpdate（）方法;<br>java.awt.image.RenderedImage类的getWidth（）方法;<br>java.beans.BeanInfo类的getBeanDescriptor（）方法;<br>java.beans.PropertyDescriptor类的getReadMethod（）方法;<br>java.io.FileInputStream类的read（）方法;<br>java.io.FileOutputStream类的write（）方法;<br>java.io.ObjectInputStream类的readObject（）方法;<br>java.io.ObjectOutputStream类的writeObject（）方法;<br>java.lang.ClassLoader类的loadClass（）方法;<br>java.lang.System类的getProperty（）方法;<br>java.lang.Thread类的start（）方法;<br>java.lang.reflect.Method类的invoke（）方法;java.net.URLConnection类的getInputStream（）方法;<br>java.sql.Statement类的executeQuery（）方法;<br>java.util.ArrayList类的add（）方法;<br>java.util.HashMap类的put（）方法;<br>java.util.Iterator类的hasNext（）方法;<br>java.util.Properties类的getProperty（）方法;<br>java.util.Random类的nextInt（）方法;<br>java.util.ResourceBundle类的getBundle（）方法;<br>java.util.Vector类的addElement（）方法;<br>java.util.zip.ZipFile类的getInputStream（）方法。</p>
-]]></content>
-      <tags>
-        <tag>jdk</tag>
       </tags>
   </entry>
   <entry>
@@ -616,6 +616,15 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>图片</title>
+    <url>/2023/08/07/%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p>这是一张图片<br><img src="/img/20230801212452.jpg" alt="图片"></p>
+]]></content>
+      <tags>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>名言</title>
     <url>/2023/08/11/%E5%90%8D%E8%A8%80/</url>
     <content><![CDATA[<div class="content"><p><strong>军事名人名言大全：</strong></p><p>　　1、让青年人歌颂爱情，让成年人崇尚军事——拉丁语</p><p>　　2、如同外科医生的手术箱里，有各种不同的工具一样，军事手段也只是达成大战略的手段之一。——利德尔·哈特</p><p>　　3、使敌人丧失平衡，自己乱了阵脚，这才是战略的真正目的；其结果不是敌人自行崩溃，就是在会战中轻易被我击溃。——利德尔·哈特</p><p>　　4、突然性是战略的本质。——利德尔·哈特</p><p>　　5、在战略上，最漫长的迂回道路，常常又是达到目的的最短途径。——利德尔·哈特</p><p>　　6、战术之为物，一言以蔽之是若干世纪以来的军事经验的积累。——戴吉伯</p><p>　　7、这是战争中一条万古不易的公理，确保你自己的侧翼和后方，而设法迂回敌人的侧翼和后方。——腓特烈</p><p>　　8、人民战争必须向云雾一样，在任何地方也不凝结成一个反抗的核心。——克劳塞维茨</p><p>　　9、只有获得胜利的可能性非常大时，才可进行决战。——恩格斯</p><p>　　10、战术就是在决定点上使用兵力的艺术，其目的就是要使他们在决定的时机、决定的地点上，发生决定性的作用。——约米尼</p><p>　　11、任何战术都只适用于一定的历史阶段；如果武器改进了，技术有了新的进步，那么军事组织的形式、军队指挥的方法也会随着改变。——伏龙芝</p><p>　　12、每一种情况都有适合于它的一个特殊的战略。——安德烈·博弗尔</p><p>　　13、战略若太复杂，必然失败。——西乡隆盛</p><p>　　14、只要不失败就是胜利。这正是对抗强大的先进国家军事力量的人民战争战略取得胜利的关键。——小山内宏</p><p>　　15、用兵之法，十则围之，五则攻之，倍则分之，敌则能战之，少则能逃之，不若则能避之。——孙武</p><p>　　16、以近待远，以佚待劳，以饱待饥。——孙武</p><p>　　17、始如处女，敌人开户，后如脱兔，敌不及拒。——孙武</p><p>　　18、出其所必趋，趋其所不意。——孙武</p><p>　　19、战势不过奇正，奇正之变，不可胜穷也。——孙武</p><p>　　20、凡战者，以正合，以奇胜。故善出奇者，无穷如天地，不竭如山河。——孙武</p><p>　　21、水之行，避高而趋下；兵之形，避实而击虚。——孙武</p><p>　　22、用兵必须审敌虚实而趋其危。——吴起</p><p>　　23、正兵贵先，奇兵贵后。或先或后，制敌者也。——魏缭</p><p>　　24、善用兵者，不以短击长，而以长击短。——<a href="//www.diyifanwen.com/tool/zggdmrmy/105223444932028539.htm">司马迁</a></p><p>　　25、与人斗，不扼其亢，拊其背，未能全胜也。——班固</p><p>　　26、兵有奇正，旋相为用，如环之无端。——苏辙</p><p>　　27、用兵以能聚散为上。——杨时</p><p>　　28、凡与敌战，须务持重。见利则动，不见利则止，慎不可轻举也。——刘基</p><p>　　29、合兵以壮威，分兵以制胜。——揭暄</p><p>　　30、有正无奇，虽整不烈，无以致胜也；有奇无正，虽锐无恃，难以控御也。——何良臣</p><p>　　31、善用兵者，攻其爱，敌必从；捣其虚，敌必随；多其方，敌必分；疑其事，敌必备。——马慧裕</p><p>　　32、以全军破敌为上，不以得土地、城池为意。——蔡锷</p><p>　　33、敌进我退，敌驻我扰，敌疲我打，敌退我追。——<a href="//www.diyifanwen.com/tool/zgjdmrmy/105223524190071416.htm">毛泽东</a></p><p>　　34、必须打胜；必须照顾全战役计划；必须照顾下一战略阶段：这是反攻开始，即打第一仗时，不可忘记的三个原则。——毛泽东</p><p>　　35、弱军对于强军作战的再一个必要条件，就是拣弱的打。——毛泽东</p><p>　　36、先打分散和孤立之敌，后打集中和强大之敌。——毛泽东</p><p>　　37、袭击是游击战争的基本作战形式。——毛泽东</p><p>　　38、歼灭战和集中优势兵力、采取包围迂回战术，同一意义。没有后者，就没有前者。——毛泽东</p><p>　　39、对于人，伤其十指不如断其一指；对于敌，击溃其十个师不如歼灭其一个师。——毛泽东</p><p>　　40、只有决战，才能解决两军之间谁胜谁败的问题。——毛泽东</p><p>　　41、牛牴角的战术是非常糟糕的，马的战术比牛的战术高明，狼的战术又比马的战术高明。——刘伯承</p><p>　　42、在战略上是打强的，在战役、战术上是打弱的。——刘伯承</p><p>　　43、良好的军事领导能左右周围事物，——<a href="//www.diyifanwen.com/tool/gwmrmy/105300574099995722.htm">拿破仑</a></p><p>　　44、政治合格，军事过硬，作风优良，纪律严明，保障有力。——江泽民</p><p>　　45、军事谋略的第一个特征，就是要有——安德烈·博弗尔</p><p>　　46、将帅的坚强意志，就像城市主要街道汇集点上的方尖碑一样，在军事艺术中占有十分突出的地位。——克劳塞维茨</p><p>　　47、没有不用军事计谋的战争。——<a href="//www.diyifanwen.com/tool/gwmrmy/105300574039011206.htm">列宁</a></p><p>　　48、战争重要的是求取政治是的成果，而不是军事上的成功。——蒙森</p><p>　　49、所谓军事指挥艺术，就是当自己的兵力数量实际上居于劣势时，反而能在战场上化劣势为优势。——拿破仑</p><p>　　50、我对政治毫无天分，就如同一头奶牛对打猎一窍不通一样，况且我对政治也不感兴趣。另外，我也认为一个人军事上的声望如果和政治混杂在一块的话，将是很糟糕的。——<a href="//www.diyifanwen.com/tool/gwmrmy/105300573733823561.htm">巴顿</a></p><p>　　51、在作战训练中的一个基本部分就是教士兵们如何照顾自己以增强身体适应力。因此，我们必须向他们说明怎样最谨慎地照料好他们的衣服、装备以及军事备品。——巴顿</p><p><strong>编辑推荐：</strong><br><a href="//www.diyifanwen.com/tool/mingyanmingju/144121512482461337544.htm" target="_blank">军事名人名言摘录</a><br><a href="//www.diyifanwen.com/tool/jingdianmingyan/1251421170120193.htm" target="_blank">关于军事的名人名言</a><br></p></div>]]></content>
@@ -638,29 +647,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 ]]></content>
       <tags>
         <tag>幸无题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图片</title>
-    <url>/2023/08/07/%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p>这是一张图片<br><img src="/img/20230801212452.jpg" alt="图片"></p>
-]]></content>
-      <tags>
-        <tag>图片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>推荐项目</title>
-    <url>/2023/08/11/%E6%8E%A8%E8%8D%90%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<p>【Java毕设】手把手教你从零写Spring Boot电商项目<br>楠哥教你学Java<br><a href="https://pan.baidu.com/s/1Ij_GLP3z_fAEDABzcnuYBg">https://pan.baidu.com/s/1Ij_GLP3z_fAEDABzcnuYBg</a><br>提取码: maac</p>
-<p>B站最通俗易懂手把手SpringBoot+Vue项目实战-前后端分离博客项目-Java项目<br>三更草堂<br><a href="https://gitee.com/wu_shengdong/blog">https://gitee.com/wu_shengdong/blog</a></p>
-<p>求求你简历别写电商了吧，面试官都看腻了，推荐6个Java实战项目<br>我是程序汪<br>3个物流仓储系统<br>1.jeewms<br><a href="https://gitee.com/erzhongxmu/jeewms?_from=gitee_search">https://gitee.com/erzhongxmu/jeewms?_from=gitee_search</a><br>2.基于SSM框架的仓库管理系统<br><a href="https://gitee.com/yangshare/warehouseManager?_from=gitee_search">https://gitee.com/yangshare/warehouseManager?_from=gitee_search</a><br>3.立体仓库WMS<br><a href="https://gitee.com/deerwms/deer-wms-2?_from=gitee_search">https://gitee.com/deerwms/deer-wms-2?_from=gitee_search</a><br>智慧物业系统<br><a href="https://gitee.com/chowa/ejyy">https://gitee.com/chowa/ejyy</a><br>1 互联网类O2O<br><a href="https://pan.baidu.com/s/1djb2BmP3S6l9OfzT62Nd6A">https://pan.baidu.com/s/1djb2BmP3S6l9OfzT62Nd6A</a> 提取码：lry9<br>2 物联网类<br><a href="https://gitee.com/kerwincui/wumei-smart">https://gitee.com/kerwincui/wumei-smart</a><br>3 进销存类<br><a href="https://gitee.com/jishenghua/JSH_ERP?_from=gitee_search">https://gitee.com/jishenghua/JSH_ERP?_from=gitee_search</a><br>4 视频类<br><a href="https://gitee.com/javaex/yaoqishan?_from=gitee_search">https://gitee.com/javaex/yaoqishan?_from=gitee_search</a><br><a href="https://github.com/user-xiangpeng/yaoqishan">https://github.com/user-xiangpeng/yaoqishan</a><br>5 教育类<br><a href="https://gitee.com/mindskip/uexam">https://gitee.com/mindskip/uexam</a><br>6 物流类<br><a href="https://gitee.com/jian_bo_bai/cable__xinrun_logistics?_from=gitee_search">https://gitee.com/jian_bo_bai/cable__xinrun_logistics?_from=gitee_search</a></p>
-<p>黑马程序员Java项目实战《瑞吉外卖》，轻松掌握springboot + mybatis plus开发核心技术的真java实战项目<br>黑马程序员<br><a href="https://pan.baidu.com/s/1bxEy2bHiCYQtouifUppsTA&pwd=1234">https://pan.baidu.com/s/1bxEy2bHiCYQtouifUppsTA&amp;pwd=1234</a></p>
-<p>selectlist   insert  selectbyid  updatebyid  deletebyid  deletebatchids<br>arrays.aslist  wrapper   querywrapper   lambdaquerywrapper<br>querywrapper<user> wrapper&#x3D;new querywrapper&lt;&gt;();<br>wrapper.eq(“”,””);<br>mapper.selectlist(wrapper);<br>wrapper.eq(user::setname,””);</p>
-<p>web层  service层  dao层</p>
-]]></content>
-      <tags>
-        <tag>项目</tag>
       </tags>
   </entry>
   <entry>
@@ -702,6 +688,32 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </categories>
       <tags>
         <tag>怀古</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>推荐项目</title>
+    <url>/2023/08/11/%E6%8E%A8%E8%8D%90%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<p>【Java毕设】手把手教你从零写Spring Boot电商项目<br>楠哥教你学Java<br><a href="https://pan.baidu.com/s/1Ij_GLP3z_fAEDABzcnuYBg">https://pan.baidu.com/s/1Ij_GLP3z_fAEDABzcnuYBg</a><br>提取码: maac</p>
+<p>B站最通俗易懂手把手SpringBoot+Vue项目实战-前后端分离博客项目-Java项目<br>三更草堂<br><a href="https://gitee.com/wu_shengdong/blog">https://gitee.com/wu_shengdong/blog</a></p>
+<p>求求你简历别写电商了吧，面试官都看腻了，推荐6个Java实战项目<br>我是程序汪<br>3个物流仓储系统<br>1.jeewms<br><a href="https://gitee.com/erzhongxmu/jeewms?_from=gitee_search">https://gitee.com/erzhongxmu/jeewms?_from=gitee_search</a><br>2.基于SSM框架的仓库管理系统<br><a href="https://gitee.com/yangshare/warehouseManager?_from=gitee_search">https://gitee.com/yangshare/warehouseManager?_from=gitee_search</a><br>3.立体仓库WMS<br><a href="https://gitee.com/deerwms/deer-wms-2?_from=gitee_search">https://gitee.com/deerwms/deer-wms-2?_from=gitee_search</a><br>智慧物业系统<br><a href="https://gitee.com/chowa/ejyy">https://gitee.com/chowa/ejyy</a><br>1 互联网类O2O<br><a href="https://pan.baidu.com/s/1djb2BmP3S6l9OfzT62Nd6A">https://pan.baidu.com/s/1djb2BmP3S6l9OfzT62Nd6A</a> 提取码：lry9<br>2 物联网类<br><a href="https://gitee.com/kerwincui/wumei-smart">https://gitee.com/kerwincui/wumei-smart</a><br>3 进销存类<br><a href="https://gitee.com/jishenghua/JSH_ERP?_from=gitee_search">https://gitee.com/jishenghua/JSH_ERP?_from=gitee_search</a><br>4 视频类<br><a href="https://gitee.com/javaex/yaoqishan?_from=gitee_search">https://gitee.com/javaex/yaoqishan?_from=gitee_search</a><br><a href="https://github.com/user-xiangpeng/yaoqishan">https://github.com/user-xiangpeng/yaoqishan</a><br>5 教育类<br><a href="https://gitee.com/mindskip/uexam">https://gitee.com/mindskip/uexam</a><br>6 物流类<br><a href="https://gitee.com/jian_bo_bai/cable__xinrun_logistics?_from=gitee_search">https://gitee.com/jian_bo_bai/cable__xinrun_logistics?_from=gitee_search</a></p>
+<p>黑马程序员Java项目实战《瑞吉外卖》，轻松掌握springboot + mybatis plus开发核心技术的真java实战项目<br>黑马程序员<br><a href="https://pan.baidu.com/s/1bxEy2bHiCYQtouifUppsTA&pwd=1234">https://pan.baidu.com/s/1bxEy2bHiCYQtouifUppsTA&amp;pwd=1234</a></p>
+<p>selectlist   insert  selectbyid  updatebyid  deletebyid  deletebatchids<br>arrays.aslist  wrapper   querywrapper   lambdaquerywrapper<br>querywrapper<user> wrapper&#x3D;new querywrapper&lt;&gt;();<br>wrapper.eq(“”,””);<br>mapper.selectlist(wrapper);<br>wrapper.eq(user::setname,””);</p>
+<p>web层  service层  dao层</p>
+]]></content>
+      <tags>
+        <tag>项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简历项目</title>
+    <url>/2023/08/07/%E7%AE%80%E5%8E%86%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<p>一. 佳购商城（2022.10-2023.6）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构：Mysql+MyBatisPlus+Redis+SpringBoot+ SpringCloud + RabbitMQ +SpringCache +Elasticsearch+SpringSecurity+vue+Element-UI<br>项目描述： 佳购商城是一个电商项目，主要是通过互联网平台为用户提供在线购买和销售商品的服务。项目主要包含：销售前台和电商管理后台。项目的主要模块有：用户模块、轮播模块、商品模块、类别模块、地址模块、收藏模块、购物模块、订单模块。用户模块是用户的登录和注册，轮播模块是对轮播图的展示，商品模块和类别模块是把商品根据类别展示，地址模块是用户对地址的操作，收藏模块是用户收藏的商品，购物模块是用户加入购物车的商品，订单模块是用户订单的内容。<br>技术描述：<br>1.	使用SpringCloud作为后端框架，vue作为前端框架，前后端分离模式。<br>2.	使用MyBatisPlus实现对数据库的增删改查，完成对数据的操作。<br>3.	使用OpenFeign对不同模块进行远程服务调用，使用Nacos作为服务的注册中心。<br>4.	使用SpringCache对商品信息进行缓存，减少查询对数据库的压力。<br>5.	使用Redis对商品模块统计商品的浏览量、销售量，统计数据并生成排行榜。<br>6.	使用RabbitMQ消息队列对数据进行同步，保证数据的一致性。<br>7.	使用Elasticsearch对商品信息进行搜索，提高查询的效率。<br>8.	使用SpringSecurity对用户进行认证和授权，用户只有登录后才能把商品加入购物车或收藏。<br>     二. 智慧云课堂（2022.4-2022.10）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： MySql+MyBatisPlus+Redis+SpringBoot+SpringCloud+RabbitMQ+vue+Element-UI<br>项目描述: 智慧云课堂是线上课堂项目，主要功能是提供在线教育服务。项目分为：系统后台和系统前台。系统后台是管理员使用，系统前台是用户使用。后台系统主要有：讲师管理，课程分类管理，点播管理，课程订单，营销管理，直播管理，权限管理。用户通过登录，可以在点播课程和直播课程的模块来学习内容。讲师管理和课程分类管理，是老师人员和课程分类的详细信息。点播管理是老师上传的课程，有付费和免费的课程。课程订单是用户下单的管理，营销管理是活动时的打折销售。直播管理有聊天互动的功能，权限管理对用户的权限进行管理。<br>技术描述：<br>1.	使用分级课程列表对课程展示,通过EasyExcal对Excal导入和导出。<br>2.	使用腾讯云的COS对课程的图片上传，VOD对点播的视频上传。<br>3.	使用Nacos把后端服务注册，SpringCloudGateWay解决前后端跨域问题。<br>4.	使用RabbitMQ将用户的学习记录和课程进度同步到不同的数据中心，以便于用户在不同地方使用课程。<br>5.	使用Redis添加缓存、计数器、排行榜，缓存热门课程信息，课程点击量，热门课程排行。<br>6.	使用Swagger2进行前后端的衔接，规范开发流程。<br>三. 科讯办公系统（2021.12-2022.4）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+MyBatisPlus+Redis+SpringBoot+SpringSecurity+Activiti+<br>vue+Element-UI<br>项目描述: 科讯办公系统是一套自动化办公系统，主要用于公司员工的日常工作和管理。系统主要包含：管理端和员工端。管理端包含：权限管理、审批管理、公众号菜单管理等功能。员工端包含：办公审批、微信授权登录、消息推送等功能。项目中也包括考勤打卡、代办记录、业务人员状态等办公辅助型功能。<br>技术描述：<br>1.	使用MD5对登录的密码进行加密处理，JWT生成token实现用户登录。<br>2.	使用SpringSecurity对后端接口进行用户认证和用户授权，自定义拦截方法不同的用户分配不同的角色操作不同的菜单。<br>3.	使用Activiti工作流，按照预定义的规则完成审批的流程，完成管理端的审批管理模块的编写。<br>4.	使用Activiti工作流，完成员工端的审批分类、记录提交信息、查询代办任务、显示审批详情、查询已处理任务等功能。<br>5.	使用Swagger2进行前后端的衔接，规范开发流程。<br>四. 美食快送（2021.6-2021.12）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构：Mysql+MyBatisPlus+Redis+Nginx+SpringBoot+SpringSession+Spring+SpringMVC+<br>vue+Element-UI<br>项目描述: 美食快送是一个外卖项目，主要用于餐饮的移动应用程序订购并送餐到指定地址的餐品。项目主要包括系统管理后台和移动端应用两部分。其中系统管理后台主要提供给餐饮企业内部员工使用，可以对餐厅的菜品、套餐、订单等进行管理维护。移动端应用主要提供给消费者使用，可以在线浏览菜品、添加购物车、下单等。<br>技术描述：<br>1.	使用Nginx实现服务端的负载均衡。<br>2.	使用SpringMVC的拦截器检验用户是否登录。<br>3.	使用MyBatisPlus的分页插件对数据进行分页查询。<br>4.	使用Redis设置有效期保存手机验证码。<br>5.	使用ThreadLocal保存和获取当前登录的用户id。<br>五. 牙科医疗项目（2020.6-2021.6）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+Mybatis+Spring+SpringMVC+jQuery+Eachart+EasyUI<br>项目描述: 牙科医疗项目是医疗项目，主要用于提供一系列的牙科医疗服务。项目中有三个大的模块分为病历模块，付款和账单模块，角色管理模块。病历模块主要给医生办公用，对患者的一些信息进行录入，和开具治疗方案。付款和账单模块主要给用户使用，用户可以通过在线平台或移动应用程序在线支付诊疗费用，并管理个人的账单信息。角色管理模块主要给公司其他办公人员使用，主要是对公司岗位的一些层级管理。<br>技术描述：<br>1.	使用Shiro进行系统部分功能的权限控制。<br>2.	使用RESTfulAPI实现患者的预约管理、医生的诊断处理、管理员的系统管理等。<br>3.	使用POI进行表单的导出和导入。<br>4.	使用Eachart进行医生的诊断数量和财务分析报表的分析和可视化展示。<br>5.	使用jQuery实现表单验证、数据提交、异步加载等操作。</p>
+]]></content>
+      <categories>
+        <category>简历</category>
+      </categories>
+      <tags>
+        <tag>简历项目</tag>
       </tags>
   </entry>
   <entry>
@@ -777,18 +789,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>简历项目</title>
-    <url>/2023/08/07/%E7%AE%80%E5%8E%86%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<p>一. 佳购商城（2022.10-2023.6）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构：Mysql+MyBatisPlus+Redis+SpringBoot+ SpringCloud + RabbitMQ +SpringCache +Elasticsearch+SpringSecurity+vue+Element-UI<br>项目描述： 佳购商城是一个电商项目，主要是通过互联网平台为用户提供在线购买和销售商品的服务。项目主要包含：销售前台和电商管理后台。项目的主要模块有：用户模块、轮播模块、商品模块、类别模块、地址模块、收藏模块、购物模块、订单模块。用户模块是用户的登录和注册，轮播模块是对轮播图的展示，商品模块和类别模块是把商品根据类别展示，地址模块是用户对地址的操作，收藏模块是用户收藏的商品，购物模块是用户加入购物车的商品，订单模块是用户订单的内容。<br>技术描述：<br>1.	使用SpringCloud作为后端框架，vue作为前端框架，前后端分离模式。<br>2.	使用MyBatisPlus实现对数据库的增删改查，完成对数据的操作。<br>3.	使用OpenFeign对不同模块进行远程服务调用，使用Nacos作为服务的注册中心。<br>4.	使用SpringCache对商品信息进行缓存，减少查询对数据库的压力。<br>5.	使用Redis对商品模块统计商品的浏览量、销售量，统计数据并生成排行榜。<br>6.	使用RabbitMQ消息队列对数据进行同步，保证数据的一致性。<br>7.	使用Elasticsearch对商品信息进行搜索，提高查询的效率。<br>8.	使用SpringSecurity对用户进行认证和授权，用户只有登录后才能把商品加入购物车或收藏。<br>     二. 智慧云课堂（2022.4-2022.10）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： MySql+MyBatisPlus+Redis+SpringBoot+SpringCloud+RabbitMQ+vue+Element-UI<br>项目描述: 智慧云课堂是线上课堂项目，主要功能是提供在线教育服务。项目分为：系统后台和系统前台。系统后台是管理员使用，系统前台是用户使用。后台系统主要有：讲师管理，课程分类管理，点播管理，课程订单，营销管理，直播管理，权限管理。用户通过登录，可以在点播课程和直播课程的模块来学习内容。讲师管理和课程分类管理，是老师人员和课程分类的详细信息。点播管理是老师上传的课程，有付费和免费的课程。课程订单是用户下单的管理，营销管理是活动时的打折销售。直播管理有聊天互动的功能，权限管理对用户的权限进行管理。<br>技术描述：<br>1.	使用分级课程列表对课程展示,通过EasyExcal对Excal导入和导出。<br>2.	使用腾讯云的COS对课程的图片上传，VOD对点播的视频上传。<br>3.	使用Nacos把后端服务注册，SpringCloudGateWay解决前后端跨域问题。<br>4.	使用RabbitMQ将用户的学习记录和课程进度同步到不同的数据中心，以便于用户在不同地方使用课程。<br>5.	使用Redis添加缓存、计数器、排行榜，缓存热门课程信息，课程点击量，热门课程排行。<br>6.	使用Swagger2进行前后端的衔接，规范开发流程。<br>三. 科讯办公系统（2021.12-2022.4）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+MyBatisPlus+Redis+SpringBoot+SpringSecurity+Activiti+<br>vue+Element-UI<br>项目描述: 科讯办公系统是一套自动化办公系统，主要用于公司员工的日常工作和管理。系统主要包含：管理端和员工端。管理端包含：权限管理、审批管理、公众号菜单管理等功能。员工端包含：办公审批、微信授权登录、消息推送等功能。项目中也包括考勤打卡、代办记录、业务人员状态等办公辅助型功能。<br>技术描述：<br>1.	使用MD5对登录的密码进行加密处理，JWT生成token实现用户登录。<br>2.	使用SpringSecurity对后端接口进行用户认证和用户授权，自定义拦截方法不同的用户分配不同的角色操作不同的菜单。<br>3.	使用Activiti工作流，按照预定义的规则完成审批的流程，完成管理端的审批管理模块的编写。<br>4.	使用Activiti工作流，完成员工端的审批分类、记录提交信息、查询代办任务、显示审批详情、查询已处理任务等功能。<br>5.	使用Swagger2进行前后端的衔接，规范开发流程。<br>四. 美食快送（2021.6-2021.12）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构：Mysql+MyBatisPlus+Redis+Nginx+SpringBoot+SpringSession+Spring+SpringMVC+<br>vue+Element-UI<br>项目描述: 美食快送是一个外卖项目，主要用于餐饮的移动应用程序订购并送餐到指定地址的餐品。项目主要包括系统管理后台和移动端应用两部分。其中系统管理后台主要提供给餐饮企业内部员工使用，可以对餐厅的菜品、套餐、订单等进行管理维护。移动端应用主要提供给消费者使用，可以在线浏览菜品、添加购物车、下单等。<br>技术描述：<br>1.	使用Nginx实现服务端的负载均衡。<br>2.	使用SpringMVC的拦截器检验用户是否登录。<br>3.	使用MyBatisPlus的分页插件对数据进行分页查询。<br>4.	使用Redis设置有效期保存手机验证码。<br>5.	使用ThreadLocal保存和获取当前登录的用户id。<br>五. 牙科医疗项目（2020.6-2021.6）<br>开发环境： jdk1.8+ maven+git+tomcat8<br>技术架构： Mysql+Mybatis+Spring+SpringMVC+jQuery+Eachart+EasyUI<br>项目描述: 牙科医疗项目是医疗项目，主要用于提供一系列的牙科医疗服务。项目中有三个大的模块分为病历模块，付款和账单模块，角色管理模块。病历模块主要给医生办公用，对患者的一些信息进行录入，和开具治疗方案。付款和账单模块主要给用户使用，用户可以通过在线平台或移动应用程序在线支付诊疗费用，并管理个人的账单信息。角色管理模块主要给公司其他办公人员使用，主要是对公司岗位的一些层级管理。<br>技术描述：<br>1.	使用Shiro进行系统部分功能的权限控制。<br>2.	使用RESTfulAPI实现患者的预约管理、医生的诊断处理、管理员的系统管理等。<br>3.	使用POI进行表单的导出和导入。<br>4.	使用Eachart进行医生的诊断数量和财务分析报表的分析和可视化展示。<br>5.	使用jQuery实现表单验证、数据提交、异步加载等操作。</p>
-]]></content>
-      <categories>
-        <category>简历</category>
-      </categories>
-      <tags>
-        <tag>简历项目</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>组件</title>
     <url>/2023/08/11/%E7%BB%84%E4%BB%B6/</url>
     <content><![CDATA[<p>Shiro：Shiro是一个用于身份验证、授权和加密的框架。<br>Elasticsearch：Elasticsearch是一个分布式搜索和分析引擎，可用于存储、搜索和分析大量的结构化或非结构化数据。<br>POI：POI是一个用于操作Microsoft Office文件的Java库。<br>Highcharts：Highcharts是一个用于制作交互式图表的JavaScript库。<br>Element-UI：Element-UI是一个基于Vue.js的组件库，提供了丰富的UI组件和交互效果。<br>Swagger2：Swagger2是一个API文档工具，可以生成和展示API的描述信息。<br>fastjson：fastjson是一种用于JSON格式数据的Java库。<br>JWT：JWT（JSON Web Token）是一种用于身份验证和授权的标准，通常用于在客户端和服务器之间传递信息。<br>Activiti：Activiti是一个开源的BPM（Business Process Management）框架，用于实现工作流和业务流程管理。<br>Nginx：nginx是一款常用的Web服务器和反向代理服务软件。<br>Redis：Redis是一款高性能的开源内存数据库。<br>Spring Security：Spring Security是基于Spring框架的安全认证和授权框架。<br>Nacos：Nacos是一款开源的服务发现和配置管理平台。<br>Spring Cloud Gateway：Spring Cloud Gateway是基于Spring Framework 5、Project Reactor和Spring Boot 2的API网关。<br>腾讯云对象存储（COS）：腾讯云对象存储（COS）是一种高可靠、高扩展性、低成本的云存储服务。<br>腾讯云点播（VOD）：腾讯云点播（VOD）是一种基于云技术的视频服务。<br>EasyExcel：EasyExcel是一款基于Java语言的Excel操作类库，能够快速、灵活地处理Excel文件，支持读取和写入多种格式的Excel文件。<br>MyBatis-Plus：MyBatis-Plus是一款基于MyBatis的增强工具，提供了多种实用的功能和特性。<br>Keepalived：Keepalived是一款Linux平台上常用的高可用性解决方案，可以实现多个服务器之间的状态同步和自动故障切换等功能。<br>Vue：Vue（也称为Vue.js）是一款流行的JavaScript框架，用于开发用户界面和单页应用程序。<br>JVM：JVM代表Java虚拟机（Java Virtual Machine），是一个在计算机上运行Java程序的虚拟机。<br>GC：”垃圾回收” (Garbage Collection) - 是一种计算机程序技术，用于自动管理动态分配的内存，并在没有被引用时释放无用的内存。<br>Docker：Docker是一种开源的容器化平台，用于运行和管理应用程序。<br>Linux：Linux是一种开源的Unix-like操作系统内核。<br>Maven：Maven是一个开源的项目管理和构建工具，用于管理Java项目中的依赖关系、构建过程和文档生成等任务。<br>Git：Git是一种开源的分布式版本控制系统，最初由Linus Torvalds创建。<br>MySQL：MySQL是一种开源的关系型数据库管理系统（RDBMS），最初由瑞典公司MySQL AB开发。<br>RabbitMQ：RabbitMQ是一种开源的消息队列（message broker）软件，它用于在不同的应用程序和服务之间传递消息。<br>OpenFeign：OpenFeign是一种基于Java的声明式HTTP客户端框架，用于简化服务之间的通信。<br>Sentinel：Sentinel是一种开源的分布式系统的流量控制、熔断和降级的框架，由阿里巴巴集团开源。<br>Seata：Seata是一种开源的分布式事务解决方案，它可以解决跨多个数据源、多个服务实例的事务管理问题。<br>Spring Boot：Spring Boot是一种基于Spring框架的开源、快速开发的Java Web框架。<br>Spring MVC：Spring MVC是一种基于Spring框架的开源Web应用程序框架，它提供了一套Model-View-Controller（MVC）设计模式的实现，用于构建灵活、高效的Web应用程序。<br>Spring：Spring是一种开源的Java应用程序框架，它由Rod Johnson在2003年创建。<br>MyBatis：MyBatis（原名为ibatis）是一种开源的Java持久化框架，它提供了一套简单易用、高性能且功能强大的API，可用于访问关系型数据库。</p>
@@ -817,18 +817,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>记事本02</title>
-    <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC02/</url>
-    <content><![CDATA[<p>jps<br>jmap -heap<br>jconsole<br>jvitualvm</p>
-<p>vue create wms01<br>cd wms01<br>npm run serve<br>npm i element-ui -S</p>
-<p>interface  abstract </p>
-<p>链接：<a href="https://pan.xunlei.com/s/VNZ7-a6GK02kEjRV11jTf6lqA1">https://pan.xunlei.com/s/VNZ7-a6GK02kEjRV11jTf6lqA1</a> 提取码：vzgh 复制这段内容后打开手机迅雷App，查看更方便</p>
-]]></content>
-      <tags>
-        <tag>记事本</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>记事本03</title>
     <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC03/</url>
     <content><![CDATA[<p>create_time   timestamp		CURRENT_TIMESTAMP<br>update_time   timestamp		CURRENT_TIMESTAMP<br>create user ‘123456‘@’127.0.0.1’ identified by ‘123456’;<br>grant replication slave on <em>.</em> to ‘123456‘@’127.0.0.1’;<br>show master status;<br> File  STAR-bin.000034<br>Position  19171<br> systemctl start docker<br>vi &#x2F;etc&#x2F;resolv.conf<br>docker pull mysql:8.0.27<br>docker images<br>mkdir ~&#x2F;mysql<br> cd ~&#x2F;mysql<br> docker run -id \</p>
@@ -841,9 +829,21 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>记事本02</title>
+    <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC02/</url>
+    <content><![CDATA[<p>jps<br>jmap -heap<br>jconsole<br>jvitualvm</p>
+<p>vue create wms01<br>cd wms01<br>npm run serve<br>npm i element-ui -S</p>
+<p>interface  abstract </p>
+<p>链接：<a href="https://pan.xunlei.com/s/VNZ7-a6GK02kEjRV11jTf6lqA1">https://pan.xunlei.com/s/VNZ7-a6GK02kEjRV11jTf6lqA1</a> 提取码：vzgh 复制这段内容后打开手机迅雷App，查看更方便</p>
+]]></content>
+      <tags>
+        <tag>记事本</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>记事本04</title>
     <url>/2023/08/11/%E8%AE%B0%E4%BA%8B%E6%9C%AC04/</url>
-    <content><![CDATA[<p>Mozilla&#x2F;5.0 (Windows NT 6.1; Trident&#x2F;7.0; rv:11.0) like Gecko;<br>npm install -g @vue&#x2F;cli<br>get-ExecutionPolicy<br>start-process PowerShell -verb runas<br>set-ExecutionPolicy RemoteSigned<br>get-ExecutionPolicy<br>vue create wms-web<br>cd wms-web<br>npm run dev<br>npm i element-ui -S<br>npm install axios –save<br>npm i <a href="mailto:&#118;&#117;&#x65;&#45;&#114;&#x6f;&#x75;&#x74;&#101;&#x72;&#64;&#x33;&#46;&#x35;&#46;&#x34;">&#118;&#117;&#x65;&#45;&#114;&#x6f;&#x75;&#x74;&#101;&#x72;&#64;&#x33;&#46;&#x35;&#46;&#x34;</a><br>npm i <a href="mailto:&#118;&#117;&#101;&#x78;&#x40;&#51;&#46;&#x30;&#x2e;&#48;">&#118;&#117;&#101;&#x78;&#x40;&#51;&#46;&#x30;&#x2e;&#48;</a><br>com.itheima</p>
+    <content><![CDATA[<p>Mozilla&#x2F;5.0 (Windows NT 6.1; Trident&#x2F;7.0; rv:11.0) like Gecko;<br>npm install -g @vue&#x2F;cli<br>get-ExecutionPolicy<br>start-process PowerShell -verb runas<br>set-ExecutionPolicy RemoteSigned<br>get-ExecutionPolicy<br>vue create wms-web<br>cd wms-web<br>npm run dev<br>npm i element-ui -S<br>npm install axios –save<br>npm i <a href="mailto:&#118;&#x75;&#101;&#45;&#114;&#x6f;&#x75;&#x74;&#x65;&#114;&#64;&#x33;&#46;&#x35;&#x2e;&#52;">&#118;&#x75;&#101;&#45;&#114;&#x6f;&#x75;&#x74;&#x65;&#114;&#64;&#x33;&#46;&#x35;&#x2e;&#52;</a><br>npm i <a href="mailto:&#118;&#117;&#x65;&#120;&#x40;&#x33;&#46;&#48;&#x2e;&#48;">&#118;&#117;&#x65;&#120;&#x40;&#x33;&#46;&#48;&#x2e;&#48;</a><br>com.itheima</p>
 <p>硅谷课堂项目视频<br>B站直达：<a href="https://www.bilibili.com/video/BV13T411372x">https://www.bilibili.com/video/BV13T411372x</a><br>百度网盘：<a href="https://pan.baidu.com/s/1SSh5oGfzW2X7PMF9QvoELw?pwd=yyds">https://pan.baidu.com/s/1SSh5oGfzW2X7PMF9QvoELw?pwd=yyds</a> 提取码：yyds<br>阿里云盘：<a href="https://www.aliyundrive.com/s/rKWiadocFfo%EF%BC%88%E6%95%99%E7%A8%8B%E9%85%8D%E5%A5%97%E8%B5%84%E6%96%99%E8%AF%B7%E4%BB%8E%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%EF%BC%89">https://www.aliyundrive.com/s/rKWiadocFfo（教程配套资料请从百度网盘下载）</a></p>
 <p>围观尚硅谷Java课程：<a href="http://www.atguigu.com/kecheng.shtml">http://www.atguigu.com/kecheng.shtml</a><br>更多尚硅谷视频教程请访问：<a href="http://www.atguigu.com/download.shtml">http://www.atguigu.com/download.shtml</a><br>1.25磅<br>extends继承    implements实现   implements  implements   extends   extends  input  output<br>public  final  abstract    abstract   final   extends  implements indexof  charat  replace   trim  split  getbytes  length  tolowercase  touppercase   substring  equals stringbuffer  stringbuilder   reverse  append  string byte  short int long double float boolean  char  round  hashcode() object jdk jre bio nio channel aio  exists  createfile  delete  copy  move  size  read<br>size  read  write  collection  list  arraylist  linkedlist vector<br>set hashset  treeset  hashmap  linkedhashmap  treemap  concurrenthashmap  hashtable  collection  collections  list   set   map   key  value  Arrays.asList(array)   queue  poll  remove iterator  thread  runnable  callable<br>sleep  wait  notify    notifyall  run  start  threadpoolexecutor<br>submit  execute  synchronized  synchronized  struts  sql  responsebody  preparedstatement  throw  throws  final   finally  finalize  try-catch-finally<br>forward   redirect   tcp udp osi  context  core   dao  aop  web   webmvc<br>setter  构造方法注入   bean singleton  prototype   request  session  global-session  no  bytype  autodetect autowired  requestmapping springboot<br>springcloud  propertites innodb myiasm<br>groupId   artifactId  version   properties  dependencies  connector<br>junit   slf4j-api  logback-classic  logback-core   logback.xml  mybatis-config.xml   UserMapper.xml  additivity  namespace  typeAliases  environments  dataSource  mappers  resultType<br>src\main\webapp<br>源码下载云盘链接: 链接：<br><a href="https://pan.baidu.com/s/1djb2BmP3S6l9OfzT62Nd6A">https://pan.baidu.com/s/1djb2BmP3S6l9OfzT62Nd6A</a> 提取码：lry9</p>
 <p>复制这段内容后打开百度网盘手机App，操作更方便哦<br>crossorigin:克rua丝欧津<br>cors:可而丝<br>jsonp:杰森p<br>get  post  osi  tcp  udp<br>forward:佛沃的<br>redirect:锐滴ruai克特<br>pointer:泼in特<br>exception:一克赛普审<br>try catch<br>finally:fai了里<br>final finally finalize<br>throw:丝肉     throws<br>csrf  xss  sql<br>prepared:普锐的派耳的 statement<br>spring mvc<br>struts:丝jwua丝<br>cookie session<br>page  request session  application<br>request response pagecontext session application out config page exception<br>jsp servlet<br>cloneable serializable<br>cglib<br>spring aop<br>hibernate:还波累特<br>mock rpc<br>atomic:唉它密克<br>volatile   native<br>synchronized  reentrantlock lock  volatile threadlocal<br>thread runnable callable<br>new runnable blocked waiting timed_waiting terminated<br>sleep  wait<br>notify notifyall<br>run  strat<br>threadpoolexecutor<br>execute  submit<br>concurrent<br>monitorenter<br>lterator:因特锐特<br>listlterator collection vector  hashtable stack  queue  poll<br>array arraylist<br>vector:歪克特<br>linkedlist  hashmap  treemap  collection  collections<br>collection list arraylist linkedlist vector  stack set hashset linkedhashset<br>treeset  exists  createfile createdirectory delete copy move size read write<br>bio nio aio extends implements final<br>indexof  charat replace trim split getbytes<br>单例模式  工厂模式  观察者模式  外观模式  状态模式<br>spring  ioc aop 事务支持<br>面向切面编程    spring core context dao web mvc<br>setter属性 构造方法  注解方式<br>singleton  prototype<br>前置控制器  映射控制器  处理器  模型和视图   视图解析器<br>requestmapping  autowired 配置简单 运行独立 自动装配 提供应用监控<br>bootstrap  application<br>properties  yml  devtools<br>ribbon  feign  eureka  hystrix zuul<br>show processlist   explain  dispatcherservlet  handlermapping controller<br>sqlsessionfactory  sqlsession  mysql navicat<br>redis  list  lpush  list  one  1  lpush  list  two  2  lrange  list  0  -1 拿取全部的值  lrange  list  0   1 获取2个    倒着拿取的，从后面往前面拿取<br>maven常用单词：project  modelVersion  groupId  artifactId  version  SNAPSHOT  RELEASE packaging  Basics  dependencies  dependency  compile  provided  runtime  test  exclusions<br>springboot常用单词：SpringBootApplication  SpringApplication getBean redisTemplate Condition  Enable Configuration Bean ComponentScan Import @interface context.getbean  EnableAutoConfiguration<br>startup.cmd -m standalone<br>redis-server redis.windows.conf<br>systemctl start docker<br>docker ps -a<br>docker start ca6fd965509a<br><property name="driver" value="com.mysql.cj.jdbc.Driver"/><br>                <property name="url" value="jdbc:mysql:///abc01?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;useServerPrepStmts=true"/><br>                <property name="username" value="root"/><br>                <property name="password" value="123456"/><br>useSSL&#x3D;false&amp;useUnicode&#x3D;true&amp;characterEncoding&#x3D;UTF-8&amp;useServerPrepStmts&#x3D;true<br>&#x2F;&#x2F;1. 获取SqlSessionFactory<br>        String resource &#x3D; “mybatis-config.xml”;<br>        InputStream inputStream &#x3D; Resources.getResourceAsStream(resource);<br>        SqlSessionFactory sqlSessionFactory &#x3D; new SqlSessionFactoryBuilder().build(inputStream);</p>
