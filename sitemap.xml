@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xiaoxue1055.github.io/2024/08/16/%E7%94%BB/</loc>
+    
+    <lastmod>2024-08-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xiaoxue1055.github.io/2024/08/16/%E6%B1%9F%E5%8D%97/</loc>
     
     <lastmod>2024-08-16</lastmod>
@@ -90,5 +99,12 @@
   </url>
   
 
+  
+  <url>
+    <loc>https://xiaoxue1055.github.io/categories/%E4%B8%80%E5%B9%B4%E7%BA%A7%E4%B8%8A%E5%86%8C/</loc>
+    <lastmod>2024-08-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>

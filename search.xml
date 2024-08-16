@@ -3,11 +3,13 @@
   <entry>
     <title>江南</title>
     <url>/2024/08/16/%E6%B1%9F%E5%8D%97/</url>
-    <content><![CDATA[<h6>江南</h6>
-
+    <content><![CDATA[<p>江南</p>
 <p>汉乐府〔两汉〕</p>
 <p>江南可采莲，莲叶何田田。鱼戏莲叶间。<br>鱼戏莲叶东，鱼戏莲叶西，鱼戏莲叶南，鱼戏莲叶北。</p>
 ]]></content>
+      <categories>
+        <category>一年级上册</category>
+      </categories>
   </entry>
   <entry>
     <title>测试</title>
@@ -61,5 +63,16 @@
       <tags>
         <tag>测试</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>画</title>
+    <url>/2024/08/16/%E7%94%BB/</url>
+    <content><![CDATA[<p>画</p>
+<p>王维〔唐代〕</p>
+<p>远看山有色，近听水无声。<br>春去花还在，人来鸟不惊。</p>
+]]></content>
+      <categories>
+        <category>一年级上册</category>
+      </categories>
   </entry>
 </search>
