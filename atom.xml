@@ -6,7 +6,7 @@
   <link href="https://xiaoxue1055.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiaoxue1055.github.io/"/>
-  <updated>2024-08-11T13:28:31.695Z</updated>
+  <updated>2024-08-16T11:32:06.890Z</updated>
   <id>https://xiaoxue1055.github.io/</id>
   
   <author>
@@ -17,13 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>江南</title>
+    <link href="https://xiaoxue1055.github.io/2024/08/16/%E6%B1%9F%E5%8D%97/"/>
+    <id>https://xiaoxue1055.github.io/2024/08/16/%E6%B1%9F%E5%8D%97/</id>
+    <published>2024-08-16T11:29:41.000Z</published>
+    <updated>2024-08-16T11:32:06.890Z</updated>
+    
+    <content type="html"><![CDATA[<h6>江南</h6><p>汉乐府〔两汉〕</p><p>江南可采莲，莲叶何田田。鱼戏莲叶间。<br>鱼戏莲叶东，鱼戏莲叶西，鱼戏莲叶南，鱼戏莲叶北。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6&gt;江南&lt;/h6&gt;
+
+&lt;p&gt;汉乐府〔两汉〕&lt;/p&gt;
+&lt;p&gt;江南可采莲，莲叶何田田。鱼戏莲叶间。&lt;br&gt;鱼戏莲叶东，鱼戏莲叶西，鱼戏莲叶南，鱼戏莲叶北。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>测试</title>
     <link href="https://xiaoxue1055.github.io/2024/08/11/%E6%B5%8B%E8%AF%95/"/>
     <id>https://xiaoxue1055.github.io/2024/08/11/%E6%B5%8B%E8%AF%95/</id>
     <published>2024-08-11T13:12:33.000Z</published>
-    <updated>2024-08-11T13:28:31.695Z</updated>
+    <updated>2024-08-11T13:43:33.814Z</updated>
     
-    <content type="html"><![CDATA[<p>&#x3D;&#x3D;高亮&#x3D;&#x3D;</p><p><em>斜体</em></p><p><del>删除线</del> </p><p><strong>加粗</strong></p><p><u>下划线</u></p><p>H<del>2</del>O</p><p>X^2^</p><table><thead><tr><th align="center">1</th><th align="center">2</th><th align="center">3</th></tr></thead><tbody><tr><td align="center">ni</td><td align="center">hao</td><td align="center">a</td></tr></tbody></table><blockquote><p>引用</p></blockquote><p>有序列表</p><ol><li>a</li><li>b</li><li>c</li></ol><p>无序列表</p><ul><li>可莉</li><li>七七</li><li>希格雯</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hello word</span><br></pre></td></tr></table></figure><p><code>markdown</code></p><hr><p>分割线</p><hr><p><a href="baidu.com">百度</a></p><p><a href="https://www.baidu.com/">https://www.baidu.com</a></p><p><img src="/img/0105.jpg" alt="图片"></p>]]></content>
+    <content type="html"><![CDATA[<p>&#x3D;&#x3D;高亮&#x3D;&#x3D;</p><p><em>斜体</em></p><p><del>删除线</del> </p><p><strong>加粗</strong></p><p><u>下划线</u></p><p>H<del>2</del>O</p><p>X^2^</p><table><thead><tr><th align="center">1</th><th align="center">2</th><th align="center">3</th></tr></thead><tbody><tr><td align="center">ni</td><td align="center">hao</td><td align="center">a</td></tr></tbody></table><blockquote><p>引用</p></blockquote><p>有序列表</p><ol><li>a</li><li>b</li><li>c</li></ol><p>无序列表</p><ul><li>可莉</li><li>七七</li><li>希格雯</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hello word</span><br></pre></td></tr></table></figure><p><code>markdown</code></p><hr><p>分割线</p><hr><p><a href="www.baidu.com">百度</a></p><p><a href="https://www.baidu.com/">https://www.baidu.com</a></p><p><img src="/img/0105.jpg" alt="图片"></p>]]></content>
     
     
       

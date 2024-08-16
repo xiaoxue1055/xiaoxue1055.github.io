@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>江南</title>
+    <url>/2024/08/16/%E6%B1%9F%E5%8D%97/</url>
+    <content><![CDATA[<h6>江南</h6>
+
+<p>汉乐府〔两汉〕</p>
+<p>江南可采莲，莲叶何田田。鱼戏莲叶间。<br>鱼戏莲叶东，鱼戏莲叶西，鱼戏莲叶南，鱼戏莲叶北。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>测试</title>
     <url>/2024/08/11/%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<p>&#x3D;&#x3D;高亮&#x3D;&#x3D;</p>
@@ -45,7 +54,7 @@
 <hr>
 <p>分割线</p>
 <hr>
-<p><a href="baidu.com">百度</a></p>
+<p><a href="www.baidu.com">百度</a></p>
 <p><a href="https://www.baidu.com/">https://www.baidu.com</a></p>
 <p><img src="/img/0105.jpg" alt="图片"></p>
 ]]></content>
